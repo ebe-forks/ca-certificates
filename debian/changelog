@@ -1,3 +1,9 @@
+ca-certificates (20080319) UNRELEASED; urgency=low
+
+  * Added the current SPI CA certificate, used by Debian's infrastructure.
+
+ -- Philipp Kern <pkern@debian.org>  Wed, 19 Mar 2008 14:25:26 +0100
+
 ca-certificates (20070303-0.1) unstable; urgency=low
 
   * Non-maintainer upload to fix longstanding pending l10n issues.
