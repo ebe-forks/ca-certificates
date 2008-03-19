@@ -1,3 +1,11 @@
+ca-certificates (20061027.2) unstable; urgency=low
+
+  * Non-maintainer upload to fix an RC issue revealed by the last NMU.
+  * Avoid cd to /etc/ssl/certs to removing hash symlinks
+    Closes: #408469
+
+ -- Christian Perrier <bubulle@debian.org>  Fri,  2 Feb 2007 07:23:27 +0100
+
 ca-certificates (20061027.1) unstable; urgency=low
 
   * Non-maintainer upload to fix remaining l10n issues

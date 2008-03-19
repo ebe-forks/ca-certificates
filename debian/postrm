@@ -18,11 +18,10 @@ set -e
 
 case "$1" in
     remove)
-       cd /etc/ssl/certs
        echo -n "Removing hash symlinks in /etc/ssl/certs ..."
-       find . -type l -print | while read h
+       find /etc/ssl/certs -type l -print | while read h
        do
-	 test -f $h || rm -f $h
+	 test -f "$h" || rm -f "$h"
        done
        echo done.
        ;;
