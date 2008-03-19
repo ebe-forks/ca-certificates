@@ -11,12 +11,11 @@
 #
 #    Developers do not need to manually edit POT or PO files.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates_20031007\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-08 11:28+0900\n"
+"POT-Creation-Date: 2007-01-22 18:53+0100\n"
 "PO-Revision-Date: 2003-11-02 16:55-0300\n"
 "Last-Translator: André Luís Lopes <andrelop@debian.org>\n"
 "Language-Team: Debian-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
@@ -26,19 +25,19 @@ msgstr ""
 
 #. Type: select
 #. Choices
-#: ../templates:3
+#: ../templates:1001
 msgid "yes, no, ask"
 msgstr "sim, não, perguntar"
 
 #. Type: select
 #. Description
-#: ../templates:5
+#: ../templates:1002
 msgid "Trust new CAs certificates?"
 msgstr "Confiar em novos certificados de CAs ?"
 
 #. Type: select
 #. Description
-#: ../templates:5
+#: ../templates:1002
 msgid ""
 "This package may install new CA (Certificate Authority) certificates when "
 "upgrading.  You may want to check such new CA certificates and select only "
@@ -51,11 +50,12 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:5
+#: ../templates:1002
+#, fuzzy
 msgid ""
 " - \"yes\", new CA certificates will be trusted and installed.\n"
 " - \"no\", new CA certificates will not be installed by default.\n"
-" - \"ask\", Ask you trust each new CA certificates or not"
+" - \"ask\", Ask if you trust each new CA certificates, or not."
 msgstr ""
 " - 'sim', novos certificados de CAs serão confiáveis e serõ instalados.\n"
 " - 'não', novos certificados de CAs n]ao serão instalados por padrão.\n"
@@ -63,42 +63,42 @@ msgstr ""
 
 #. Type: multiselect
 #. Choices
-#: ../templates:16
+#: ../templates:2001
 msgid "${new_crts}"
 msgstr "${new_certs}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:17
+#: ../templates:2002
 msgid "Select new certificates to activate:"
 msgstr "Selecione os novos certificados a serem ativados :"
 
 #. Type: multiselect
 #. Description
-#: ../templates:17
+#: ../templates:2002
+#, fuzzy
 msgid ""
-"In this upgrading, these new certificates are added. Do you trust these "
-"certificates and want that these certificates are installed into /etc/ssl/"
-"certs?"
+"During the upgrade, these new certificates will be added. Do you trust them "
+"and want them installed into /etc/ssl/certs?"
 msgstr ""
 "Nesta atualização, estes novos certificados foram adicionados. Você "
 "confia neles e quer que os mesmos sejam instalados em /etc/ssl/certs ?"
 
 #. Type: multiselect
 #. Choices
-#: ../templates:24
+#: ../templates:3001
 msgid "${enable_crts}"
 msgstr "${enable_certs}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:25
+#: ../templates:3002
 msgid "Select certificates to activate:"
 msgstr "Selecione os certificados a serem ativados :"
 
 #. Type: multiselect
 #. Description
-#: ../templates:25
+#: ../templates:3002
 msgid ""
 "This package installs common CA (Certificate Authority) certificates in /usr/"
 "share/ca-certificates. You can select certs from these available certs to be "

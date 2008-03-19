@@ -31,6 +31,8 @@ clean:
 	# Add here commands to clean up after the build process.
 	-$(MAKE) clean
 
+	debconf-updatepo
+
 	dh_clean
 
 install: build

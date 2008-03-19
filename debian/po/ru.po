@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates_20030924\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-08 11:28+0900\n"
+"POT-Creation-Date: 2007-01-22 18:53+0100\n"
 "PO-Revision-Date: 2003-10-04 21:39+0600\n"
 "Last-Translator: Ilgiz Kalmetev <translator@ilgiz.pp.ru>\n"
 "Language-Team: russian <debian-russian@lists.debian.org>\n"
@@ -25,19 +25,19 @@ msgstr ""
 
 #. Type: select
 #. Choices
-#: ../templates:3
+#: ../templates:1001
 msgid "yes, no, ask"
 msgstr "да, нет, спросить"
 
 #. Type: select
 #. Description
-#: ../templates:5
+#: ../templates:1002
 msgid "Trust new CAs certificates?"
 msgstr "Доверять новым сертификатам CA?"
 
 #. Type: select
 #. Description
-#: ../templates:5
+#: ../templates:1002
 msgid ""
 "This package may install new CA (Certificate Authority) certificates when "
 "upgrading.  You may want to check such new CA certificates and select only "
@@ -49,11 +49,12 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:5
+#: ../templates:1002
+#, fuzzy
 msgid ""
 " - \"yes\", new CA certificates will be trusted and installed.\n"
 " - \"no\", new CA certificates will not be installed by default.\n"
-" - \"ask\", Ask you trust each new CA certificates or not"
+" - \"ask\", Ask if you trust each new CA certificates, or not."
 msgstr ""
 " - `да', доверять и установить новые сертификаты CA.\n"
 " - 'нет', по умолчанию не устанавливать новые сертификаты CA.\n"
@@ -61,23 +62,23 @@ msgstr ""
 
 #. Type: multiselect
 #. Choices
-#: ../templates:16
+#: ../templates:2001
 msgid "${new_crts}"
 msgstr "${new_crts}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:17
+#: ../templates:2002
 msgid "Select new certificates to activate:"
 msgstr "Выбрать новые сертификаты для активации:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:17
+#: ../templates:2002
+#, fuzzy
 msgid ""
-"In this upgrading, these new certificates are added. Do you trust these "
-"certificates and want that these certificates are installed into /etc/ssl/"
-"certs?"
+"During the upgrade, these new certificates will be added. Do you trust them "
+"and want them installed into /etc/ssl/certs?"
 msgstr ""
 "Во время текущего обновления будут добавлены эти новые сертификаты. "
 "Доверяете ли Вы этим сертификатам и хотите ли, чтобы эти сертификаты были "
@@ -85,19 +86,19 @@ msgstr ""
 
 #. Type: multiselect
 #. Choices
-#: ../templates:24
+#: ../templates:3001
 msgid "${enable_crts}"
 msgstr "${enable_crts}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:25
+#: ../templates:3002
 msgid "Select certificates to activate:"
 msgstr "Выбрать сертификаты для активации:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:25
+#: ../templates:3002
 msgid ""
 "This package installs common CA (Certificate Authority) certificates in /usr/"
 "share/ca-certificates. You can select certs from these available certs to be "

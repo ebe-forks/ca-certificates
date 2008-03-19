@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates 20040809\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2004-08-08 11:28+0900\n"
+"POT-Creation-Date: 2007-01-22 18:53+0100\n"
 "PO-Revision-Date: 2005-05-17 23:50+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
@@ -17,19 +17,19 @@ msgstr ""
 
 #. Type: select
 #. Choices
-#: ../templates:3
+#: ../templates:1001
 msgid "yes, no, ask"
 msgstr "có, không, hỏi"
 
 #. Type: select
 #. Description
-#: ../templates:5
+#: ../templates:1002
 msgid "Trust new CAs certificates?"
 msgstr "Tin chứng nhận của CA mới không?"
 
 #. Type: select
 #. Description
-#: ../templates:5
+#: ../templates:1002
 msgid ""
 "This package may install new CA (Certificate Authority) certificates when "
 "upgrading.  You may want to check such new CA certificates and select only "
@@ -41,11 +41,12 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:5
+#: ../templates:1002
+#, fuzzy
 msgid ""
 " - \"yes\", new CA certificates will be trusted and installed.\n"
 " - \"no\", new CA certificates will not be installed by default.\n"
-" - \"ask\", Ask you trust each new CA certificates or not"
+" - \"ask\", Ask if you trust each new CA certificates, or not."
 msgstr ""
 " - «có» có nghĩa là sẽ tin và cài đặt các chứng nhận CA mới.\n"
 "- «không» có nghĩa là sẽ không cài đặt chứng nhận CA mới, theo mặc định.\n"
@@ -54,23 +55,23 @@ msgstr ""
 # Variable: do not translate/ biến: đừng dịch
 #. Type: multiselect
 #. Choices
-#: ../templates:16
+#: ../templates:2001
 msgid "${new_crts}"
 msgstr "${new_crts}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:17
+#: ../templates:2002
 msgid "Select new certificates to activate:"
 msgstr "Chọn chứng nhận mới cần kích hoạt:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:17
+#: ../templates:2002
+#, fuzzy
 msgid ""
-"In this upgrading, these new certificates are added. Do you trust these "
-"certificates and want that these certificates are installed into /etc/ssl/"
-"certs?"
+"During the upgrade, these new certificates will be added. Do you trust them "
+"and want them installed into /etc/ssl/certs?"
 msgstr ""
 "Trong khi cập nhật thì sẽ thêm những chứng nhận mới này. Bạn có tin chúng, "
 "và muốn cài đặt chúng vào /etc/ssl/certs không?"
@@ -78,19 +79,19 @@ msgstr ""
 # Variable: do not translate/ biến: đừng dịch
 #. Type: multiselect
 #. Choices
-#: ../templates:24
+#: ../templates:3001
 msgid "${enable_crts}"
 msgstr "${enable_crts}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:25
+#: ../templates:3002
 msgid "Select certificates to activate:"
 msgstr "Chọn chứng nhận cần kích hoạt:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:25
+#: ../templates:3002
 msgid ""
 "This package installs common CA (Certificate Authority) certificates in /usr/"
 "share/ca-certificates. You can select certs from these available certs to be "

@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates_20031007_templates\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-09-09 11:47-0600\n"
+"POT-Creation-Date: 2007-01-22 18:53+0100\n"
 "PO-Revision-Date: 2006-09-18 08:00+0200\n"
 "Last-Translator: Claus Hindsgaul <claus.hindsgaul@gmail.com>\n"
 "Language-Team: Danish\n"
@@ -58,8 +58,10 @@ msgid ""
 " - \"ask\", Ask if you trust each new CA certificates, or not."
 msgstr ""
 " - \"ja\", nye CA-certifikater vil blive installeret og stolet på.\n"
-" - \"nej\", nye CA-certifikater vil som udgangspunkt ikke blive installeret.\n"
-" - \"spørg\", spørger om du vil stole på hvert enkelt nyt CA-certifikat eller ej."
+" - \"nej\", nye CA-certifikater vil som udgangspunkt ikke blive "
+"installeret.\n"
+" - \"spørg\", spørger om du vil stole på hvert enkelt nyt CA-certifikat "
+"eller ej."
 
 #. Type: multiselect
 #. Choices
@@ -80,8 +82,8 @@ msgid ""
 "During the upgrade, these new certificates will be added. Do you trust them "
 "and want them installed into /etc/ssl/certs?"
 msgstr ""
-"Disse nye certifikater bliver tilføjet under opgraderingen. Stoler du "
-"på dem, og vil du have dem installeret i /etc/ssl/certs?"
+"Disse nye certifikater bliver tilføjet under opgraderingen. Stoler du på "
+"dem, og vil du have dem installeret i /etc/ssl/certs?"
 
 #. Type: multiselect
 #. Choices
@@ -108,4 +110,3 @@ msgstr ""
 "ca-certificates. Du kan vælge certifikater til installation i /etc/ssl/certs "
 "ud fra disse. Denne pakke vil oprette symbolske lænker og generere en enkelt "
 "fil med alle dine valgte certifikater i /etc/ssl/certs/ca-certificates.crt."
-

@@ -1,3 +1,15 @@
+ca-certificates (20061027.1) unstable; urgency=low
+
+  * Non-maintainer upload to fix remaining l10n issues
+  * Debconf translation updates:
+    - Czech. Closes: #407807
+    - Spanish. Closes: #401968
+    - German. Closes: #396942
+  * Add debconf-updatepo to the clean target in debian/rules
+    to guarantee up-to-date PO(T) files
+
+ -- Christian Perrier <bubulle@debian.org>  Mon, 22 Jan 2007 18:56:53 +0100
+
 ca-certificates (20061027) unstable; urgency=low
 
   * sbin/update-ca-certificates:
