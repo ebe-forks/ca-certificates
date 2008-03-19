@@ -7,7 +7,7 @@ Standards-Version: 3.5.9
 
 Package: ca-certificates
 Architecture: all
-Depends: openssl, debconf (>= 0.5.00)
+Depends: openssl, ${misc:Depends}
 Enhances: libssl0.9.7, openssl
 Description: Common CA Certificates PEM files
  It includes the followings PEM files of CA certificates
@@ -15,6 +15,10 @@ Description: Common CA Certificates PEM files
   * spi-inc.org certificate
   * db.debian.org certificate
   * Mozilla builtin CA certificates
+  * CACert.org certificates
+  * Brazilian Government Certificate
+  * Signet CA certificates
+  * QuoVadis CA certificates
  .
  This is useful for any openssl applications to verify
  SSL connection.
