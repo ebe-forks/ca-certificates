@@ -10,22 +10,23 @@ Package: ca-certificates
 Architecture: all
 Depends: openssl, ${misc:Depends}
 Enhances: libssl0.9.8, openssl
-Description: Common CA Certificates PEM files
- It includes the followings PEM files of CA certificates
+Description: Common CA certificates
+ This package includes the followings PEM files of CA certificates:
  .
-  * spi-inc.org certificate
-  * db.debian.org certificate
-  * debconf.org certificate
-  * Mozilla builtin CA certificates
-  * CACert.org certificates
-  * Brazilian Government Certificate
-  * Signet CA certificates
-  * QuoVadis CA certificates
+  - spi-inc.org
+  - db.debian.org
+  - debconf.org
+  - Mozilla built-in CAs
+  - CACert.orgs
+  - Brazilian government
+  - Signet
+  - QuoVadis
  .
- This is useful for any openssl applications to verify
- SSL connection.
+ It allows SSL-based applications to check for the authenticity of
+ SSL connections.
  .
- Note that certificate authorities whose certificates are included in
- this package are not in any way audited for trustworthiness and RFC
- 3647 compliance, and that full responsibility to assess them rests
- with the user.
+ Please note that certificate authorities whose certificates are
+ included in this package are not in any way audited for
+ trustworthiness and RFC 3647 compliance, and that full responsibility
+ to assess them belongs to the local system administrator.
+

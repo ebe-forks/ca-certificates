@@ -14,9 +14,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-22 18:53+0100\n"
-"PO-Revision-Date: 2007-01-21 17:12+0100\n"
+"Report-Msgid-Bugs-To: ukai@debian.or.jp\n"
+"POT-Creation-Date: 2007-07-27 11:03+0200\n"
+"PO-Revision-Date: 2007-07-29 11:13+0200\n"
 "Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team: Czech <debian-l10n-czech@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
@@ -25,85 +25,92 @@ msgstr ""
 
 #. Type: select
 #. Choices
-#: ../templates:1001
+#: ../templates:2001
 msgid "yes, no, ask"
 msgstr "ano, ne, zeptat se"
 
 #. Type: select
 #. Description
-#: ../templates:1002
-msgid "Trust new CAs certificates?"
-msgstr "Důvěřovat novým certifikátům CA?"
+#: ../templates:2002
+msgid "Trust new certificates from certificate authorities?"
+msgstr "Důvěřovat novým certifikátům certifikačních autorit?"
 
 #. Type: select
 #. Description
-#: ../templates:1002
+#: ../templates:2002
 msgid ""
 "This package may install new CA (Certificate Authority) certificates when "
-"upgrading.  You may want to check such new CA certificates and select only "
+"upgrading. You may want to check such new CA certificates and select only "
 "certificates that you trust."
 msgstr ""
-"Tento balíček může při aktualizaci instalovat nové certifikáty "
-"certifikačních autorit (CA). Měli byste tyto nové certifikáty zkontrolovat a "
-"vybrat jen ty, kterým důvěřujete."
+"Tento balík může při aktualizaci instalovat nové certifikáty certifikačních "
+"autorit (CA). Měli byste tyto nové certifikáty zkontrolovat a vybrat jen ty, "
+"kterým důvěřujete."
 
 #. Type: select
 #. Description
-#: ../templates:1002
+#: ../templates:2002
 msgid ""
-" - \"yes\", new CA certificates will be trusted and installed.\n"
-" - \"no\", new CA certificates will not be installed by default.\n"
-" - \"ask\", Ask if you trust each new CA certificates, or not."
+" - yes: new CA certificates will be trusted and installed;\n"
+" - no : new CA certificates will not be installed by default;\n"
+" - ask: prompt for each new CA certificate."
 msgstr ""
-" - \"ano\", důvěřujete novým certifikátům a budou nainstalovány.\n"
-" - \"ne\", nové certifikáty nebudou implicitně instalovány.\n"
-" - \"zeptat se\", zeptat se na důvěru každého certifikátu."
+" - ano: důvěřujete novým certifikátům a budou nainstalovány.\n"
+" - ne:  nové certifikáty nebudou implicitně instalovány.\n"
+" - zeptat se: zeptá se na každý nový certifikát individuálně."
 
 #. Type: multiselect
 #. Choices
-#: ../templates:2001
+#: ../templates:3001
 msgid "${new_crts}"
 msgstr "${new_crts}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:2002
-msgid "Select new certificates to activate:"
-msgstr "Vyberte nové certifikáty, které se mají aktivovat:"
+#: ../templates:3002
+msgid "New certificates to activate:"
+msgstr "Nové certifikáty, které se mají aktivovat:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:2002
+#: ../templates:3002
 msgid ""
-"During the upgrade, these new certificates will be added. Do you trust them "
-"and want them installed into /etc/ssl/certs?"
+"During upgrades, new certificates will be added. Please choose those you "
+"trust."
 msgstr ""
-"V této aktualizaci jsou přidány tyto nové certifikáty. Důvěřujete jim a "
-"chcete je nainstalovat do /etc/ssl/certs?"
+"Během aktualizace budou přidány nové certifikáty. Vyberte prosím ty, kterým "
+"důvěřujete."
 
 #. Type: multiselect
 #. Choices
-#: ../templates:3001
+#: ../templates:4001
 msgid "${enable_crts}"
 msgstr "${enable_crts}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:3002
-msgid "Select certificates to activate:"
-msgstr "Vyberte certifikáty, které se mají aktivovat:"
+#: ../templates:4002
+msgid "Certificates to activate:"
+msgstr "Certifikáty, které se mají aktivovat:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:3002
+#: ../templates:4002
 msgid ""
 "This package installs common CA (Certificate Authority) certificates in /usr/"
-"share/ca-certificates. You can select certs from these available certs to be "
-"installed into /etc/ssl/certs. This package will make symlinks and generate "
-"a single file of all your selected certs, /etc/ssl/certs/ca-certificates.crt."
+"share/ca-certificates."
 msgstr ""
-"Tento balíček instaluje certifikáty běžných CA (Certifikačních Autorit) do /"
-"usr/share/ca-certificates. Z dostupných certifikátů můžete vybrat ty, které "
-"se mají nainstalovat do /etc/ssl/certs. Vytvoří se symbolické odkazy a "
-"vygeneruje se soubor /etc/ssl/certs/ca-certificates.crt obsahující všechny "
-"vybrané certifikáty."
+"Tento balík instaluje běžné certifikáty certifikačních autorit (CA) do /usr/"
+"share/ca-certificates."
+
+#. Type: multiselect
+#. Description
+#: ../templates:4002
+msgid ""
+"Please select the certificate authorities you trust so that their "
+"certificates are installed into /etc/ssl/certs. They will be compiled into a "
+"single /etc/ssl/certs/ca-certificates.crt file."
+msgstr ""
+"Vyberte prosím certifikační autority, kterým věříte a jejichž certifikáty "
+"nainstalovat do /etc/ssl/certs. Vybrané certifikáty budou sloučeny do "
+"jediného souboru /etc/ssl/certs/ca-certificates.crt."

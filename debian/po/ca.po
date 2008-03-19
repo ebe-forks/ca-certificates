@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates 20031007\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-22 18:53+0100\n"
+"Report-Msgid-Bugs-To: ukai@debian.or.jp\n"
+"POT-Creation-Date: 2007-07-27 11:03+0200\n"
 "PO-Revision-Date: 2004-03-05 01:14+0100\n"
 "Last-Translator: Josep Monés i Teixidor <jmones@puntbarra.com>\n"
 "Language-Team: Catalan <debian-l10n-catalanLL@lists.debian.org>\n"
@@ -16,22 +16,29 @@ msgstr ""
 
 #. Type: select
 #. Choices
-#: ../templates:1001
+#: ../templates:2001
 msgid "yes, no, ask"
 msgstr "sí, no, demana"
 
 #. Type: select
 #. Description
-#: ../templates:1002
-msgid "Trust new CAs certificates?"
+#: ../templates:2002
+#, fuzzy
+#| msgid "Trust new CAs certificates?"
+msgid "Trust new certificates from certificate authorities?"
 msgstr "Voleu confiar en els nous certificats de les CA?"
 
 #. Type: select
 #. Description
-#: ../templates:1002
+#: ../templates:2002
+#, fuzzy
+#| msgid ""
+#| "This package may install new CA (Certificate Authority) certificates when "
+#| "upgrading.  You may want to check such new CA certificates and select "
+#| "only certificates that you trust."
 msgid ""
 "This package may install new CA (Certificate Authority) certificates when "
-"upgrading.  You may want to check such new CA certificates and select only "
+"upgrading. You may want to check such new CA certificates and select only "
 "certificates that you trust."
 msgstr ""
 "Aquest paquet pot instal·lar nous certificats de les CA (Entitats "
@@ -41,12 +48,12 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:1002
+#: ../templates:2002
 #, fuzzy
 msgid ""
-" - \"yes\", new CA certificates will be trusted and installed.\n"
-" - \"no\", new CA certificates will not be installed by default.\n"
-" - \"ask\", Ask if you trust each new CA certificates, or not."
+" - yes: new CA certificates will be trusted and installed;\n"
+" - no : new CA certificates will not be installed by default;\n"
+" - ask: prompt for each new CA certificate."
 msgstr ""
 "- 'sí', es confiarà i s'instal·laran els nous certificats de les CA.\n"
 "- 'no', no s'instal·laran els nous certificats de les CA.\n"
@@ -54,50 +61,81 @@ msgstr ""
 
 #. Type: multiselect
 #. Choices
-#: ../templates:2001
+#: ../templates:3001
 msgid "${new_crts}"
 msgstr "${new_crts}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:2002
-msgid "Select new certificates to activate:"
-msgstr "Seleccioneu quins certificats nous voleu activar:"
+#: ../templates:3002
+#, fuzzy
+#| msgid "Select certificates to activate:"
+msgid "New certificates to activate:"
+msgstr "Seleccioneu els certificats que s'activaran:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:2002
+#: ../templates:3002
 #, fuzzy
 msgid ""
-"During the upgrade, these new certificates will be added. Do you trust them "
-"and want them installed into /etc/ssl/certs?"
+"During upgrades, new certificates will be added. Please choose those you "
+"trust."
 msgstr ""
 "En aquesta actualització s'han afegit aquests certificats nous. Confieu en "
 "aquests certificats i voleu que s'instal·lin a /etc/ssl/certs?"
 
 #. Type: multiselect
 #. Choices
-#: ../templates:3001
+#: ../templates:4001
 msgid "${enable_crts}"
 msgstr "${enable_crts}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:3002
-msgid "Select certificates to activate:"
+#: ../templates:4002
+#, fuzzy
+#| msgid "Select certificates to activate:"
+msgid "Certificates to activate:"
 msgstr "Seleccioneu els certificats que s'activaran:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:3002
+#: ../templates:4002
+#, fuzzy
+#| msgid ""
+#| "This package may install new CA (Certificate Authority) certificates when "
+#| "upgrading.  You may want to check such new CA certificates and select "
+#| "only certificates that you trust."
 msgid ""
 "This package installs common CA (Certificate Authority) certificates in /usr/"
-"share/ca-certificates. You can select certs from these available certs to be "
-"installed into /etc/ssl/certs. This package will make symlinks and generate "
-"a single file of all your selected certs, /etc/ssl/certs/ca-certificates.crt."
+"share/ca-certificates."
 msgstr ""
-"Aquest paquet instal·la certificats de les CA (Entitats Certificadores) d'ús "
-"comú a /usr/share/ca-certificates. D'aquests certificats en podeu "
-"seleccionar els que desitgeu instal·lar a /etc/ssl/certs. Aquest paquet farà "
-"enllaços simbòlics i generarà un sol fitxer per a tots els certificats que "
-"seleccioneu, /etc/ssl/certs/ca-certificates.crt."
+"Aquest paquet pot instal·lar nous certificats de les CA (Entitats "
+"Certificadores) en el moment d'actualitzar-lo. Podeu escollir comprovar "
+"aquests nous certificats de les CA i seleccionar-ne només els certificats en "
+"els que confieu."
+
+#. Type: multiselect
+#. Description
+#: ../templates:4002
+msgid ""
+"Please select the certificate authorities you trust so that their "
+"certificates are installed into /etc/ssl/certs. They will be compiled into a "
+"single /etc/ssl/certs/ca-certificates.crt file."
+msgstr ""
+
+#~ msgid "Select new certificates to activate:"
+#~ msgstr "Seleccioneu quins certificats nous voleu activar:"
+
+#~ msgid ""
+#~ "This package installs common CA (Certificate Authority) certificates in /"
+#~ "usr/share/ca-certificates. You can select certs from these available "
+#~ "certs to be installed into /etc/ssl/certs. This package will make "
+#~ "symlinks and generate a single file of all your selected certs, /etc/ssl/"
+#~ "certs/ca-certificates.crt."
+#~ msgstr ""
+#~ "Aquest paquet instal·la certificats de les CA (Entitats Certificadores) "
+#~ "d'ús comú a /usr/share/ca-certificates. D'aquests certificats en podeu "
+#~ "seleccionar els que desitgeu instal·lar a /etc/ssl/certs. Aquest paquet "
+#~ "farà enllaços simbòlics i generarà un sol fitxer per a tots els "
+#~ "certificats que seleccioneu, /etc/ssl/certs/ca-certificates.crt."

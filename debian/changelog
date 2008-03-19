@@ -1,3 +1,31 @@
+ca-certificates (20070303-0.1) unstable; urgency=low
+
+  * Non-maintainer upload to fix longstanding pending l10n issues.
+  * Debconf templates and debian/control reviewed by the debian-l10n-
+    english team as part of the Smith review project.
+    Closes: #432249, #434789
+  * Debconf translation updates:
+    - Japanese. Closes:#433067
+    - Basque. Closes: #433074
+    - Spanish. Closes: #433078
+    - Czech. Closes: #433100
+    - Galician. Closes: #433215
+    - Russian. Closes: #433224
+    - Swedish. Closes: #433432
+    - Vietnamese. Closes: #433792, #427000, #434992
+    - Dutch. Closes: #434670
+    - German. Closes: #434788
+    - Italian. Closes: #435029
+  * Portuguese. Closes: #435471
+  * Finnish. Closes: #448826
+  * Remove /etc/ssl when purging the package (only if that
+    directory is empty). Closes: #454334
+  * [Lintian] Give a reference to the GPL text in debian/copyright
+  * [Lintian] No longer ignore errors from "make clean"
+  * [Lintian] Upgrade debhelper compatibility to 4 (with debian/compat).
+
+ -- Christian Perrier <bubulle@debian.org>  Thu, 14 Feb 2008 19:52:37 +0100
+
 ca-certificates (20070303) unstable; urgency=low
 
   * Add debconf.org crt. closes: Bug#342088

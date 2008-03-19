@@ -8,98 +8,102 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates_20061027\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-22 18:53+0100\n"
-"PO-Revision-Date: 2007-02-13 11:12+0600\n"
+"Report-Msgid-Bugs-To: ukai@debian.or.jp\n"
+"POT-Creation-Date: 2007-07-27 11:03+0200\n"
+"PO-Revision-Date: 2007-07-27 17:45+0700\n"
 "Last-Translator: Mikhail Gusarov <dottedmag@dottedmag.net>\n"
-"Language-Team: russian <debian-russian@lists.debian.org>\n"
+"Language-Team: Russian l10n Team <debian-l10n-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Type: select
 #. Choices
-#: ../templates:1001
+#: ../templates:2001
 msgid "yes, no, ask"
-msgstr "да, нет, спросить"
+msgstr "да, нет, спрашивать"
 
 #. Type: select
 #. Description
-#: ../templates:1002
-msgid "Trust new CAs certificates?"
-msgstr "Доверять новым сертификатам CA?"
+#: ../templates:2002
+msgid "Trust new certificates from certificate authorities?"
+msgstr "Доверять новым корневым сертификатам?"
 
 #. Type: select
 #. Description
-#: ../templates:1002
+#: ../templates:2002
 msgid ""
 "This package may install new CA (Certificate Authority) certificates when "
-"upgrading.  You may want to check such new CA certificates and select only "
+"upgrading. You may want to check such new CA certificates and select only "
 "certificates that you trust."
 msgstr ""
-"При обновлении этот пакет может установить новый сертификаты CA (Certificate "
-"Authority). Возможно, Вы захотите проверить эти новые сертификаты и выбрать "
-"только те, которым доверяете."
+"При обновлении этот пакет может установить новые корневые сертификаты. Вы "
+"можете проверить их и выбрать только те, которым доверяете."
 
 #. Type: select
 #. Description
-#: ../templates:1002
+#: ../templates:2002
 msgid ""
-" - \"yes\", new CA certificates will be trusted and installed.\n"
-" - \"no\", new CA certificates will not be installed by default.\n"
-" - \"ask\", Ask if you trust each new CA certificates, or not."
+" - yes: new CA certificates will be trusted and installed;\n"
+" - no : new CA certificates will not be installed by default;\n"
+" - ask: prompt for each new CA certificate."
 msgstr ""
-" - \"да\", доверять и установить новые сертификаты CA.\n"
-" - \"нет\", по умолчанию не устанавливать новые сертификаты CA.\n"
-" - \"спросить\", спрашивать, стоит ли доверять каждому из новых сертифкатов "
-"CA."
+" - да: доверять новым корневым сертификатам и установить их.\n"
+" - нет: по умолчанию не устанавливать новые корневые сертификаты.\n"
+" - спрашивать: спрашивать, стоит ли доверять каждому из новых сертифкатов CA."
 
 #. Type: multiselect
 #. Choices
-#: ../templates:2001
+#: ../templates:3001
 msgid "${new_crts}"
 msgstr "${new_crts}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:2002
-msgid "Select new certificates to activate:"
-msgstr "Выберите новые сертификаты для активации:"
+#: ../templates:3002
+msgid "New certificates to activate:"
+msgstr "Сертификаты для активации:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:2002
+#: ../templates:3002
 msgid ""
-"During the upgrade, these new certificates will be added. Do you trust them "
-"and want them installed into /etc/ssl/certs?"
+"During upgrades, new certificates will be added. Please choose those you "
+"trust."
 msgstr ""
-"Во время обновления будут добавлены эти новые сертификаты. Доверяете ли Вы "
-"этим сертификатам и хотите ли, чтобы эти сертификаты были установлены в "
-"каталог /etc/ssl/certs?"
+"Во время обновления будут добавлены новые сертификаты. Выберите те, которым "
+"вы доверяете."
 
 #. Type: multiselect
 #. Choices
-#: ../templates:3001
+#: ../templates:4001
 msgid "${enable_crts}"
 msgstr "${enable_crts}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:3002
-msgid "Select certificates to activate:"
-msgstr "Выберите сертификаты для активации:"
+#: ../templates:4002
+msgid "Certificates to activate:"
+msgstr "Сертификаты для активации:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:3002
+#: ../templates:4002
 msgid ""
 "This package installs common CA (Certificate Authority) certificates in /usr/"
-"share/ca-certificates. You can select certs from these available certs to be "
-"installed into /etc/ssl/certs. This package will make symlinks and generate "
-"a single file of all your selected certs, /etc/ssl/certs/ca-certificates.crt."
+"share/ca-certificates."
 msgstr ""
-"Этот пакет устанавливает общие сертификаты CA (Certificate Authority) в "
-"каталог /usr/share/ca-certificates. Вы можете выбрать сертификаты их этих "
-"доступных сертификатов для установки в каталог /etc/ssl/certs. Этот пакет "
-"создаст символические ссылки и сгенерирует один файл для всех выбранных Вами "
-"сертификатов, /etc/ssl/certs/ca-certificates.crt."
+"Этот пакет устанавливает новые корневые сертификаты в каталог /usr/share/ca-"
+"certificates."
+
+#. Type: multiselect
+#. Description
+#: ../templates:4002
+msgid ""
+"Please select the certificate authorities you trust so that their "
+"certificates are installed into /etc/ssl/certs. They will be compiled into a "
+"single /etc/ssl/certs/ca-certificates.crt file."
+msgstr ""
+"Выберите корневые сертификаты, которым вы доверяете, для установки в "
+"каталог /etc/ssl/certs. Эти сертификаты будут скомпонованы в файл /etc/ssl/"
+"certs/ca-certificates.crt."

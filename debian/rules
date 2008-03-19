@@ -5,8 +5,6 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-# This is the debhelper compatability version to use.
-export DH_COMPAT=3
 VERSION := $(shell dpkg-parsechangelog | sed -ne 's/^Version: //p')
 
 configure: configure-stamp
@@ -29,7 +27,7 @@ clean:
 	dh_testroot
 	rm -f build-stamp configure-stamp
 	# Add here commands to clean up after the build process.
-	-$(MAKE) clean
+	[ ! -f Makefile ] || $(MAKE) clean
 
 	debconf-updatepo
 

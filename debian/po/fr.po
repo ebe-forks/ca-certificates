@@ -1,115 +1,109 @@
-# translation of fr.po to French
+# Translation of ca-certificates debconf templates to French
 #
-#    Translators, if you are not familiar with the PO format, gettext
-#    documentation is worth reading, especially sections dedicated to
-#    this format, e.g. by running:
-#         info -n '(gettext)PO Files'
-#         info -n '(gettext)Header Entry'
-#
-#    Some information specific to po-debconf are available at
-#            /usr/share/doc/po-debconf/README-trans
-#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
-#
-#    Developers do not need to manually edit POT or PO files.
-#
-# Christian Perrier <bubulle@debian.org>, 2006.
+# Christian Perrier <bubulle@debian.org>, 2006, 2007.
+# This file is licensed under the same license as the ca-certificates package
 msgid ""
 msgstr ""
-"Project-Id-Version: fr\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-01-22 18:53+0100\n"
-"PO-Revision-Date: 2006-09-05 23:03+0200\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: ukai@debian.or.jp\n"
+"POT-Creation-Date: 2007-07-27 11:03+0200\n"
+"PO-Revision-Date: 2007-07-27 08:40+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-15\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #. Type: select
 #. Choices
-#: ../templates:1001
+#: ../templates:2001
 msgid "yes, no, ask"
 msgstr "Oui, Non, Demander"
 
 #. Type: select
 #. Description
-#: ../templates:1002
-msgid "Trust new CAs certificates?"
-msgstr "Faut-il accepter les certificats des nouveaux tiers de confiance ?"
+#: ../templates:2002
+msgid "Trust new certificates from certificate authorities?"
+msgstr "Faut-il accepter les nouveaux certificats de tiers de confianceÂ ?"
 
 #. Type: select
 #. Description
-#: ../templates:1002
+#: ../templates:2002
 msgid ""
 "This package may install new CA (Certificate Authority) certificates when "
-"upgrading.  You may want to check such new CA certificates and select only "
+"upgrading. You may want to check such new CA certificates and select only "
 "certificates that you trust."
 msgstr ""
 "Ce paquet peut installer des certificats de nouveaux tiers de confiance "
-"(« Certificate Authority ») lors de ses mises à jour. Vous pouvez souhaiter "
-"vérifier ces nouveaux certificats et ne choisir que ceux que vous acceptez."
+"(Â«Â Certificate AuthorityÂ Â») lors de ses mises Ã  jour. Vous pouvez souhaiter "
+"vÃ©rifier ces nouveaux certificats et ne choisir que ceux que vous acceptez."
 
 #. Type: select
 #. Description
-#: ../templates:1002
+#: ../templates:2002
 msgid ""
-" - \"yes\", new CA certificates will be trusted and installed.\n"
-" - \"no\", new CA certificates will not be installed by default.\n"
-" - \"ask\", Ask if you trust each new CA certificates, or not."
+" - yes: new CA certificates will be trusted and installed;\n"
+" - no : new CA certificates will not be installed by default;\n"
+" - ask: prompt for each new CA certificate."
 msgstr ""
-"- si vous choisissez « Oui », les nouveaux certificats seront\n"
-"  acceptés et installés ;\n"
-"- si vous choisissez « Non », les nouveaux certificats ne seront\n"
-"  pas installés par défaut ;\n"
-"- si vous choisissez « Demander », l'agrément de chacun des\n"
-"  nouveaux certificats vous sera demandé."
+"- OuiÂ      :Â les nouveaux certificats seront acceptÃ©s et installÃ©sÂ ;\n"
+"- NonÂ      : les nouveaux certificats ne seront pas installÃ©s par dÃ©fautÂ ;\n"
+"- DemanderÂ : l'agrÃ©ment de chacun des nouveaux certificats vous sera\n"
+"             demandÃ©."
 
 #. Type: multiselect
 #. Choices
-#: ../templates:2001
+#: ../templates:3001
 msgid "${new_crts}"
 msgstr "${new_crts}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:2002
-msgid "Select new certificates to activate:"
-msgstr "Nouveaux certificats à accepter :"
+#: ../templates:3002
+msgid "New certificates to activate:"
+msgstr "Nouveaux certificats Ã  accepterÂ :"
 
 #. Type: multiselect
 #. Description
-#: ../templates:2002
+#: ../templates:3002
 msgid ""
-"During the upgrade, these new certificates will be added. Do you trust them "
-"and want them installed into /etc/ssl/certs?"
+"During upgrades, new certificates will be added. Please choose those you "
+"trust."
 msgstr ""
-"Lors de cette mise à jour, de nouveaux certificats ont été ajoutés. Veuillez "
-"choisir si vous les acceptez, pour qu'ils soient placés dans /etc/ssl/certs."
+"Lors de cette mise Ã  jour, de nouveaux certificats ont Ã©tÃ© ajoutÃ©s. Veuillez "
+"choisir si vous les acceptez."
 
 #. Type: multiselect
 #. Choices
-#: ../templates:3001
+#: ../templates:4001
 msgid "${enable_crts}"
 msgstr "${enable_crts}"
 
 #. Type: multiselect
 #. Description
-#: ../templates:3002
-msgid "Select certificates to activate:"
-msgstr "Certificats à accepter :"
+#: ../templates:4002
+msgid "Certificates to activate:"
+msgstr "Certificats Ã  accepterÂ :"
 
 #. Type: multiselect
 #. Description
-#: ../templates:3002
+#: ../templates:4002
 msgid ""
 "This package installs common CA (Certificate Authority) certificates in /usr/"
-"share/ca-certificates. You can select certs from these available certs to be "
-"installed into /etc/ssl/certs. This package will make symlinks and generate "
-"a single file of all your selected certs, /etc/ssl/certs/ca-certificates.crt."
+"share/ca-certificates."
 msgstr ""
-"Ce paquet installe les certificats de tiers de confiance usuels dans /usr/"
-"share/ca-certificates. Vous pouvez choisir parmi ces certificats ceux que "
-"vous agréez et qui seront installés dans /etc/ssl/certs. Ce paquet créera "
-"des liens symboliques et générera un seul fichier, /etc/ssl/certs/ca-"
-"certificates.crt, avec les certificats choisis."
+"Ce paquet peut installer des certificats de nouveaux tiers de confiance "
+"(Â«Â Certificate AuthorityÂ Â») dans /usr/share/ca-certificates."
+
+#. Type: multiselect
+#. Description
+#: ../templates:4002
+msgid ""
+"Please select the certificate authorities you trust so that their "
+"certificates are installed into /etc/ssl/certs. They will be compiled into a "
+"single /etc/ssl/certs/ca-certificates.crt file."
+msgstr ""
+"Veuillez choisir les tiers de confiance que vous agrÃ©ez afin que leurs "
+"certificats soient installÃ©s dans /etc/ssl/certs. Ils seront rassemblÃ©s dans "
+"un seul fichier nommÃ© /etc/ssl/certs/ca-certificates.crt."
