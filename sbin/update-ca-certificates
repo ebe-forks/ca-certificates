@@ -41,7 +41,16 @@ CERTBUNDLE=ca-certificates.crt
 cd /etc/ssl/certs
 if [ "$fresh" = 1 ]; then
   echo -n "Clearing symlinks in /etc/ssl/certs..."
-  find . -type l -print0 | xargs -0 rm -f
+  find . -type l -print | while read symlink
+  do
+     case $(readlink $symlink) in
+     $CERTSDIR*) rm -f $symlink;;
+     esac
+  done
+  find . -type l -print | while read symlink
+  do
+     test -f $symlink || rm -f $symlink
+  done
   echo "done."
 fi
 echo -n "Updating certificates in /etc/ssl/certs...."

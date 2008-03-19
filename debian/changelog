@@ -1,3 +1,17 @@
+ca-certificates (20061027) unstable; urgency=low
+
+  * sbin/update-ca-certificates:
+    in fresh mode, rm symlinks only point to /usr/share/ca-certificates.
+    preserve other symlinks. closes: Bug#387089
+  * debian/po/nl.po: updated
+    closes: Bug#386767
+  * debian/po/fr.po: updated
+    closes: Bug#386806
+  * debian/po/da.po: updated
+    closes: Bug#388018
+    
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Sat, 28 Oct 2006 02:28:50 +0900
+
 ca-certificates (20060816) unstable; urgency=low
 
   * debian/control: explicitly mention that trustworthiness of certificate
