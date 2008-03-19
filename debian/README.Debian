@@ -19,9 +19,8 @@ configuration file:
 	make hash symlinks
 	generate ca-certificates.crt (single-file version)
 
-/etc/ssl/certs/ca-certificates.crt will be used by many of the web browsers
-in Debian, including mozilla, when deciding what secure web sites to trust.
-
+/etc/ssl/certs/ca-certificates.crt may be used by the web browsers
+in Debian, such as w3m, when deciding what secure web sites to trust.
 For w3m package, it has ssl_ca_path configuration in /etc/w3m/w3mconfig,
 so it works without any configuration.  You can specify 
 /etc/ssl/certs/ca-certificates.crt for ssl_ca_file instead.
@@ -40,4 +39,4 @@ How certificate will be accepted in ca-certificates package
    the bug report, GPG signed.
    I won't accept if the CA is requested by only one people.
    
- -- ukai <ukai@debian.or.jp>, Wed May 18 01:24:57 2005
+ -- Fumitoshi UKAI <ukai@debian.or.jp>, Thu, 17 Aug 2006 13:27:55 +0900

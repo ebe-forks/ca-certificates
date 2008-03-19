@@ -2,7 +2,10 @@
 
 while line = $stdin.gets
   next if line =~ /^#/
-  next if line =~ /^\s*$/
+  if line =~ /^\s*$/
+     fname = nil
+     next
+  end
   line.chomp!
   if line =~ /CKA_LABEL/
     label,type,val = line.split(' ',3)
@@ -12,9 +15,13 @@ while line = $stdin.gets
     next
   end
   if line =~ /CKA_VALUE MULTILINE_OCTAL/
+    if fname.nil?
+      puts "E: unexpected CKA_VALUE MULTILINE_OCTAL"
+      next
+    end
     data=''
     while line = $stdin.gets
-      break if /^END/
+      break if line =~ /^END/
       line.chomp!
       line.gsub(/\\([0-3][0-7][0-7])/) { data += $1.oct.chr }
     end

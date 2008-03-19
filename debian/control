@@ -8,7 +8,7 @@ Standards-Version: 3.5.9
 Package: ca-certificates
 Architecture: all
 Depends: openssl, ${misc:Depends}
-Enhances: libssl0.9.7, openssl
+Enhances: libssl0.9.8, openssl
 Description: Common CA Certificates PEM files
  It includes the followings PEM files of CA certificates
  .
@@ -22,3 +22,8 @@ Description: Common CA Certificates PEM files
  .
  This is useful for any openssl applications to verify
  SSL connection.
+ .
+ Note that certificate authorities whose certificates are included in
+ this package are not in any way audited for trustworthiness and RFC
+ 3647 compliance, and that full responsibility to assess them rests
+ with the user.

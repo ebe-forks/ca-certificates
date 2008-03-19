@@ -9,15 +9,14 @@ _Description: Trust new CAs certificates?
  .
   - "yes", new CA certificates will be trusted and installed.
   - "no", new CA certificates will not be installed by default.
-  - "ask", Ask you trust each new CA certificates or not
+  - "ask", Ask if you trust each new CA certificates, or not.
 
 Template: ca-certificates/new_crts
 Type: multiselect
 _Choices: ${new_crts}
 _Description: Select new certificates to activate:
- In this upgrading, these new certificates are added. Do you trust these
- certificates and want that these certificates are installed into
- /etc/ssl/certs?
+ During the upgrade, these new certificates will be added. Do you
+ trust them and want them installed into /etc/ssl/certs?
 
 Template: ca-certificates/enable_crts
 Type: multiselect

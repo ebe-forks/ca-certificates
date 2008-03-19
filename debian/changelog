@@ -1,3 +1,29 @@
+ca-certificates (20060816) unstable; urgency=low
+
+  * debian/control: explicitly mention that trustworthiness of certificate
+    authorities is not evaluated.
+    closes: Bug#350726
+  * debian/templates: refine messages
+    closes: Bug#309481
+  * debian/postinst: remove tailing spaces to avoid unnecessary dpkg-old file.
+    closes: Bug#349346
+  * debian/control: libssl0.9.7->libssl0.9.8
+    closes: Bug#345197
+  * debian/postrm: remove .dpkg-old files
+    closes: Bug#349351
+  * debian/README.Debian: fix
+    closes: Bug#354509
+  * debian/postinst: fix typo
+    closes: Bug#355271
+  * debian/po/sv.po: added
+    closes: Bug#330984
+  * debian/po/es.po: added
+    closes: Bug#334383
+  * add new SPI CA certificate
+    submitted by Michael C. Schultheiss <schultmc@debian.org>
+
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Thu, 17 Aug 2006 13:12:27 +0900
+
 ca-certificates (20050804) unstable; urgency=low
 
   * use ${misc:Depends} in debian/control for debconf

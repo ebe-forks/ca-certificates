@@ -1,0 +1,121 @@
+Return-Path: <ukai@lists.debian.or.jp>
+X-Original-To: ukai@ukai.jp
+Delivered-To: ukai@ukai.jp
+Received: from osdn.debian.or.jp (osdn.debian.or.jp [61.215.208.41])
+	by mint.ukai.jp (Postfix) with ESMTP id 206B7D41E6
+	for <ukai@ukai.jp>; Thu, 17 Aug 2006 06:02:29 +0900 (JST)
+Received: by osdn.debian.or.jp (Postfix, from userid 1001)
+	id EDABBC31A6; Thu, 17 Aug 2006 06:02:30 +0900 (JST)
+X-Return-Path: <schultmc@amellus.com>
+X-Original-To: ukai@debian.or.jp
+Delivered-To: ukai@debian.or.jp
+Received: from mx1.amellus.net (tanzanite.amellus.net [72.232.8.122])
+	by osdn.debian.or.jp (Postfix) with ESMTP id 8AC35C31A6
+	for <ukai@debian.or.jp>; Thu, 17 Aug 2006 06:02:28 +0900 (JST)
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by mx1.amellus.net (Postfix) with ESMTP id CC4DF12C20A;
+	Wed, 16 Aug 2006 16:02:19 -0500 (CDT)
+X-Virus-Scanned: by AWESOM-O (Amavis-new,ClamAV) at mx1.amellus.net
+X-Spam-Score: -102.441
+X-Spam-Level: 
+X-Spam-Status: No, score=-102.441 tagged_above=-999 required=4.2
+	tests=[AWL=0.024, BAYES_00=-2.599, FORGED_RCVD_HELO=0.135,
+	SPF_PASS=-0.001, UPPERCASE_25_50=0, USER_IN_WHITELIST=-100]
+Received: from mx1.amellus.net ([127.0.0.1])
+	by localhost (tanzanite.amellus.net [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id Dpf+8VjxZOkr; Wed, 16 Aug 2006 16:02:11 -0500 (CDT)
+Received: from cartman.hq.amellus.com (c-68-58-138-203.hsd1.in.comcast.net [68.58.138.203])
+	by mx1.amellus.net (Postfix) with ESMTP id 72CE512C17F;
+	Wed, 16 Aug 2006 16:02:11 -0500 (CDT)
+Received: by cartman.hq.amellus.com (Postfix, from userid 1000)
+	id 87D66479DE; Wed, 16 Aug 2006 17:03:13 -0400 (EDT)
+Date: Wed, 16 Aug 2006 17:03:13 -0400
+From: Michael Schultheiss <schultmc@spi-inc.org>
+To: Fumitoshi UKAI <ukai@debian.or.jp>
+Cc: hostmaster@spi-inc.org
+Subject: spi-inc.org CA certificate
+Message-ID: <20060816210313.GD6360@amellus.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="+g7M9IMkV8truYOl"
+Content-Disposition: inline
+User-Agent: Mutt/1.5.12-2006-07-14
+X-Bogosity: Ham, tests=bogofilter, spamicity=0.296304, version=0.94.4
+
+
+--+g7M9IMkV8truYOl
+Content-Type: multipart/mixed; boundary="pf9I7BMVVzbSWLtt"
+Content-Disposition: inline
+
+
+--pf9I7BMVVzbSWLtt
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+The current SPI CA certificate expires on 2007-01-14.  I have generated
+a new SPI CA certificate, signed by the current SPI CA certificate, that
+expires on 2016-08-13 (attached).  The new certificate should be
+included in the Debian ca-certificates package ASAP.
+
+--=20
+----------------------------
+Michael Schultheiss
+E-mail: schultmc@spi-inc.org
+
+--pf9I7BMVVzbSWLtt
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: attachment; filename="SPI_CA_2006-cacert.pem"
+
+-----BEGIN CERTIFICATE-----
+MIIGFTCCBX6gAwIBAgIBEDANBgkqhkiG9w0BAQUFADCBvjELMAkGA1UEBhMCVVMx
+EDAOBgNVBAgTB0luZGlhbmExFTATBgNVBAcTDEluZGlhbmFwb2xpczEoMCYGA1UE
+ChMfU29mdHdhcmUgaW4gdGhlIFB1YmxpYyBJbnRlcmVzdDETMBEGA1UECxMKaG9z
+dG1hc3RlcjEgMB4GA1UEAxMXQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkxJTAjBgkq
+hkiG9w0BCQEWFmhvc3RtYXN0ZXJAc3BpLWluYy5vcmcwHhcNMDYwODE2MjA0NjUy
+WhcNMTYwODEzMjA0NjUyWjCBvDELMAkGA1UEBhMCVVMxEDAOBgNVBAgTB0luZGlh
+bmExFTATBgNVBAcTDEluZGlhbmFwb2xpczEoMCYGA1UEChMfU29mdHdhcmUgaW4g
+dGhlIFB1YmxpYyBJbnRlcmVzdDETMBEGA1UECxMKSG9zdG1hc3RlcjEeMBwGA1UE
+AxMVQ2VydGlmaWNhdGUgQXV0aG9yaXR5MSUwIwYJKoZIhvcNAQkBFhZob3N0bWFz
+dGVyQHNwaS1pbmMub3JnMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA
+uTlCOrOYvCe0Qszlz90rVIQkS2UDa7R+qCTkRE5ipKC+3OZXGgv2EOYk/IOuCE3D
+8+tlTAl8MwvmwOHgL0GWnjoluR95narhNiV9Px8xyL2Z8kctwrWXbEii0Ot48VcN
+IQMDW5GK8Ww5puMKZr8+bXF2HFzkt8gwaCtrojcF4fLGcm3//bR13CKWbOzacANZ
+gAi00pD70ppjJU/uNVOe5HX6x/Id+50G6jwasanEzhteYJdbbHaMqrL4J6XbTwgJ
+ZciB0ifOZkwTBvQiRJpTkTWPyn/HptMbJGOwwiNbcgtWV7QVLW1GB3HYVum47Zwp
+XcXVM4Fs4XLwfx1Ti87LGdAJJYDS5K1F2prHKW5MsmFLJg61Nd6dZPRDLJLaOPEq
+0Jxa1NdfDjJ8rXOIcuLRAozjBui23vUhfOW9z4kpVIg+c+ylV2Oh/7f+fO731P7E
+AqsTFmiU7svcvkm2OKslolpnQ+pqGFLM4laQE/Q0kjogm7LiOpRssBW/ZfZ7pPLZ
+Ru0/AXrgKwQIM8mLazwlD3wHKPRElhIkxSv4qZ95zgJo6ky/7BpzZ/OAlz3BICbN
+WQhW/MBQVFiC6ivhjDq3AzgyykLShB0eIMRN0SBfTy3/aNfIJbqLmTNookXPoSP7
++mg5OVzVBvDv5ZskWSl8kJB1DzJbN+DOr/i8V3Ugl90CAwEAAaOCAZ0wggGZMB0G
+A1UdDgQWBBTON+buqfoMXkWdtvObUS11tnY77DCB6wYDVR0jBIHjMIHggBQHrehB
+HX+91r8bgXo/jEuI3gTS+qGBxKSBwTCBvjELMAkGA1UEBhMCVVMxEDAOBgNVBAgT
+B0luZGlhbmExFTATBgNVBAcTDEluZGlhbmFwb2xpczEoMCYGA1UEChMfU29mdHdh
+cmUgaW4gdGhlIFB1YmxpYyBJbnRlcmVzdDETMBEGA1UECxMKaG9zdG1hc3RlcjEg
+MB4GA1UEAxMXQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkxJTAjBgkqhkiG9w0BCQEW
+Fmhvc3RtYXN0ZXJAc3BpLWluYy5vcmeCAQAwDwYDVR0TAQH/BAUwAwEB/zARBglg
+hkgBhvhCAQEEBAMCAQYwCQYDVR0SBAIwADArBglghkgBhvhCAQ0EHhYcVGlueUNB
+IEdlbmVyYXRlZCBDZXJ0aWZpY2F0ZTAhBgNVHREEGjAYgRZob3N0bWFzdGVyQHNw
+aS1pbmMub3JnMAsGA1UdDwQEAwIBBjANBgkqhkiG9w0BAQUFAAOBgQA5HQcqwPE/
+RaN8cb8H1G34rkvSEsj4l8UIivMFEWIKnF3SQT8KVcD7j/eJuhMazwRlTs8Rnu6V
+/uTC10w7SS6gELwDqAzR4PiXTzfkW8OJemyQn6JWXKfq2pR1n4fvwEn7htjeNS69
+iFKlFXyE9j2jhGaps1CKHfe1YX0MuwO4Jw==
+-----END CERTIFICATE-----
+
+--pf9I7BMVVzbSWLtt--
+
+--+g7M9IMkV8truYOl
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.5 (GNU/Linux)
+
+iD8DBQFE44gRyJBzD6P54w4RAkuOAJ4xN0tA3aw9CjFJKpbLy4G/OliU7ACdEbEB
+4Mnt8skHQ+OQVDtsyVySyg4=
+=Xztd
+-----END PGP SIGNATURE-----
+
+--+g7M9IMkV8truYOl--

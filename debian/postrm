@@ -28,8 +28,8 @@ case "$1" in
        ;;
 
     purge)
-       rm -f /etc/ssl/certs/ca-certificates.crt
-       rm -f /etc/ca-certificates.conf
+       rm -f /etc/ssl/certs/ca-certificates.crt*
+       rm -f /etc/ca-certificates.conf*
        if test -e /usr/share/debconf/confmodule; then
          . /usr/share/debconf/confmodule
          db_purge
