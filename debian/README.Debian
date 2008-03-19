@@ -6,6 +6,7 @@ Common CA certificates PEM files, installed in /usr/share/ca-certificates/
 It includes the following certificates:
  - spi-inc.org certificate
  - db.debian.org certificate
+ - debconf.org certificate
  - Mozilla builtin CA certificates
  - brasil.gov.br certificate
  - cacert.org certificate

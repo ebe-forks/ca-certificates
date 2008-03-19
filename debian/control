@@ -2,7 +2,8 @@ Source: ca-certificates
 Section: misc
 Priority: optional
 Maintainer: Fumitoshi UKAI <ukai@debian.or.jp>
-Build-Depends-Indep: debhelper (>> 4.1.16), ruby
+Build-Depends: debhelper (>> 4.1.16), po-debconf
+Build-Depends-Indep: ruby
 Standards-Version: 3.5.9
 
 Package: ca-certificates
@@ -14,6 +15,7 @@ Description: Common CA Certificates PEM files
  .
   * spi-inc.org certificate
   * db.debian.org certificate
+  * debconf.org certificate
   * Mozilla builtin CA certificates
   * CACert.org certificates
   * Brazilian Government Certificate

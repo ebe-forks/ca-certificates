@@ -1,3 +1,14 @@
+ca-certificates (20070303) unstable; urgency=low
+
+  * Add debconf.org crt. closes: Bug#342088
+  * Add cacert class3 crt. closes: Bug#350282
+  * Add debian/po/pt.po. closes: Bug#408183
+  * Update debian/po/ru.po. closes: Bug#410770
+  * Update debian/po/pt_BR.po. closes: Bug#403824
+  * Add debian/po/gl.po. closes: Bug#407951
+
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Sun,  4 Mar 2007 14:12:23 +0900
+
 ca-certificates (20061027.2) unstable; urgency=low
 
   * Non-maintainer upload to fix an RC issue revealed by the last NMU.
@@ -17,6 +28,7 @@ ca-certificates (20061027.1) unstable; urgency=low
     to guarantee up-to-date PO(T) files
 
  -- Christian Perrier <bubulle@debian.org>  Mon, 22 Jan 2007 18:56:53 +0100
+
 
 ca-certificates (20061027) unstable; urgency=low
 

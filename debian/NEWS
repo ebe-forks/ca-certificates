@@ -1,3 +1,11 @@
+ca-certificates (20070303) unstable; urgency=low
+
+  * New CA certificates:
+    - debconf.org: DebConf
+    - cacert.org: add class3
+
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Sat,  3 Mar 2007 21:21:50 -0800
+
 ca-certificates (20040808) unstable; urgency=low
 
   * New CA certificates:

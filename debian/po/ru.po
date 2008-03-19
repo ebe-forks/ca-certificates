@@ -1,39 +1,33 @@
-# translation of ca-certificates_20030924.po to russian
+# translation of ca-certificates_20061027.2.po to Russian
 #
-#    Translators, if you are not familiar with the PO format, gettext
-#    documentation is worth reading, especially sections dedicated to
-#    this format, e.g. by running:
-#         info -n '(gettext)PO Files'
-#         info -n '(gettext)Header Entry'
-#    Some information specific to po-debconf are available at
-#            /usr/share/doc/po-debconf/README-trans
-#         or http://www.debian.org/intl/l10n/po-debconf/README-trans#
-#    Developers do not need to manually edit POT or PO files.
+# This file is distributed under the same license as the ca-certificates
+# package.
 #
+# Copyright (C) 2003 Ilgiz Kalmetev <translator@ilgiz.pp.ru>
+# Copyright (C) 2007 Mikhail Gusarov <dottedmag@dottedmag.net>
 msgid ""
 msgstr ""
-"Project-Id-Version: ca-certificates_20030924\n"
+"Project-Id-Version: ca-certificates_20061027\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-01-22 18:53+0100\n"
-"PO-Revision-Date: 2003-10-04 21:39+0600\n"
-"Last-Translator: Ilgiz Kalmetev <translator@ilgiz.pp.ru>\n"
+"PO-Revision-Date: 2007-02-13 11:12+0600\n"
+"Last-Translator: Mikhail Gusarov <dottedmag@dottedmag.net>\n"
 "Language-Team: russian <debian-russian@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=KOI8-R\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.0.1\n"
 
 #. Type: select
 #. Choices
 #: ../templates:1001
 msgid "yes, no, ask"
-msgstr "да, нет, спросить"
+msgstr "п╢п╟, п╫п╣я┌, я│п©я─п╬я│п╦я┌я▄"
 
 #. Type: select
 #. Description
 #: ../templates:1002
 msgid "Trust new CAs certificates?"
-msgstr "Доверять новым сертификатам CA?"
+msgstr "п■п╬п╡п╣я─я▐я┌я▄ п╫п╬п╡я▀п╪ я│п╣я─я┌п╦я└п╦п╨п╟я┌п╟п╪ CA?"
 
 #. Type: select
 #. Description
@@ -43,22 +37,22 @@ msgid ""
 "upgrading.  You may want to check such new CA certificates and select only "
 "certificates that you trust."
 msgstr ""
-"При обновлении этот пакет может установить новый CA (Certificate Authority). "
-"Возможно, Вы захотите проверить эти новые сертификаты и выбрать только те "
-"сертификаты, которым доверяете."
+"п÷я─п╦ п╬п╠п╫п╬п╡п╩п╣п╫п╦п╦ я█я┌п╬я┌ п©п╟п╨п╣я┌ п╪п╬п╤п╣я┌ я┐я│я┌п╟п╫п╬п╡п╦я┌я▄ п╫п╬п╡я▀п╧ я│п╣я─я┌п╦я└п╦п╨п╟я┌я▀ CA (Certificate "
+"Authority). п▓п╬п╥п╪п╬п╤п╫п╬, п▓я▀ п╥п╟я┘п╬я┌п╦я┌п╣ п©я─п╬п╡п╣я─п╦я┌я▄ я█я┌п╦ п╫п╬п╡я▀п╣ я│п╣я─я┌п╦я└п╦п╨п╟я┌я▀ п╦ п╡я▀п╠я─п╟я┌я▄ "
+"я┌п╬п╩я▄п╨п╬ я┌п╣, п╨п╬я┌п╬я─я▀п╪ п╢п╬п╡п╣я─я▐п╣я┌п╣."
 
 #. Type: select
 #. Description
 #: ../templates:1002
-#, fuzzy
 msgid ""
 " - \"yes\", new CA certificates will be trusted and installed.\n"
 " - \"no\", new CA certificates will not be installed by default.\n"
 " - \"ask\", Ask if you trust each new CA certificates, or not."
 msgstr ""
-" - `да', доверять и установить новые сертификаты CA.\n"
-" - 'нет', по умолчанию не устанавливать новые сертификаты CA.\n"
-" - 'спросить', спрашивать, стоит ли доверять каждому из новых сертифкатов CA"
+" - \"п╢п╟\", п╢п╬п╡п╣я─я▐я┌я▄ п╦ я┐я│я┌п╟п╫п╬п╡п╦я┌я▄ п╫п╬п╡я▀п╣ я│п╣я─я┌п╦я└п╦п╨п╟я┌я▀ CA.\n"
+" - \"п╫п╣я┌\", п©п╬ я┐п╪п╬п╩я┤п╟п╫п╦я▌ п╫п╣ я┐я│я┌п╟п╫п╟п╡п╩п╦п╡п╟я┌я▄ п╫п╬п╡я▀п╣ я│п╣я─я┌п╦я└п╦п╨п╟я┌я▀ CA.\n"
+" - \"я│п©я─п╬я│п╦я┌я▄\", я│п©я─п╟я┬п╦п╡п╟я┌я▄, я│я┌п╬п╦я┌ п╩п╦ п╢п╬п╡п╣я─я▐я┌я▄ п╨п╟п╤п╢п╬п╪я┐ п╦п╥ п╫п╬п╡я▀я┘ я│п╣я─я┌п╦я└п╨п╟я┌п╬п╡ "
+"CA."
 
 #. Type: multiselect
 #. Choices
@@ -70,19 +64,18 @@ msgstr "${new_crts}"
 #. Description
 #: ../templates:2002
 msgid "Select new certificates to activate:"
-msgstr "Выбрать новые сертификаты для активации:"
+msgstr "п▓я▀п╠п╣я─п╦я┌п╣ п╫п╬п╡я▀п╣ я│п╣я─я┌п╦я└п╦п╨п╟я┌я▀ п╢п╩я▐ п╟п╨я┌п╦п╡п╟я├п╦п╦:"
 
 #. Type: multiselect
 #. Description
 #: ../templates:2002
-#, fuzzy
 msgid ""
 "During the upgrade, these new certificates will be added. Do you trust them "
 "and want them installed into /etc/ssl/certs?"
 msgstr ""
-"Во время текущего обновления будут добавлены эти новые сертификаты. "
-"Доверяете ли Вы этим сертификатам и хотите ли, чтобы эти сертификаты были "
-"установлены в каталог /etc/ssl/certs?"
+"п▓п╬ п╡я─п╣п╪я▐ п╬п╠п╫п╬п╡п╩п╣п╫п╦я▐ п╠я┐п╢я┐я┌ п╢п╬п╠п╟п╡п╩п╣п╫я▀ я█я┌п╦ п╫п╬п╡я▀п╣ я│п╣я─я┌п╦я└п╦п╨п╟я┌я▀. п■п╬п╡п╣я─я▐п╣я┌п╣ п╩п╦ п▓я▀ "
+"я█я┌п╦п╪ я│п╣я─я┌п╦я└п╦п╨п╟я┌п╟п╪ п╦ я┘п╬я┌п╦я┌п╣ п╩п╦, я┤я┌п╬п╠я▀ я█я┌п╦ я│п╣я─я┌п╦я└п╦п╨п╟я┌я▀ п╠я▀п╩п╦ я┐я│я┌п╟п╫п╬п╡п╩п╣п╫я▀ п╡ "
+"п╨п╟я┌п╟п╩п╬пЁ /etc/ssl/certs?"
 
 #. Type: multiselect
 #. Choices
@@ -94,7 +87,7 @@ msgstr "${enable_crts}"
 #. Description
 #: ../templates:3002
 msgid "Select certificates to activate:"
-msgstr "Выбрать сертификаты для активации:"
+msgstr "п▓я▀п╠п╣я─п╦я┌п╣ я│п╣я─я┌п╦я└п╦п╨п╟я┌я▀ п╢п╩я▐ п╟п╨я┌п╦п╡п╟я├п╦п╦:"
 
 #. Type: multiselect
 #. Description
@@ -105,8 +98,8 @@ msgid ""
 "installed into /etc/ssl/certs. This package will make symlinks and generate "
 "a single file of all your selected certs, /etc/ssl/certs/ca-certificates.crt."
 msgstr ""
-"Этот пакет устанавливает общие сертификаты CA (Certificate Authority) в "
-"каталог /usr/share/ca-certificates. Вы можете выбрать сертификаты их этих "
-"доступных сертификатов для установки в каталог /etc/ssl/certs. Этот пакет "
-"создаст символические ссылки и сгенерирует один файл для всех выбранных Вами "
-"сертификатов, /etc/ssl/certs/ca-certificates.crt."
+"п╜я┌п╬я┌ п©п╟п╨п╣я┌ я┐я│я┌п╟п╫п╟п╡п╩п╦п╡п╟п╣я┌ п╬п╠я┴п╦п╣ я│п╣я─я┌п╦я└п╦п╨п╟я┌я▀ CA (Certificate Authority) п╡ "
+"п╨п╟я┌п╟п╩п╬пЁ /usr/share/ca-certificates. п▓я▀ п╪п╬п╤п╣я┌п╣ п╡я▀п╠я─п╟я┌я▄ я│п╣я─я┌п╦я└п╦п╨п╟я┌я▀ п╦я┘ я█я┌п╦я┘ "
+"п╢п╬я│я┌я┐п©п╫я▀я┘ я│п╣я─я┌п╦я└п╦п╨п╟я┌п╬п╡ п╢п╩я▐ я┐я│я┌п╟п╫п╬п╡п╨п╦ п╡ п╨п╟я┌п╟п╩п╬пЁ /etc/ssl/certs. п╜я┌п╬я┌ п©п╟п╨п╣я┌ "
+"я│п╬п╥п╢п╟я│я┌ я│п╦п╪п╡п╬п╩п╦я┤п╣я│п╨п╦п╣ я│я│я▀п╩п╨п╦ п╦ я│пЁп╣п╫п╣я─п╦я─я┐п╣я┌ п╬п╢п╦п╫ я└п╟п╧п╩ п╢п╩я▐ п╡я│п╣я┘ п╡я▀п╠я─п╟п╫п╫я▀я┘ п▓п╟п╪п╦ "
+"я│п╣я─я┌п╦я└п╦п╨п╟я┌п╬п╡, /etc/ssl/certs/ca-certificates.crt."
