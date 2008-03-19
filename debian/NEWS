@@ -1,0 +1,11 @@
+ca-certificates (20040808) unstable; urgency=low
+
+  * New CA certificates:
+   - brasil.gov.gr: Autoridade Certificadora Raiz Brasileira
+   - signet.pl: Certification Center Signet (CC Signet)
+   - quovadis.bm: QuoVadis CA certificates
+  * Remove CA certificates:
+   - debian.org: revoked due to crack incident.
+
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Sun,  8 Aug 2004 22:43:36 +0900
+

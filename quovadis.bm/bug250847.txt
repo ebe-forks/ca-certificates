@@ -1,0 +1,205 @@
+From SDavidson@quovadis.bm Tue May 25 05:18:29 2004
+Received: (at submit) by bugs.debian.org; 25 May 2004 12:18:29 +0000
+Return-path: <SDavidson@quovadis.bm>
+Received: from scbm1mx01.securecentre.com [200.1.160.234] 
+	by spohr.debian.org with esmtp (Exim 3.35 1 (Debian))
+	id 1BSat2-0000fn-00; Tue, 25 May 2004 05:18:28 -0700
+Received: from mail.quovadis.bm (webmail.qvnetwork.com) by scbm1mx01.securecentre.com
+ (Content Technologies SMTPRS 4.3.12) with ESMTP id <T69c7dc6727c801a0ea314@scbm1mx01.securecentre.com> for <submit@bugs.debian.org>;
+ Tue, 25 May 2004 09:17:56 -0300
+X-MimeOLE: Produced By Microsoft Exchange V6.5.6944.0
+Content-class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----_=_NextPart_001_01C44252.4F71FB64"
+Subject: ca-certificates - Add QuoVadis CA Certificates
+Date: Tue, 25 May 2004 09:17:56 -0300
+Message-ID: <FAC7214EEEE5034DA60F8318C06729091F4364@qvbm2mx01.evcnetwork.com>
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+Thread-Topic: ca-certificates - Add QuoVadis CA Certificates
+Thread-Index: AcRCUk9mQ9YHgyerSUiCfaIpO7JoJg==
+From: "Stephen Davidson" <SDavidson@quovadis.bm>
+To: <submit@bugs.debian.org>
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2004_03_25 
+	(1.212-2003-09-23-exp) on spohr.debian.org
+X-Spam-Status: No, hits=1.6 required=4.0 tests=FRONTPAGE,HAS_PACKAGE,
+	HTML_10_20,HTML_MESSAGE,UPPERCASE_25_50 autolearn=no 
+	version=2.60-bugs.debian.org_2004_03_25
+X-Spam-Level: *
+
+This is a multi-part message in MIME format.
+
+------_=_NextPart_001_01C44252.4F71FB64
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Package: ca-certificates
+Version: 20020323
+Severity:  Normal
+
+Problem:  Please add the QuoVadis CA certificates to Debian.
+=20
+QuoVadis is a commercial certificate authority located in Bermuda and
+serving customers worldwide.  QuoVadis is an Authorised Certification
+Services Provider (CSP) under Bermuda's Electronic Transactions Act.
+The CSP standard synthesizes major requirements from BS 7799, WebTrust
+for Certification Authorities, and the European Electronic Signature
+Standards Initiative (EESSI).  More information may be found at:
+http://www.quovadis.bm/bdacsp.asp <http://www.quovadis.bm/bdacsp.asp> .
+
+
+The QuoVadis CA cert is already distributed in Apple OSX and Microsoft
+Windows (for which we completed the WebTrust for CAs procedures with
+Ernst & Young).
+
+A summary of our certification policies may be found at:
+http://www.quovadis.bm/policies/pki.asp
+<http://www.quovadis.bm/policies/pki.asp>=20
+
+QuoVadis currently provides a "root injector" that senses the user's
+computer config and inserts the root appropriately.  This may be found
+at: =20
+
+Following is the QV root CA cert in base 64 format.  The CA cert may
+also be downloaded from http://www.quovadis.bm/root/
+<http://www.quovadis.bm/root/> :
+
+-----BEGIN CERTIFICATE-----
+MIIF0DCCBLigAwIBAgIEOrZQizANBgkqhkiG9w0BAQUFADB/MQswCQYDVQQGEwJC
+TTEZMBcGA1UEChMQUXVvVmFkaXMgTGltaXRlZDElMCMGA1UECxMcUm9vdCBDZXJ0
+aWZpY2F0aW9uIEF1dGhvcml0eTEuMCwGA1UEAxMlUXVvVmFkaXMgUm9vdCBDZXJ0
+aWZpY2F0aW9uIEF1dGhvcml0eTAeFw0wMTAzMTkxODMzMzNaFw0yMTAzMTcxODMz
+MzNaMH8xCzAJBgNVBAYTAkJNMRkwFwYDVQQKExBRdW9WYWRpcyBMaW1pdGVkMSUw
+IwYDVQQLExxSb290IENlcnRpZmljYXRpb24gQXV0aG9yaXR5MS4wLAYDVQQDEyVR
+dW9WYWRpcyBSb290IENlcnRpZmljYXRpb24gQXV0aG9yaXR5MIIBIjANBgkqhkiG
+9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv2G1lVO6V/z68mcLOhrfEYBklbTRvM16z/Yp
+li4kVEAkOPcahdxYTMukJ0KX0J+DisPkBgNbAKVRHnAEdOLB1Dqr1607BxgFjv2D
+rOpm2RgbaIr1VxqYuvXtdj182d6UajtLF8HVj71lODqV0D1VNk7feVcxKh7YWWVJ
+WCCYfqtffp/p1k3sg3Spx2zY7ilKhSoGFPlU5tPaZQeLYzcS19Dsw3sgQUSj7cug
+F+FxZc4dZjH3dgEZyH0DWLaVSR2mEiboxgx24ONmy+pdpibu5cxfvWenAScOospU
+xbF6lR1xHkopigPcakXBpBlebzbNw6Kwt/5cOOJSvPhEQ+aQuwIDAQABo4ICUjCC
+Ak4wPQYIKwYBBQUHAQEEMTAvMC0GCCsGAQUFBzABhiFodHRwczovL29jc3AucXVv
+dmFkaXNvZmZzaG9yZS5jb20wDwYDVR0TAQH/BAUwAwEB/zCCARoGA1UdIASCAREw
+ggENMIIBCQYJKwYBBAG+WAABMIH7MIHUBggrBgEFBQcCAjCBxxqBxFJlbGlhbmNl
+IG9uIHRoZSBRdW9WYWRpcyBSb290IENlcnRpZmljYXRlIGJ5IGFueSBwYXJ0eSBh
+c3N1bWVzIGFjY2VwdGFuY2Ugb2YgdGhlIHRoZW4gYXBwbGljYWJsZSBzdGFuZGFy
+ZCB0ZXJtcyBhbmQgY29uZGl0aW9ucyBvZiB1c2UsIGNlcnRpZmljYXRpb24gcHJh
+Y3RpY2VzLCBhbmQgdGhlIFF1b1ZhZGlzIENlcnRpZmljYXRlIFBvbGljeS4wIgYI
+KwYBBQUHAgEWFmh0dHA6Ly93d3cucXVvdmFkaXMuYm0wHQYDVR0OBBYEFItLbe3T
+KbkGGew5Oanwl4Rqy+/fMIGuBgNVHSMEgaYwgaOAFItLbe3TKbkGGew5Oanwl4Rq
+y+/foYGEpIGBMH8xCzAJBgNVBAYTAkJNMRkwFwYDVQQKExBRdW9WYWRpcyBMaW1p
+dGVkMSUwIwYDVQQLExxSb290IENlcnRpZmljYXRpb24gQXV0aG9yaXR5MS4wLAYD
+VQQDEyVRdW9WYWRpcyBSb290IENlcnRpZmljYXRpb24gQXV0aG9yaXR5ggQ6tlCL
+MA4GA1UdDwEB/wQEAwIBBjANBgkqhkiG9w0BAQUFAAOCAQEAitQUtf70mpKnGdSk
+fnIYj9lofFIk3WdvOXrEql494liwTXCYhGHoG+NpGA7O+0dQoE7/8CQfvbLO9Sf8
+7C9TqnN7Az10buYWnuulLsS/VidQK2K6vkscPFVcQR0kvoIgR13VRH56FmjffU1R
+cHhXHTMe/QKZnAzNCgVPx7uOpHX6Sm2xgI4JVrmcGmD+XcHXetwReNDWXcG31a0y
+mQM6isxUJTkxgXsTIlG6Rmyhu576BGxJJnSP0nPrzDCi5upZIof4l/UO/erMkqQW
+xFIY6iHOsfHmhIHluqmGKPJDWl0Snawe2ajlCmqnf6CHKc/yiU3U7MXi5nrQNiOK
+SnQ2+Q=3D=3D
+-----END CERTIFICATE-----
+
+Please contact me if you need any additional information.
+=20
+=20
+
+------_=_NextPart_001_01C44252.4F71FB64
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Message</TITLE>
+<META http-equiv=3DContent-Language content=3Den-us>
+<META content=3D"MSHTML 6.00.2800.1400" name=3DGENERATOR>
+<META content=3DFrontPage.Editor.Document name=3DProgId>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Dus-ascii">
+<STYLE fprolloverstyle>A:hover {color: #0D2677; font-size: 8pt; =
+font-family: Verdana; font-weight: bold}=0A=
+</STYLE>
+</HEAD>
+<BODY style=3D"FONT-SIZE: 10pt; COLOR: #003366; FONT-FAMILY: Verdana" =
+text=3D#333333=20
+vLink=3D#009900 aLink=3D#009900 link=3D#009900 bgColor=3D#ffffff>
+<DIV>Package: ca-certificates<BR>Version: 20020323</DIV>
+<DIV><SPAN class=3D668590512-25052004></SPAN>S<SPAN=20
+class=3D668590512-25052004>everity:&nbsp; Normal</SPAN><BR></DIV>
+<DIV><SPAN class=3D668590512-25052004>Problem:&nbsp; Please add the =
+QuoVadis CA=20
+certificates to Debian.</SPAN></DIV>
+<DIV><SPAN class=3D668590512-25052004></SPAN>&nbsp;</DIV>
+<DIV><SPAN class=3D668590512-25052004>QuoVadis is a commercial =
+certificate=20
+authority located in Bermuda and serving customers worldwide.&nbsp; =
+QuoVadis is=20
+an Authorised Certification Services Provider (CSP) under Bermuda's =
+Electronic=20
+Transactions Act.&nbsp; The CSP standard synthesizes =
+major&nbsp;requirements=20
+from BS 7799, WebTrust for Certification Authorities, and the European=20
+Electronic Signature Standards Initiative (EESSI).&nbsp; More =
+information may be=20
+found at:&nbsp; <A href=3D"http://www.quovadis.bm/bdacsp.asp"><FONT=20
+color=3D#800080>http://www.quovadis.bm/bdacsp.asp</FONT></A>.&nbsp; =
+<BR><BR>The=20
+QuoVadis CA cert is already distributed in Apple OSX and Microsoft =
+Windows (for=20
+which we completed the WebTrust for CAs procedures&nbsp;with Ernst &amp; =
+
+Young).<BR><BR>A summary of our certification policies may be found =
+at:&nbsp; <A=20
+href=3D"http://www.quovadis.bm/policies/pki.asp"><FONT=20
+color=3D#800080>http://www.quovadis.bm/policies/pki.asp</FONT></A><BR><BR=
+>QuoVadis=20
+currently provides a "root injector" that senses the user's computer =
+config and=20
+inserts the root appropriately.&nbsp; This may be found at:&nbsp;=20
+<BR><BR>Following is the QV root CA cert in base 64 format.&nbsp; The CA =
+cert=20
+may also be downloaded from <A =
+href=3D"http://www.quovadis.bm/root/"><FONT=20
+color=3D#800080>http://www.quovadis.bm/root/</FONT></A>:<BR><BR>-----BEGI=
+N=20
+CERTIFICATE-----<BR>MIIF0DCCBLigAwIBAgIEOrZQizANBgkqhkiG9w0BAQUFADB/MQswC=
+QYDVQQGEwJC<BR>TTEZMBcGA1UEChMQUXVvVmFkaXMgTGltaXRlZDElMCMGA1UECxMcUm9vdC=
+BDZXJ0<BR>aWZpY2F0aW9uIEF1dGhvcml0eTEuMCwGA1UEAxMlUXVvVmFkaXMgUm9vdCBDZXJ=
+0<BR>aWZpY2F0aW9uIEF1dGhvcml0eTAeFw0wMTAzMTkxODMzMzNaFw0yMTAzMTcxODMz<BR>=
+MzNaMH8xCzAJBgNVBAYTAkJNMRkwFwYDVQQKExBRdW9WYWRpcyBMaW1pdGVkMSUw<BR>IwYDV=
+QQLExxSb290IENlcnRpZmljYXRpb24gQXV0aG9yaXR5MS4wLAYDVQQDEyVR<BR>dW9WYWRpcy=
+BSb290IENlcnRpZmljYXRpb24gQXV0aG9yaXR5MIIBIjANBgkqhkiG<BR>9w0BAQEFAAOCAQ8=
+AMIIBCgKCAQEAv2G1lVO6V/z68mcLOhrfEYBklbTRvM16z/Yp<BR>li4kVEAkOPcahdxYTMuk=
+J0KX0J+DisPkBgNbAKVRHnAEdOLB1Dqr1607BxgFjv2D<BR>rOpm2RgbaIr1VxqYuvXtdj182=
+d6UajtLF8HVj71lODqV0D1VNk7feVcxKh7YWWVJ<BR>WCCYfqtffp/p1k3sg3Spx2zY7ilKhS=
+oGFPlU5tPaZQeLYzcS19Dsw3sgQUSj7cug<BR>F+FxZc4dZjH3dgEZyH0DWLaVSR2mEiboxgx=
+24ONmy+pdpibu5cxfvWenAScOospU<BR>xbF6lR1xHkopigPcakXBpBlebzbNw6Kwt/5cOOJS=
+vPhEQ+aQuwIDAQABo4ICUjCC<BR>Ak4wPQYIKwYBBQUHAQEEMTAvMC0GCCsGAQUFBzABhiFod=
+HRwczovL29jc3AucXVv<BR>dmFkaXNvZmZzaG9yZS5jb20wDwYDVR0TAQH/BAUwAwEB/zCCAR=
+oGA1UdIASCAREw<BR>ggENMIIBCQYJKwYBBAG+WAABMIH7MIHUBggrBgEFBQcCAjCBxxqBxFJ=
+lbGlhbmNl<BR>IG9uIHRoZSBRdW9WYWRpcyBSb290IENlcnRpZmljYXRlIGJ5IGFueSBwYXJ0=
+eSBh<BR>c3N1bWVzIGFjY2VwdGFuY2Ugb2YgdGhlIHRoZW4gYXBwbGljYWJsZSBzdGFuZGFy<=
+BR>ZCB0ZXJtcyBhbmQgY29uZGl0aW9ucyBvZiB1c2UsIGNlcnRpZmljYXRpb24gcHJh<BR>Y3=
+RpY2VzLCBhbmQgdGhlIFF1b1ZhZGlzIENlcnRpZmljYXRlIFBvbGljeS4wIgYI<BR>KwYBBQU=
+HAgEWFmh0dHA6Ly93d3cucXVvdmFkaXMuYm0wHQYDVR0OBBYEFItLbe3T<BR>KbkGGew5Oanw=
+l4Rqy+/fMIGuBgNVHSMEgaYwgaOAFItLbe3TKbkGGew5Oanwl4Rq<BR>y+/foYGEpIGBMH8xC=
+zAJBgNVBAYTAkJNMRkwFwYDVQQKExBRdW9WYWRpcyBMaW1p<BR>dGVkMSUwIwYDVQQLExxSb2=
+90IENlcnRpZmljYXRpb24gQXV0aG9yaXR5MS4wLAYD<BR>VQQDEyVRdW9WYWRpcyBSb290IEN=
+lcnRpZmljYXRpb24gQXV0aG9yaXR5ggQ6tlCL<BR>MA4GA1UdDwEB/wQEAwIBBjANBgkqhkiG=
+9w0BAQUFAAOCAQEAitQUtf70mpKnGdSk<BR>fnIYj9lofFIk3WdvOXrEql494liwTXCYhGHoG=
++NpGA7O+0dQoE7/8CQfvbLO9Sf8<BR>7C9TqnN7Az10buYWnuulLsS/VidQK2K6vkscPFVcQR=
+0kvoIgR13VRH56FmjffU1R<BR>cHhXHTMe/QKZnAzNCgVPx7uOpHX6Sm2xgI4JVrmcGmD+XcH=
+XetwReNDWXcG31a0y<BR>mQM6isxUJTkxgXsTIlG6Rmyhu576BGxJJnSP0nPrzDCi5upZIof4=
+l/UO/erMkqQW<BR>xFIY6iHOsfHmhIHluqmGKPJDWl0Snawe2ajlCmqnf6CHKc/yiU3U7MXi5=
+nrQNiOK<BR>SnQ2+Q=3D=3D<BR>-----END=20
+CERTIFICATE-----<BR><BR>Please contact me if you need any additional=20
+information.</SPAN></DIV>
+<DIV><SPAN class=3D668590512-25052004></SPAN>&nbsp;</DIV>
+<DIV><SPAN class=3D668590512-25052004></SPAN>&nbsp;</DIV></BODY></HTML>
+=00
+------_=_NextPart_001_01C44252.4F71FB64--
+
+
+

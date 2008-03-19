@@ -1,0 +1,184 @@
+ca-certificates (20050518) unstable; urgency=high
+
+  * fix ca-certificates.crt generationumask-sensitive and racy
+    closes: Bug#296212
+  * update mozilla/certdata.txt
+    add: "Certum Root CA", "Comodo AAA Services root"
+         "Comodo Secure Services root", 
+	 "Comodo Trusted Services root",
+	 "IPS Chained CAs root", "IPS CLASE1 root", "IPS CLASE3 root",
+	 "IPS CLASEA1 root", "IPS CLASEA3 root", "IPS Servidores root"
+	 "IPS Timestamping root",
+	 "QuoVadis Root CA",
+	 "Security Communication Root CA",
+	 "Sonera Class 1 Root CA", "Sonera Class 2 Root CA",
+	 "Staat der Nederlanden Root CA",
+	 "TDC Internet Root CA", "TDC OCES Root CA", 
+	 "UTN DATACorp SGC Root CA", "UTN USERFirst Email Root CA",
+	 "UTN USERFirst Hardware Root CA", "UTN USERFirst Object Root CA"
+  * add CACert.org's Root CA
+    closes: Bug#213086, Bug#288293
+  * add debian/po/vi.po
+    closes: Bug#309480
+  * add debian/po/cs.po
+    closes: Bug#309019
+  * write "How certificate will be accepted in ca-certificates package"
+    in README.Debain
+    
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Wed, 18 May 2005 00:40:54 +0900
+
+ca-certificates (20040809) unstable; urgency=low
+
+  * previous version was not fixed Bug#255933 correctly.
+    update-ca-certificates now remove symlinks of deselected entries 
+    in ca-certificates.conf
+    closes: Bug#255933
+
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Mon,  9 Aug 2004 03:23:20 +0900
+
+ca-certificates (20040808) unstable; urgency=low
+
+  * run update-ca-certificates by /bin/sh -e
+    closes: Bug#247581
+  * update-ca-certificates remove symlinks of deselected entries 
+    in ca-certificates.conf
+    closes: Bug#255933
+  * change default of trust_new_crts from 'ask' to 'yes'
+    closes: Bug#218838, Bug#221527, Bug#236675, Bug#247509
+  * refer libssl0.9.7 instead of libssl0.9.6 in Enhances:
+    closes: Bug#251158
+  * add brasil.gov.br certs
+    closes: Bug#224612
+  * add Signet CA Roots certs
+    closes: Bug#233206
+  * add QuoVadis CA Roots certs
+    closes: Bug#250847
+  * update pt_BR.po
+    closes: Bug#218812
+  * add da.po
+    closes: Bug#235322
+  * add ca.po
+    closes: Bug#237124
+  * add nl.po
+    closes: Bug#23840
+  * add de.po
+    closes: Bug#250785
+  * fix quote characters in template
+    closes: Bug#255738
+  * remove debian.org, because certs used in db.debian.org has been
+    revoked due to debian.org crack incidents.
+    db.debian.org uses certificates using spi-inc.org Root CA.
+
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Sun,  8 Aug 2004 10:58:30 +0900
+
+ca-certificates (20031007.1) unstable; urgency=low
+
+  * NMU
+  * Add brasil.gov.br/brasil.gov.br.crt, created from
+    http://www.icpbrasil.gov.br/certificadoACRaiz.crt
+  * Add debian/po/pt_BR.po: closes: Bug#224612
+
+ -- Otavio Salvador <otavio@debian.org>  Thu,  5 Aug 2004 12:16:26 -0300
+
+ca-certificates (20031007) unstable; urgency=low
+
+  * add debian/po/ru.po: closes: Bug#214371
+
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Tue,  7 Oct 2003 03:06:06 +0900
+
+ca-certificates (20030924) unstable; urgency=low
+
+  * add debian/po/ja.po: closes: Bug#212565
+
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Wed, 24 Sep 2003 22:09:09 +0900
+
+ca-certificates (20030916) unstable; urgency=low
+
+  * add debian/po/fr.po: closes: Bug#211224, Bug#206769
+  * debian/config: if new cert is asked, don't ask all available certs
+    closes: Bug#211199
+
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Wed, 17 Sep 2003 02:12:14 +0900
+
+ca-certificates (20030915) unstable; urgency=low
+
+  * debian/config.in: fix typo. closes: Bug#190990
+  * add option for new CA certificates. closes: Bug#190989
+  * switch to gettext-based debconf templates. closes: Bug#205782
+  * update mozilla/certdata.txt from mozilla 1.4 release
+
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Mon, 15 Sep 2003 01:15:04 +0900
+
+ca-certificates (20030420) unstable; urgency=low
+
+  * add README.Debian and update-ca-certificates(8). closes: Bug#189604
+  * fix broken English in debconf template. closes: Bug#189606
+  * don't remove symlinks in /etc/ssl/certs. closes: Bug#189607
+  * preserve comments in /etc/ca-certificates.conf when upgrading.
+    closes: Bug#189611
+
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Mon, 21 Apr 2003 00:06:01 +0900
+
+ca-certificates (20030415) unstable; urgency=medium
+
+  * fix upgrade problem
+    closes: Bug#188938, Bug#188940
+  * purge debconf
+
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Mon, 14 Apr 2003 23:00:58 +0900
+
+ca-certificates (20030414) unstable; urgency=medium
+    
+  * certificates are installed in /usr/share/ca-certificates
+    you can find md5sum of certs files. closes: Bug#170777
+  
+  * debconf to generate /etc/ca-certificates.conf
+  * update-ca-certificates update /etc/ssl/certs according 
+    /etc/ca-certificates.conf
+    It also generate /etc/ssl/certs/ca-certificates.crt
+    which is single-file version of certs.
+    closes: Bug#158904
+  
+  * change extension from .pem to .crt in /usr/share/ca-certificates
+    - /etc/mime.types:
+      application/x-x509-ca-cert crt
+    but it will be hardlink or copied in /etc/ssl/certs with .pem
+    extension by update-ca-certificates.
+    c_rehash requires .pem extension
+
+  * Update certificate from mozilla 2:1.3-4
+    mozilla/security/nss/lib/ckfw/builtins/certdata.txt 
+    cefd05b299ea683fc6b1ce9ff1e23a3f  mozilla/certdata.txt
+
+  * Add spi-inc.org/spi-ca.crt from http://www.spi-inc.org/secretary/
+    33922a1660820e44812e7ddc392878cb  spi-inc.org/spi-ca.crt
+    % openssl x509 -in spi-inc.org/spi-ca.crt -fingerprint -noout
+    MD5 Fingerprint=ED:85:3A:FD:32:43:13:73:91:4D:94:06:C4:10:EB:E5
+
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Mon, 14 Apr 2003 00:02:48 +0900
+
+ca-certificates (20020323) unstable; urgency=low
+
+  * Moved from non-US to main now that openssl has moved there.
+
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Sun, 24 Mar 2002 03:11:54 +0900
+
+ca-certificates (20020208) unstable; urgency=low
+
+  * add db.debian.org certificate
+
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Fri,  8 Feb 2002 23:46:11 +0900
+
+ca-certificates (20020112) unstable; urgency=low
+
+  * upload to non-US instead of main, because it depends on openssl
+    (it uses c_rehash in openssl in maintainer scripts)
+
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Sun, 13 Jan 2002 04:30:28 +0900
+
+ca-certificates (20020107) unstable; urgency=low
+
+  * Initial Release. closes: Bug#126586
+
+ -- Fumitoshi UKAI <ukai@debian.or.jp>  Mon,  7 Jan 2002 21:16:51 +0900
+

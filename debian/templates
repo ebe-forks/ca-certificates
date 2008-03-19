@@ -1,0 +1,30 @@
+Template: ca-certificates/trust_new_crts
+Type: select
+_Choices: yes, no, ask
+Default: yes
+_Description: Trust new CAs certificates?
+ This package may install new CA (Certificate Authority) certificates when
+ upgrading.  You may want to check such new CA certificates and select only
+ certificates that you trust.
+ .
+  - "yes", new CA certificates will be trusted and installed.
+  - "no", new CA certificates will not be installed by default.
+  - "ask", Ask you trust each new CA certificates or not
+
+Template: ca-certificates/new_crts
+Type: multiselect
+_Choices: ${new_crts}
+_Description: Select new certificates to activate:
+ In this upgrading, these new certificates are added. Do you trust these
+ certificates and want that these certificates are installed into
+ /etc/ssl/certs?
+
+Template: ca-certificates/enable_crts
+Type: multiselect
+_Choices: ${enable_crts}
+_Description: Select certificates to activate:
+ This package installs common CA (Certificate Authority) certificates in
+ /usr/share/ca-certificates. You can select certs from these available
+ certs to be installed into /etc/ssl/certs. This package will make symlinks
+ and generate a single file of all your selected certs,
+ /etc/ssl/certs/ca-certificates.crt.

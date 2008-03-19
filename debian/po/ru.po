@@ -1,0 +1,111 @@
+# translation of ca-certificates_20030924.po to russian
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans#
+#    Developers do not need to manually edit POT or PO files.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ca-certificates_20030924\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-08-08 11:28+0900\n"
+"PO-Revision-Date: 2003-10-04 21:39+0600\n"
+"Last-Translator: Ilgiz Kalmetev <translator@ilgiz.pp.ru>\n"
+"Language-Team: russian <debian-russian@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=KOI8-R\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0.1\n"
+
+#. Type: select
+#. Choices
+#: ../templates:3
+msgid "yes, no, ask"
+msgstr "да, нет, спросить"
+
+#. Type: select
+#. Description
+#: ../templates:5
+msgid "Trust new CAs certificates?"
+msgstr "Доверять новым сертификатам CA?"
+
+#. Type: select
+#. Description
+#: ../templates:5
+msgid ""
+"This package may install new CA (Certificate Authority) certificates when "
+"upgrading.  You may want to check such new CA certificates and select only "
+"certificates that you trust."
+msgstr ""
+"При обновлении этот пакет может установить новый CA (Certificate Authority). "
+"Возможно, Вы захотите проверить эти новые сертификаты и выбрать только те "
+"сертификаты, которым доверяете."
+
+#. Type: select
+#. Description
+#: ../templates:5
+msgid ""
+" - \"yes\", new CA certificates will be trusted and installed.\n"
+" - \"no\", new CA certificates will not be installed by default.\n"
+" - \"ask\", Ask you trust each new CA certificates or not"
+msgstr ""
+" - `да', доверять и установить новые сертификаты CA.\n"
+" - 'нет', по умолчанию не устанавливать новые сертификаты CA.\n"
+" - 'спросить', спрашивать, стоит ли доверять каждому из новых сертифкатов CA"
+
+#. Type: multiselect
+#. Choices
+#: ../templates:16
+msgid "${new_crts}"
+msgstr "${new_crts}"
+
+#. Type: multiselect
+#. Description
+#: ../templates:17
+msgid "Select new certificates to activate:"
+msgstr "Выбрать новые сертификаты для активации:"
+
+#. Type: multiselect
+#. Description
+#: ../templates:17
+msgid ""
+"In this upgrading, these new certificates are added. Do you trust these "
+"certificates and want that these certificates are installed into /etc/ssl/"
+"certs?"
+msgstr ""
+"Во время текущего обновления будут добавлены эти новые сертификаты. "
+"Доверяете ли Вы этим сертификатам и хотите ли, чтобы эти сертификаты были "
+"установлены в каталог /etc/ssl/certs?"
+
+#. Type: multiselect
+#. Choices
+#: ../templates:24
+msgid "${enable_crts}"
+msgstr "${enable_crts}"
+
+#. Type: multiselect
+#. Description
+#: ../templates:25
+msgid "Select certificates to activate:"
+msgstr "Выбрать сертификаты для активации:"
+
+#. Type: multiselect
+#. Description
+#: ../templates:25
+msgid ""
+"This package installs common CA (Certificate Authority) certificates in /usr/"
+"share/ca-certificates. You can select certs from these available certs to be "
+"installed into /etc/ssl/certs. This package will make symlinks and generate "
+"a single file of all your selected certs, /etc/ssl/certs/ca-certificates.crt."
+msgstr ""
+"Этот пакет устанавливает общие сертификаты CA (Certificate Authority) в "
+"каталог /usr/share/ca-certificates. Вы можете выбрать сертификаты их этих "
+"доступных сертификатов для установки в каталог /etc/ssl/certs. Этот пакет "
+"создаст символические ссылки и сгенерирует один файл для всех выбранных Вами "
+"сертификатов, /etc/ssl/certs/ca-certificates.crt."

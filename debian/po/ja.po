@@ -1,0 +1,109 @@
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#    Developers do not need to manually edit POT or PO files.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-08-08 11:28+0900\n"
+"PO-Revision-Date: 2003-09-24 21:35+0900\n"
+"Last-Translator: Kenshi Muto <kmuto@debian.org>\n"
+"Language-Team: Japanese <debian-japanese@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=EUC-JP\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: select
+#. Choices
+#: ../templates:3
+msgid "yes, no, ask"
+msgstr "はい, いいえ, 質問する"
+
+#. Type: select
+#. Description
+#: ../templates:5
+msgid "Trust new CAs certificates?"
+msgstr "新しい CA 証明書を信用しますか?"
+
+#. Type: select
+#. Description
+#: ../templates:5
+msgid ""
+"This package may install new CA (Certificate Authority) certificates when "
+"upgrading.  You may want to check such new CA certificates and select only "
+"certificates that you trust."
+msgstr ""
+"このパッケージは、更新時に新しい CA (証明機関) をインストールできます。そのよ"
+"うな新しい CA 証明書を確認して、信用する証明書だけを選択できます。"
+
+#. Type: select
+#. Description
+#: ../templates:5
+msgid ""
+" - \"yes\", new CA certificates will be trusted and installed.\n"
+" - \"no\", new CA certificates will not be installed by default.\n"
+" - \"ask\", Ask you trust each new CA certificates or not"
+msgstr ""
+" - `はい' は新しい CA 証明書を信用し、インストールします。\n"
+" - `いいえ' は新しい CA 証明書をデフォルトではインストールしません。\n"
+" - `質問する' は新しい CA 証明書をそれぞれ信用するかどうかを尋ねます。"
+
+#. Type: multiselect
+#. Choices
+#: ../templates:16
+msgid "${new_crts}"
+msgstr "${new_crts}"
+
+#. Type: multiselect
+#. Description
+#: ../templates:17
+msgid "Select new certificates to activate:"
+msgstr "活性化する新しい証明書を選択してください:"
+
+#. Type: multiselect
+#. Description
+#: ../templates:17
+msgid ""
+"In this upgrading, these new certificates are added. Do you trust these "
+"certificates and want that these certificates are installed into /etc/ssl/"
+"certs?"
+msgstr ""
+"この更新では、これらの新しい証明書が追加されています。これらの証明書を信用し"
+"て、/etc/ssl/certs に証明書をインストールしますか?"
+
+#. Type: multiselect
+#. Choices
+#: ../templates:24
+msgid "${enable_crts}"
+msgstr "${enable_crts}"
+
+#. Type: multiselect
+#. Description
+#: ../templates:25
+msgid "Select certificates to activate:"
+msgstr "活性化する証明書を選択してください:"
+
+#. Type: multiselect
+#. Description
+#: ../templates:25
+msgid ""
+"This package installs common CA (Certificate Authority) certificates in /usr/"
+"share/ca-certificates. You can select certs from these available certs to be "
+"installed into /etc/ssl/certs. This package will make symlinks and generate "
+"a single file of all your selected certs, /etc/ssl/certs/ca-certificates.crt."
+msgstr ""
+"このパッケージは共通の CA (証明機関) 証明書を /usr/share/ca-certificates にイ"
+"ンストールします。これらの利用できる証明書から、/etc/ssl/certs にインストール"
+"したい証明書を選択できます。このパッケージはシンボリックリンクを作成し、すべ"
+"ての選択した証明書から成る単一のファイル /etc/ssl/certs/ca-certificates.crt "
+"を生成します。"
