@@ -3,6 +3,8 @@ ca-certificates (20080319) UNRELEASED; urgency=low
   * Added the current SPI CA certificate, used by Debian's infrastructure.
   * Added Deutsche Telekom Root CA 2, which is used by German institutions
     through the DFN PKI.
+  * Updated the Russian debconf translation, thanks to Mikhail Gusarov.
+    (Closes: #434856)
 
  -- Philipp Kern <pkern@debian.org>  Wed, 19 Mar 2008 14:25:26 +0100
 
