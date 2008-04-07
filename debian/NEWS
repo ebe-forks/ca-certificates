@@ -1,3 +1,11 @@
+ca-certificates (20080319) unstable; urgency=low
+
+  * New CA certificates:
+    - spi-inc.org: current SPI CA certificate
+    - telesec.de: added Deutsche Telekom Root CA 2
+
+ -- Philipp Kern <pkern@debian.org>  Mon, 07 Apr 2008 18:00:06 +0200
+
 ca-certificates (20070303) unstable; urgency=low
 
   * New CA certificates:
