@@ -5,6 +5,7 @@ ca-certificates (20080319) UNRELEASED; urgency=low
     through the DFN PKI.
   * Updated the Russian debconf translation, thanks to Mikhail Gusarov.
     (Closes: #434856)
+  * Reworded the description and made it static to ease translations.
 
  -- Philipp Kern <pkern@debian.org>  Wed, 19 Mar 2008 14:25:26 +0100
 
