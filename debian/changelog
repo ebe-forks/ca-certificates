@@ -3,6 +3,51 @@ ca-certificates (20080319) UNRELEASED; urgency=low
   * Added the current SPI CA certificate, used by Debian's infrastructure.
   * Added Deutsche Telekom Root CA 2, which is used by German institutions
     through the DFN PKI.
+  * Updated mozilla certificates from trunk, which led to the following
+    adds (+) and removes (-):
+    + Camerfirma Chambers of Commerce Root
+    + Camerfirma Global Chambersign Root
+    + Certplus Class 2 Primary CA
+    + COMODO Certification Authority
+    + DigiCert Assured ID Root CA
+    + DigiCert Global Root CA
+    + DigiCert High Assurance EV Root CA
+    + DST ACES CA X6
+    + DST Root CA X3
+    + Entrust Root Certification Authority
+    + Firmaprofesional Root CA
+    + GeoTrust Global CA 2
+    + GeoTrust Primary Certification Authority
+    + GeoTrust Universal CA
+    + GeoTrust Universal CA 2
+    + GlobalSign Root CA - R2
+    + Go Daddy Class 2 CA
+    + NetLock Business (Class B) Root
+    + NetLock Express (Class C) Root
+    + NetLock Notary (Class A) Root
+    + NetLock Qualified (Class QA) Root
+    + QuoVadis Root CA 2
+    + QuoVadis Root CA 3
+    + Secure Global CA
+    + SecureTrust CA
+    + Starfield Class 2 CA
+    + StartCom Certification Authority
+    + StartCom Ltd.
+    + Swisscom Root CA 1
+    + SwissSign Gold CA - G2
+    + SwissSign Platinum CA - G2
+    + SwissSign Silver CA - G2
+    + Taiwan GRCA
+    + thawte Primary Root CA
+    + TURKTRUST Certificate Services Provider Root 1
+    + TURKTRUST Certificate Services Provider Root 2
+    + VeriSign Class 3 Public Primary Certification Authority - G5
+    + Wells Fargo Root CA
+    + XRamp Global CA Root
+    - Verisign Class 1 Public Primary OCSP Responder
+    - Verisign Class 2 Public Primary OCSP Responder
+    - Verisign Class 3 Public Primary OCSP Responder
+    - Verisign Secure Server OCSP Responder
   * Updated the Russian debconf translation, thanks to Mikhail Gusarov.
     (Closes: #434856)
   * Reworded the description and made it static to ease translations.
