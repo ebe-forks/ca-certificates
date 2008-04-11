@@ -53,6 +53,8 @@ ca-certificates (20080411) unstable; urgency=low
   * Reworded the description and made it static to ease translations.
   * Reworded and amended README.Debian.
   * Added myself to the uploaders of this package.
+  * Applied a patch by Martin F. Krafft to support hooks scripts
+    on add/remove of a certificate.  (Closes: #377314)
 
  -- Philipp Kern <pkern@debian.org>  Fri, 11 Apr 2008 18:56:42 +0200
 

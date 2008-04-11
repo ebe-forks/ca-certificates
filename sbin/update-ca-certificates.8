@@ -34,6 +34,11 @@ It reads /etc/ca-certificates.conf file. Each lines list pathname of
 activated CA certificates under /usr/share/ca-certificates.
 Lines that begin with "#" is comment line. 
 Lines that begin with "!" is deselect, deactivation of the CA certificates. 
+.PP
+Before terminating, \fBupdate-ca-certificates\fP invokes
+\fBrun-parts\fP on /etc/ca-certificates/update.d and calls each hook with
+a list of certificates: those added are prefixed with a +, those removed are
+prefixed with a -.
 .SH OPTIONS
 A summary of options is included below.
 .TP

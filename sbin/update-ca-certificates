@@ -38,9 +38,10 @@ done
 CERTSCONF=/etc/ca-certificates.conf
 CERTSDIR=/usr/share/ca-certificates
 CERTBUNDLE=ca-certificates.crt
-cd /etc/ssl/certs
+ETCCERTSDIR=/etc/ssl/certs
+cd $ETCCERTSDIR
 if [ "$fresh" = 1 ]; then
-  echo -n "Clearing symlinks in /etc/ssl/certs..."
+  echo -n "Clearing symlinks in $ETCCERTSDIR..."
   find . -type l -print | while read symlink
   do
      case $(readlink $symlink) in
@@ -53,31 +54,49 @@ if [ "$fresh" = 1 ]; then
   done
   echo "done."
 fi
-echo -n "Updating certificates in /etc/ssl/certs...."
+echo -n "Updating certificates in $ETCCERTSDIR...."
 
 bundletmp=`mktemp "${CERTBUNDLE}.tmp.XXXXXX"`
-sed -ne 's/^!//p' $CERTSCONF | while read crt
+removed="$(sed -ne 's/^!//p' $CERTSCONF | while read crt
 do
  if test "$crt" = ""; then continue; fi
  pem=$(basename "$crt" .crt).pem
- if test -e "$pem"; then rm -f "$pem"; fi
-done
+ if test -e "$pem"; then
+  rm -f "$pem"
+  echo "-$ETCCERTSDIR/$pem"
+ fi
+done)"
 
-sed -e '/^#/d' -e '/^!/d' $CERTSCONF | while read crt
+added="$(sed -e '/^#/d' -e '/^!/d' $CERTSCONF | while read crt
 do
  if test "$crt" = ""; then continue; fi
  if ! test -f "$CERTSDIR/$crt"; then continue; fi
  pem=$(basename "$crt" .crt).pem
+ if ! test -e "$pem"; then echo "+$ETCCERTSDIR/$pem"; fi
  ln -sf "$CERTSDIR/$crt" "$pem"
  cat "$CERTSDIR/$crt" >> "$bundletmp"
-done
+done)"
 chmod 0644 "$bundletmp"
 mv -f "$bundletmp" "$CERTBUNDLE"
 
-if [ "$verbose" = 0 ]; then
-  c_rehash . > /dev/null 2>&1
-else
-  c_rehash .
-fi
-echo "done."
+if [ -n "$added" ] || [ -n "$removed" ]; then
+  # only run if set of files has changed
 
+  if [ "$verbose" = 0 ]; then
+    c_rehash . > /dev/null 2>&1
+  else
+    c_rehash .
+  fi
+  echo "done."
+
+  HOOKSDIR=/etc/ca-certificates/update.d
+  echo -n "Running hooks in $HOOKSDIR...."
+  VERBOSE_ARG=
+  [ "$verbose" = 0 ] || VERBOSE_ARG=--verbose
+  eval run-parts $VERB_ARG --test -- $HOOKSDIR | while read hook; do
+  printf -- "${removed:+$removed\n}${added:+$added\n}" | eval $hook
+  done
+  echo "done."
+else
+  echo "done."
+fi
