@@ -1,4 +1,4 @@
-ca-certificates (20080319) unstable; urgency=low
+ca-certificates (20080411) unstable; urgency=low
 
   * New CA certificates:
     - spi-inc.org: current SPI CA certificate

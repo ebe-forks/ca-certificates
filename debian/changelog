@@ -1,4 +1,4 @@
-ca-certificates (20080319) UNRELEASED; urgency=low
+ca-certificates (20080411) unstable; urgency=low
 
   * Added the current SPI CA certificate, used by Debian's infrastructure.
   * Added Deutsche Telekom Root CA 2, which is used by German institutions
@@ -54,7 +54,7 @@ ca-certificates (20080319) UNRELEASED; urgency=low
   * Reworded and amended README.Debian.
   * Added myself to the uploaders of this package.
 
- -- Philipp Kern <pkern@debian.org>  Wed, 19 Mar 2008 14:25:26 +0100
+ -- Philipp Kern <pkern@debian.org>  Fri, 11 Apr 2008 18:56:42 +0200
 
 ca-certificates (20070303-0.1) unstable; urgency=low
 
