@@ -1,43 +1,42 @@
-The Debian Package ca-certificates
+The Debian Package “ca-certificates”
 ----------------------------------
 
-Common CA certificates PEM files, installed in /usr/share/ca-certificates/
+This package includes PEM files of CA certificates to allow SSL-based
+applications to check for the authenticity of SSL connections.
 
-It includes the following certificates:
- - spi-inc.org certificate
- - db.debian.org certificate
- - debconf.org certificate
- - Mozilla builtin CA certificates
- - brasil.gov.br certificate
- - cacert.org certificate
+Please note that certificate authorities whose certificates are included
+in this package are not in any way audited for trustworthiness and RFC
+3647 compliance, and that full responsibility to assess them belongs to
+the local system administrator.
 
-configuration file:
- /etc/ca-certificates.conf
-	- managed by debconf
-   # dpkg-reconfigure ca-certificates
+The CA certificates contained in this package are installed into
+“/usr/share/ca-certificates”.
 
- update-ca-certificates will update /etc/ssl/certs
-	make hash symlinks
-	generate ca-certificates.crt (single-file version)
+The configuration file “/etc/ca-certificates.conf” is seeded with
+trust information through Debconf.  Just call “dpkg-reconfigure
+ca-certificates” to adjust the settings.
 
-/etc/ssl/certs/ca-certificates.crt may be used by the web browsers
-in Debian, such as w3m, when deciding what secure web sites to trust.
-For w3m package, it has ssl_ca_path configuration in /etc/w3m/w3mconfig,
-so it works without any configuration.  You can specify 
-/etc/ssl/certs/ca-certificates.crt for ssl_ca_file instead.
+“update-ca-certificates” will then update “/etc/ssl/certs” which may be
+used by the web browsers in Debian.  It will also generate the hash
+symlinks and generate a single-file version in
+“/etc/ssl/certs/ca-certificates.crt”.
 
 
-How certificate will be accepted in ca-certificates package
------------------------------------------------------------
+How certificates will be accepted into the ca-certificates package
+------------------------------------------------------------------
 
- - submit *GPG signed* bug report to ca-certificate with severity normal.
-   the bug report should include
-     - description of the CA
-     - how to obtain CA cert pem or paste it in the bug report
-     - license of the CA certificate
-     - fingerprint and/or hash value of the cert
- - get 2 or 3 recommendation ("seconded" mail) from other people to 
-   the bug report, GPG signed.
-   I won't accept if the CA is requested by only one people.
-   
- -- Fumitoshi UKAI <ukai@debian.or.jp>, Thu, 17 Aug 2006 13:27:55 +0900
+ Option 1:
+ - File a *GPG-signed* bug report against ca-certificates with
+   *severity normal*.  The bug report must include an attached
+   copy of the PEM certificates of the CA, a link to and a
+   description of the CA, the licence of the CA certificate
+   and signed fingerprint and/or hash values of the certificate.
+ - Get two or three recommendations from other people to the
+   bug report, GPG-signed (preferably from the strong set).
+ - CA certificates will not be accepted if requested by only
+   one person.
+
+ Option 2:
+ - Get it included into Mozilla's trust store.
+ - File a bug against ca-certificates stating this fact.
+
