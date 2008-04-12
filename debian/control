@@ -5,7 +5,7 @@ Maintainer: Fumitoshi UKAI <ukai@debian.or.jp>
 Uploaders: Philipp Kern <pkern@debian.org>
 Build-Depends: debhelper (>> 4.1.16), po-debconf
 Build-Depends-Indep: ruby
-Standards-Version: 3.5.9
+Standards-Version: 3.7.3
 
 Package: ca-certificates
 Architecture: all
