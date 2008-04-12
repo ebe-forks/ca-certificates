@@ -48,6 +48,7 @@ ca-certificates (20080411) unstable; urgency=low
     - Verisign Class 2 Public Primary OCSP Responder
     - Verisign Class 3 Public Primary OCSP Responder
     - Verisign Secure Server OCSP Responder
+    (Closes: #447062, #456581)
   * Updated the Russian debconf translation, thanks to Mikhail Gusarov.
     (Closes: #434856)
   * Reworded the description and made it static to ease translations.
@@ -56,7 +57,7 @@ ca-certificates (20080411) unstable; urgency=low
   * Applied a patch by Martin F. Krafft to support hooks scripts
     on add/remove of a certificate.  (Closes: #377314)
 
- -- Philipp Kern <pkern@debian.org>  Fri, 11 Apr 2008 18:56:42 +0200
+ -- Philipp Kern <pkern@debian.org>  Sat, 12 Apr 2008 17:35:26 +0200
 
 ca-certificates (20070303-0.1) unstable; urgency=low
 
