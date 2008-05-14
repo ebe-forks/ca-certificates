@@ -1,3 +1,10 @@
+ca-certificates (20080514) unstable; urgency=medium
+
+  * Added the new SPI CA certificate, created in response to the latest
+    openssl security update.
+
+ -- Philipp Kern <pkern@debian.org>  Wed, 14 May 2008 10:03:42 +0200
+
 ca-certificates (20080411) unstable; urgency=low
 
   * Added the current SPI CA certificate, used by Debian's infrastructure.
