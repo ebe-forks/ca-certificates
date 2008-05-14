@@ -54,7 +54,7 @@ msgstr ""
 #. Choices
 #: ../templates:3001
 msgid "${new_crts}"
-msgstr ""
+msgstr "${new_crts}"
 
 #. Type: multiselect
 #. Description
@@ -76,7 +76,7 @@ msgstr ""
 #. Choices
 #: ../templates:4001
 msgid "${enable_crts}"
-msgstr ""
+msgstr "${enable_crts}"
 
 #. Type: multiselect
 #. Description
