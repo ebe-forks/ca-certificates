@@ -2,6 +2,9 @@ ca-certificates (20080514) unstable; urgency=medium
 
   * Added the new SPI CA certificate, created in response to the latest
     openssl security update.
+  * Removed old SPI CA certificates (2006, 2007) as CAs cannot be
+    revoked sensibly.  Expired CA created in 2003, expired in 2007 left
+    around for reference.
   * Updated the Galician translation, thanks to Glennie Vignarajah.
     (Closes: #416470)
 
