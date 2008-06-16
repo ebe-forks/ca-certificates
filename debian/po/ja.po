@@ -14,8 +14,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates\n"
-"Report-Msgid-Bugs-To: ukai@debian.or.jp\n"
-"POT-Creation-Date: 2007-07-27 11:03+0200\n"
+"Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
+"POT-Creation-Date: 2008-06-16 17:02+0200\n"
 "PO-Revision-Date: 2007-07-30 14:08+0900\n"
 "Last-Translator: Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Japanese <debian-japanese@lists.debian.org>\n"
@@ -59,20 +59,14 @@ msgstr ""
 " - `質問する': 新しい CA 証明書についてそれぞれ尋ねます。"
 
 #. Type: multiselect
-#. Choices
-#: ../templates:3001
-msgid "${new_crts}"
-msgstr "${new_crts}"
-
-#. Type: multiselect
 #. Description
-#: ../templates:3002
+#: ../templates:3001
 msgid "New certificates to activate:"
 msgstr "活性化する新しい証明書:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:3002
+#: ../templates:3001
 msgid ""
 "During upgrades, new certificates will be added. Please choose those you "
 "trust."
@@ -81,20 +75,14 @@ msgstr ""
 "か選んでください。"
 
 #. Type: multiselect
-#. Choices
-#: ../templates:4001
-msgid "${enable_crts}"
-msgstr "${enable_crts}"
-
-#. Type: multiselect
 #. Description
-#: ../templates:4002
+#: ../templates:4001
 msgid "Certificates to activate:"
 msgstr "活性化する証明書:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:4002
+#: ../templates:4001
 msgid ""
 "This package installs common CA (Certificate Authority) certificates in /usr/"
 "share/ca-certificates."
@@ -104,7 +92,7 @@ msgstr ""
 
 #. Type: multiselect
 #. Description
-#: ../templates:4002
+#: ../templates:4001
 msgid ""
 "Please select the certificate authorities you trust so that their "
 "certificates are installed into /etc/ssl/certs. They will be compiled into a "
@@ -113,3 +101,9 @@ msgstr ""
 "/etc/ssl/certs にインストールされる、信用する証明機関の証明書を選択してくださ"
 "い。これらは、単一のファイル /etc/ssl/certs/ca-certificates.crt にコンパイル"
 "されます。"
+
+#~ msgid "${new_crts}"
+#~ msgstr "${new_crts}"
+
+#~ msgid "${enable_crts}"
+#~ msgstr "${enable_crts}"

@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates 20070304\n"
-"Report-Msgid-Bugs-To: ukai@debian.or.jp\n"
-"POT-Creation-Date: 2007-07-27 11:03+0200\n"
+"Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
+"POT-Creation-Date: 2008-06-16 17:02+0200\n"
 "PO-Revision-Date: 2007-07-27 20:21+0200\n"
 "Last-Translator: Helge Kreutzmann <debian@helgefjell.de>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
@@ -55,20 +55,14 @@ msgstr ""
 " - Fragen: fragt bei jedem neuen CA-Zertifikat nach."
 
 #. Type: multiselect
-#. Choices
-#: ../templates:3001
-msgid "${new_crts}"
-msgstr "${new_crts}"
-
-#. Type: multiselect
 #. Description
-#: ../templates:3002
+#: ../templates:3001
 msgid "New certificates to activate:"
 msgstr "Zu aktivierende neue Zertifikate:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:3002
+#: ../templates:3001
 msgid ""
 "During upgrades, new certificates will be added. Please choose those you "
 "trust."
@@ -77,20 +71,14 @@ msgstr ""
 "diejenigen aus, denen Sie vertrauen."
 
 #. Type: multiselect
-#. Choices
-#: ../templates:4001
-msgid "${enable_crts}"
-msgstr "${enable_crts}"
-
-#. Type: multiselect
 #. Description
-#: ../templates:4002
+#: ../templates:4001
 msgid "Certificates to activate:"
 msgstr "Zu aktivierende Zertifikate:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:4002
+#: ../templates:4001
 msgid ""
 "This package installs common CA (Certificate Authority) certificates in /usr/"
 "share/ca-certificates."
@@ -100,7 +88,7 @@ msgstr ""
 
 #. Type: multiselect
 #. Description
-#: ../templates:4002
+#: ../templates:4001
 msgid ""
 "Please select the certificate authorities you trust so that their "
 "certificates are installed into /etc/ssl/certs. They will be compiled into a "
@@ -109,6 +97,12 @@ msgstr ""
 "Bitte wählen Sie die Zertifizierungsstellen aus, denen Sie vertrauen, damit "
 "deren Zertifikate in /etc/ssl/certs installiert werden. Sie werden in eine "
 "einzige Datei /etc/ssl/certs/ca-certificates.crt zusammengestellt."
+
+#~ msgid "${new_crts}"
+#~ msgstr "${new_crts}"
+
+#~ msgid "${enable_crts}"
+#~ msgstr "${enable_crts}"
 
 #~ msgid "Select new certificates to activate:"
 #~ msgstr "Neue Zertifikate zum Aktivieren auswählen:"

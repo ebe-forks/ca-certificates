@@ -15,8 +15,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates_20031007_templates\n"
-"Report-Msgid-Bugs-To: ukai@debian.or.jp\n"
-"POT-Creation-Date: 2007-07-27 11:03+0200\n"
+"Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
+"POT-Creation-Date: 2008-06-16 17:02+0200\n"
 "PO-Revision-Date: 2006-09-18 08:00+0200\n"
 "Last-Translator: Claus Hindsgaul <claus.hindsgaul@gmail.com>\n"
 "Language-Team: Danish\n"
@@ -76,14 +76,8 @@ msgstr ""
 "eller ej."
 
 #. Type: multiselect
-#. Choices
-#: ../templates:3001
-msgid "${new_crts}"
-msgstr "${new_crts}"
-
-#. Type: multiselect
 #. Description
-#: ../templates:3002
+#: ../templates:3001
 #, fuzzy
 #| msgid "Select certificates to activate:"
 msgid "New certificates to activate:"
@@ -91,7 +85,7 @@ msgstr "Vælg certifikater at aktivere:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:3002
+#: ../templates:3001
 #, fuzzy
 #| msgid ""
 #| "During the upgrade, these new certificates will be added. Do you trust "
@@ -104,14 +98,8 @@ msgstr ""
 "dem, og vil du have dem installeret i /etc/ssl/certs?"
 
 #. Type: multiselect
-#. Choices
-#: ../templates:4001
-msgid "${enable_crts}"
-msgstr "${enable_crts}"
-
-#. Type: multiselect
 #. Description
-#: ../templates:4002
+#: ../templates:4001
 #, fuzzy
 #| msgid "Select certificates to activate:"
 msgid "Certificates to activate:"
@@ -119,7 +107,7 @@ msgstr "Vælg certifikater at aktivere:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:4002
+#: ../templates:4001
 #, fuzzy
 #| msgid ""
 #| "This package may install new CA (Certificate Authority) certificates when "
@@ -135,12 +123,18 @@ msgstr ""
 
 #. Type: multiselect
 #. Description
-#: ../templates:4002
+#: ../templates:4001
 msgid ""
 "Please select the certificate authorities you trust so that their "
 "certificates are installed into /etc/ssl/certs. They will be compiled into a "
 "single /etc/ssl/certs/ca-certificates.crt file."
 msgstr ""
+
+#~ msgid "${new_crts}"
+#~ msgstr "${new_crts}"
+
+#~ msgid "${enable_crts}"
+#~ msgstr "${enable_crts}"
 
 #~ msgid "Select new certificates to activate:"
 #~ msgstr "Vælg nyt certifikat at aktivere:"

@@ -1,12 +1,12 @@
 # Vietnamese Translation for ca-certificates.
 # Copyright © 2007 Free Software Foundation, Inc.
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2007.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates 20070304\n"
-"Report-Msgid-Bugs-To: ukai@debian.or.jp\n"
-"POT-Creation-Date: 2007-07-27 11:03+0200\n"
+"Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
+"POT-Creation-Date: 2008-06-16 17:02+0200\n"
 "PO-Revision-Date: 2007-07-30 18:25+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-bugs@googlegroups.com>\n"
@@ -52,22 +52,15 @@ msgstr ""
 " • không\t\tmặc định là không cài đặt chứng nhận CA mới.\n"
 " • hỏi\t\tnhắc với mỗi chứng nhận CA mới"
 
-# Variable: do not translate/ biến: đừng dịch
-#. Type: multiselect
-#. Choices
-#: ../templates:3001
-msgid "${new_crts}"
-msgstr "${new_crts}"
-
 #. Type: multiselect
 #. Description
-#: ../templates:3002
+#: ../templates:3001
 msgid "New certificates to activate:"
 msgstr "Các chứng nhận mới cần kích hoạt:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:3002
+#: ../templates:3001
 msgid ""
 "During upgrades, new certificates will be added. Please choose those you "
 "trust."
@@ -75,32 +68,25 @@ msgstr ""
 "Trong khi nâng cấp, chứng nhận mới sẽ được thêm. Hãy chọn những chứng nhận "
 "bạn tin vậy."
 
-# Variable: do not translate/ biến: đừng dịch
-#. Type: multiselect
-#. Choices
-#: ../templates:4001
-msgid "${enable_crts}"
-msgstr "${enable_crts}"
-
 #. Type: multiselect
 #. Description
-#: ../templates:4002
+#: ../templates:4001
 msgid "Certificates to activate:"
 msgstr "Các chứng nhận cần kích hoạt:"
 
 #. Type: multiselect
 #. Description
-#: ../templates:4002
+#: ../templates:4001
 msgid ""
 "This package installs common CA (Certificate Authority) certificates in /usr/"
 "share/ca-certificates."
 msgstr ""
-"Gói này sẽ tạo các chứng nhận CA (nhà cầm quyền chứng nhận) vào «  /usr/"
-"share/ca-certificates »."
+"Gói này sẽ tạo các chứng nhận CA (nhà cầm quyền chứng nhận) vào «  /usr/share/"
+"ca-certificates »."
 
 #. Type: multiselect
 #. Description
-#: ../templates:4002
+#: ../templates:4001
 msgid ""
 "Please select the certificate authorities you trust so that their "
 "certificates are installed into /etc/ssl/certs. They will be compiled into a "
@@ -109,3 +95,11 @@ msgstr ""
 "Hãy chọn những nhà cầm quyền chứng nhận bạn tin cậy để cài đặt các chứng "
 "nhận của chúng vào « /etc/ssl/certs ». Chúng sẽ được biên dịch vào một tập "
 "tin « /etc/ssl/certs/ca-certificates.crt » riêng lẻ."
+
+# Variable: do not translate/ biến: đừng dịch
+#~ msgid "${new_crts}"
+#~ msgstr "${new_crts}"
+
+# Variable: do not translate/ biến: đừng dịch
+#~ msgid "${enable_crts}"
+#~ msgstr "${enable_crts}"

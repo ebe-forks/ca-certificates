@@ -1,3 +1,13 @@
+ca-certificates (20080616) UNRELEASED; urgency=low
+
+  * Fix installation on pt_BR locales.  The problem was caused by the
+    .templates choices strings being marked for translation, with pt_BR
+    being the only language which actually translated them.  Thanks to
+    Ubuntu for the fix, which needs to be around until Lenny is released
+    or six months have passed, whichever is later.  (Closes: #472507)
+
+ -- Philipp Kern <pkern@debian.org>  Mon, 16 Jun 2008 16:57:29 +0200
+
 ca-certificates (20080514) unstable; urgency=medium
 
   * Added the new SPI CA certificate, created in response to the latest
