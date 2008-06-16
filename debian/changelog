@@ -6,6 +6,7 @@ ca-certificates (20080616) UNRELEASED; urgency=low
     Ubuntu for the fix, which needs to be around until Lenny is released
     or six months have passed, whichever is later.  (Closes: #472507)
   * Drop Fumitoshi from the list of maintainers.  Farewell!
+  * Bump Standards-Version to 3.8.0.
 
  -- Philipp Kern <pkern@debian.org>  Mon, 16 Jun 2008 16:57:29 +0200
 
