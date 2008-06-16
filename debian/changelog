@@ -1,4 +1,4 @@
-ca-certificates (20080616) UNRELEASED; urgency=low
+ca-certificates (20080616) unstable; urgency=low
 
   * Fix installation on pt_BR locales.  The problem was caused by the
     .templates choices strings being marked for translation, with pt_BR
@@ -8,7 +8,7 @@ ca-certificates (20080616) UNRELEASED; urgency=low
   * Drop Fumitoshi from the list of maintainers.  Farewell!
   * Bump Standards-Version to 3.8.0.
 
- -- Philipp Kern <pkern@debian.org>  Mon, 16 Jun 2008 16:57:29 +0200
+ -- Philipp Kern <pkern@debian.org>  Mon, 16 Jun 2008 17:41:50 +0200
 
 ca-certificates (20080514) unstable; urgency=medium
 
