@@ -1,8 +1,7 @@
 Source: ca-certificates
 Section: misc
 Priority: optional
-Maintainer: Fumitoshi UKAI <ukai@debian.or.jp>
-Uploaders: Philipp Kern <pkern@debian.org>
+Maintainer: Philipp Kern <pkern@debian.org>
 Build-Depends: debhelper (>> 4.1.16), po-debconf
 Build-Depends-Indep: ruby
 Standards-Version: 3.7.3
