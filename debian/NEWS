@@ -1,3 +1,15 @@
+ca-certificates (20080617) unstable; urgency=low
+
+  * New CA certificates:
+    - gouv.fr: added French Government's IGC/A CA
+    - spi-inc.org: added new SPI CA certificate, created in reponse to
+      the infamous OpenSSL security update (already in 20080514)
+  * Removed CA certificates:
+    - spi-inc.org: removed old, still valid but possibly compromised
+      SPI CA certificates from 2006 and 2007 (already in 20080514)
+
+ -- Philipp Kern <pkern@debian.org>  Fri, 20 Jun 2008 10:05:49 +0200
+
 ca-certificates (20080411) unstable; urgency=low
 
   * New CA certificates:
