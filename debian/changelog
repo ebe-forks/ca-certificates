@@ -1,9 +1,9 @@
-ca-certificates (20080617) UNRELEASED; urgency=low
+ca-certificates (20080617) unstable; urgency=low
 
   * Added French Government's IGC/A CA (both DSA and RSA).
     (Closes: #416470)
 
- -- Philipp Kern <pkern@debian.org>  Fri, 20 Jun 2008 09:59:18 +0200
+ -- Philipp Kern <pkern@debian.org>  Mon, 23 Jun 2008 20:55:53 +0200
 
 ca-certificates (20080616) unstable; urgency=low
 
