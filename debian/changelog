@@ -5,6 +5,9 @@ ca-certificates (20080809) unstable; urgency=low
     server certificates are used.  The old class3.pem and root.pem
     certificates are deprecated.  This new file could safely serve as
     a replacement for both.  (Closes: #494343)
+  * This also reintroduces the old name for the CACert certificate,
+    thus closing a long-standing bug about its rename to root.crt.
+    (Closes: #413766)
 
  -- Philipp Kern <pkern@debian.org>  Sat, 09 Aug 2008 14:58:24 -0300
 
