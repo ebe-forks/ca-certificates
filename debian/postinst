@@ -21,13 +21,13 @@
 #     `abort-remove' or `abort-deconfigure'.
 
 each_value() {
- echo "$l" |tr ',' '\n' | sed -e 's/^[[:space:]]*//' 
+ echo "$1" |tr ',' '\n' | sed -e 's/^[[:space:]]*//' 
 }
 
 memberp() {
  m="$1"
  l="$2"
- each_value "$1" | grep -q "^$m\$"
+ each_value "$l" | grep -q "^$m\$"
 }
 
 delca() {

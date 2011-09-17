@@ -1,3 +1,11 @@
+ca-certificates (20090814+nmu2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fixes buggy shell functions included in the postinst script.
+    (Closes: #591607)
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 13 Aug 2010 20:16:21 -0300
+
 ca-certificates (20090814+nmu1) unstable; urgency=low
 
   * Non-maintainer upload.
