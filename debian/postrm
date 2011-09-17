@@ -17,6 +17,10 @@ set -e
 # for details, see /usr/share/doc/packaging-manual/
 
 remove_dangling_symlinks() {
+    if ! [ -d /etc/ssl/certs ]
+    then
+        return
+    fi
     echo -n "Removing dangling symlinks from /etc/ssl/certs... "
     find /etc/ssl/certs -type l -print | while read h
     do
