@@ -1,3 +1,10 @@
+ca-certificates (20110502+nmu1) unstable; urgency=high
+
+  * Non-maintainer upload by the Security Team.
+  * Blacklist "DigiNotar Root CA" (Closes: #639744)
+
+ -- Raphael Geissert <geissert@debian.org>  Tue, 30 Aug 2011 21:00:55 -0500
+
 ca-certificates (20110502) unstable; urgency=low
 
   * QA upload.
