@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
-"POT-Creation-Date: 2008-06-16 17:02+0200\n"
+"POT-Creation-Date: 2011-05-02 19:31+0200\n"
 "PO-Revision-Date: 2007-07-27 08:40+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
@@ -18,21 +18,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
+#. Type: title
+#. Description
+#: ../templates:2001
+msgid "ca-certificates configuration"
+msgstr ""
+
 #. Type: select
 #. Choices
-#: ../templates:2001
+#: ../templates:3001
 msgid "yes, no, ask"
 msgstr "Oui, Non, Demander"
 
 #. Type: select
 #. Description
-#: ../templates:2002
+#: ../templates:3002
 msgid "Trust new certificates from certificate authorities?"
 msgstr "Faut-il accepter les nouveaux certificats de tiers de confiance ?"
 
 #. Type: select
 #. Description
-#: ../templates:2002
+#: ../templates:3002
 msgid ""
 "This package may install new CA (Certificate Authority) certificates when "
 "upgrading. You may want to check such new CA certificates and select only "
@@ -44,7 +50,7 @@ msgstr ""
 
 #. Type: select
 #. Description
-#: ../templates:2002
+#: ../templates:3002
 msgid ""
 " - yes: new CA certificates will be trusted and installed;\n"
 " - no : new CA certificates will not be installed by default;\n"
@@ -57,13 +63,13 @@ msgstr ""
 
 #. Type: multiselect
 #. Description
-#: ../templates:3001
+#: ../templates:4001
 msgid "New certificates to activate:"
 msgstr "Nouveaux certificats à accepter :"
 
 #. Type: multiselect
 #. Description
-#: ../templates:3001
+#: ../templates:4001
 msgid ""
 "During upgrades, new certificates will be added. Please choose those you "
 "trust."
@@ -73,13 +79,13 @@ msgstr ""
 
 #. Type: multiselect
 #. Description
-#: ../templates:4001
+#: ../templates:5001
 msgid "Certificates to activate:"
 msgstr "Certificats à accepter :"
 
 #. Type: multiselect
 #. Description
-#: ../templates:4001
+#: ../templates:5001
 msgid ""
 "This package installs common CA (Certificate Authority) certificates in /usr/"
 "share/ca-certificates."
@@ -89,7 +95,7 @@ msgstr ""
 
 #. Type: multiselect
 #. Description
-#: ../templates:4001
+#: ../templates:5001
 msgid ""
 "Please select the certificate authorities you trust so that their "
 "certificates are installed into /etc/ssl/certs. They will be compiled into a "

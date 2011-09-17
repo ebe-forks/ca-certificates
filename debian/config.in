@@ -47,7 +47,7 @@ members()
 db_version 2.0
 db_capb multiselect
 
-db_title "ca-certificates configuration"
+db_settitle ca-certificates/title
 db_input medium ca-certificates/trust_new_crts || true
 db_go
 
@@ -142,7 +142,6 @@ fi
 if test "$trust_new" = "ask" && test "$CERTS_NEW" != "" && test "$new_seen" = "false"; then
   # New certificates added
   db_fset ca-certificates/new_crts seen false
-  db_title "ca-certificates configuration"
   db_input critical ca-certificates/new_crts || true
   db_go
   
@@ -213,7 +212,6 @@ if [ "$set_values" = "true" ]; then
   if test "$seen" != true; then
    db_fset ca-certificates/enable_crts seen false
   fi
-  db_title "ca-certificates configuration"
   db_input $PRIO ca-certificates/enable_crts || true
   db_go
 

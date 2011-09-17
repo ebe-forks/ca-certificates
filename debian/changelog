@@ -1,3 +1,12 @@
+ca-certificates (20110502) unstable; urgency=low
+
+  * QA upload.
+  * Mark the package as multi-arch:foreign.  (Closes: #622323)
+  * Use db_settitle in config script to allow translations of the
+    dialog title; thanks to Frans Pop.  (Closes: #560314)
+
+ -- Philipp Kern <pkern@debian.org>  Mon, 02 May 2011 19:27:50 +0200
+
 ca-certificates (20110421) unstable; urgency=low
 
   * QA upload.

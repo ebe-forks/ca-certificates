@@ -10,6 +10,7 @@ Package: ca-certificates
 Architecture: all
 Depends: openssl (>= 1.0.0), ${misc:Depends}
 Enhances: openssl
+Multi-Arch: foreign
 Description: Common CA certificates
  This package includes PEM files of CA certificates to allow SSL-based
  applications to check for the authenticity of SSL connections.

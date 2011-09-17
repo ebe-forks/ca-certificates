@@ -7,6 +7,10 @@
 # Even minor modifications require translation updates and such
 # changes should be coordinated with translators and reviewers.
 
+Template: ca-certificates/title
+Type: title
+_Description: ca-certificates configuration
+
 Template: ca-certificates/trust_new_crts
 Type: select
 _Choices: yes, no, ask
