@@ -1,3 +1,91 @@
+ca-certificates (20110421) unstable; urgency=low
+
+  * QA upload.
+  * Package is orphaned, set maintainer to QA group
+  * Depend on openssl 1.0.0 and force a call of c_rehash so that we have
+    both the old and new style of symlinks.  (Closes: #611102)
+  * Remove libssl0.9.8 from enhances
+  * Update mozilla certdata.txt file to the latest version.
+    Removed:
+    - ABAecom_=sub.__Am._Bankers_Assn.=_Root_CA.crt
+    - beTRUSTed_Root_CA-Baltimore_Implementation.crt
+    - beTRUSTed_Root_CA.crt
+    - beTRUSTed_Root_CA_-_Entrust_Implementation.crt
+    - beTRUSTed_Root_CA_-_RSA_Implementation.crt
+    - Digital_Signature_Trust_Co._Global_CA_2.crt
+    - Digital_Signature_Trust_Co._Global_CA_4.crt
+    - Entrust.net_Global_Secure_Personal_CA.crt
+    - Entrust.net_Global_Secure_Server_CA.crt
+    - Entrust.net_Secure_Personal_CA.crt
+    - GTE_CyberTrust_Root_CA.crt
+    - IPS_Chained_CAs_root.crt
+    - IPS_CLASE1_root.crt
+    - IPS_CLASE3_root.crt
+    - IPS_CLASEA1_root.crt
+    - IPS_CLASEA3_root.crt
+    - IPS_Servidores_root.crt
+    - IPS_Timestamping_root.crt
+    - RSA_Security_1024_v3.crt
+    - StartCom_Ltd..crt
+    - Thawte_Personal_Basic_CA.crt
+    - Thawte_Personal_Premium_CA.crt
+    - UTN-USER_First-Network_Applications.crt
+    - Verisign_RSA_Secure_Server_CA.crt
+    - Verisign_Time_Stamping_Authority_CA.crt
+    - Visa_International_Global_Root_2.crt
+    Added:
+    - ACEDICOM_Root.crt
+    - AC_Raíz_Certicámara_S.A..crt
+    - ApplicationCA_-_Japanese_Government.crt
+    - Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.crt
+    - Buypass_Class_2_CA_1.crt
+    - Buypass_Class_3_CA_1.crt
+    - CA_Disig.crt
+    - Certigna.crt
+    - certSIGN_ROOT_CA.crt
+    - Chambers_of_Commerce_Root_-_2008.crt
+    - CNNIC_ROOT.crt
+    - ComSign_CA.crt
+    - ComSign_Secured_CA.crt
+    - Cybertrust_Global_Root.crt
+    - Deutsche_Telekom_Root_CA_2.crt
+    - EBG_Elektronik_Sertifika_Hizmet_Sağlayıcısı.crt
+    - E-Guven_Kok_Elektronik_Sertifika_Hizmet_Saglayicisi.crt
+    - ePKI_Root_Certification_Authority.crt
+    - GeoTrust_Primary_Certification_Authority_-_G2.crt
+    - GeoTrust_Primary_Certification_Authority_-_G3.crt
+    - Global_Chambersign_Root_-_2008.crt
+    - GlobalSign_Root_CA_-_R3.crt
+    - Hongkong_Post_Root_CA_1.crt
+    - IGC_A.crt
+    - Izenpe.com.crt
+    - Juur-SK.crt
+    - Microsec_e-Szigno_Root_CA_2009.crt
+    - Microsec_e-Szigno_Root_CA.crt
+    - NetLock_Arany_=Class_Gold=_Főtanúsítvány.crt
+    - OISTE_WISeKey_Global_Root_GA_CA.crt
+    - SecureSign_RootCA11.crt
+    - Security_Communication_EV_RootCA1.crt
+    - Staat_der_Nederlanden_Root_CA_-_G2.crt
+    - S-TRUST_Authentication_and_Encryption_Root_CA_2005_PN.crt
+    - TÜBİTAK_UEKAE_Kök_Sertifika_Hizmet_Sağlayıcısı_-_Sürüm_3.crt
+    - TC_TrustCenter_Class_2_CA_II.crt
+    - TC_TrustCenter_Class_3_CA_II.crt
+    - TC_TrustCenter_Universal_CA_I.crt
+    - TC_TrustCenter_Universal_CA_III.crt
+    - thawte_Primary_Root_CA_-_G2.crt
+    - thawte_Primary_Root_CA_-_G3.crt
+    - VeriSign_Class_3_Public_Primary_Certification_Authority_-_G4.crt
+    - VeriSign_Universal_Root_Certification_Authority.crt
+    Changed:
+    - Verisign_Class_1_Public_Primary_Certification_Authority.crt
+    - Verisign_Class_3_Public_Primary_Certification_Authority.crt
+  * Remove telesec.de/deutsche-telekom-root-ca-2.crt, now in mozilla.
+  * String decode the mozilla certdata.txt so the filenames show up as
+    proper UTF-8 strings.
+
+ -- Kurt Roeckx <kurt@roeckx.be>  Thu, 21 Apr 2011 18:56:08 +0200
+
 ca-certificates (20090814+nmu3) unstable; urgency=low
 
   * Non-maintainer upload.

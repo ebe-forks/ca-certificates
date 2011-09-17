@@ -138,6 +138,13 @@ EOF
 	    >> /etc/ca-certificates.conf
 	fi
 	update-ca-certificates
+	# Call c_rehash when upgrading from older versions to that we
+	# have both the old and new style of symlink
+	if [ ! -z "$2" ]; then
+	  if dpkg --compare-versions "$2" le 20090814+nmu3; then
+	    c_rehash
+	  fi
+	fi
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

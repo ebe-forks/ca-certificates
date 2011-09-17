@@ -118,6 +118,7 @@ for obj in objects:
                                       .replace('(', '=')\
                                       .replace(')', '=')\
                                       .replace(',', '_') + '.crt'
+	fname = fname.decode('string_escape')
         f = open(fname, 'w')
         f.write("-----BEGIN CERTIFICATE-----\n")
         f.write("\n".join(textwrap.wrap(base64.b64encode(obj['CKA_VALUE']), 64)))
