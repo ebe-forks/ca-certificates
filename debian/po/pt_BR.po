@@ -1,25 +1,19 @@
-#
-#    Translators, if you are not familiar with the PO format, gettext
-#    documentation is worth reading, especially sections dedicated to
-#    this format, e.g. by running:
-#         info -n '(gettext)PO Files'
-#         info -n '(gettext)Header Entry'
-#
-#    Some information specific to po-debconf are available at
-#            /usr/share/doc/po-debconf/README-trans
-#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
-#
-#    Developers do not need to manually edit POT or PO files.
+# Debconf translations for ca-certificates.
+# Copyright (C) 2011 THE ca-certificates'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ca-certificates package.
+# André Luís Lopes <andrelop@debian.org>, 2006.
+# Adriano Rafael Gomes <adrianorg@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ca-certificates\n"
+"Project-Id-Version: ca-certificates 20090814+nmu2\n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
 "POT-Creation-Date: 2008-06-16 17:02+0200\n"
-"PO-Revision-Date: 2006-12-19 21:01-0200\n"
-"Last-Translator: André Luís Lopes <andrelop@debian.org>\n"
-"Language-Team: Debian-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2011-03-15 16:20-0300\n"
+"Last-Translator: Adriano Rafael Gomes <adrianorg@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
+"org>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,92 +27,65 @@ msgstr "sim, não, perguntar"
 #. Type: select
 #. Description
 #: ../templates:2002
-#, fuzzy
-#| msgid "Trust new CAs certificates?"
 msgid "Trust new certificates from certificate authorities?"
-msgstr "Confiar em novos certificados de CAs ?"
+msgstr "Confiar em novos certificados de autoridades certificadoras?"
 
 #. Type: select
 #. Description
 #: ../templates:2002
-#, fuzzy
-#| msgid ""
-#| "This package may install new CA (Certificate Authority) certificates when "
-#| "upgrading.  You may want to check such new CA certificates and select "
-#| "only certificates that you trust."
 msgid ""
 "This package may install new CA (Certificate Authority) certificates when "
 "upgrading. You may want to check such new CA certificates and select only "
 "certificates that you trust."
 msgstr ""
 "Este pacote pode instalar novos certificados de CAs (Autoridades "
-"Certificadoras) em atualizações futuras. Você pode checar esses novos "
+"Certificadoras) ao atualizar. Você pode querer checar esses novos "
 "certificados de CAs e selecionar somente aqueles certificados nos quais você "
 "confia."
 
 #. Type: select
 #. Description
 #: ../templates:2002
-#, fuzzy
-#| msgid ""
-#| " - \"yes\", new CA certificates will be trusted and installed.\n"
-#| " - \"no\", new CA certificates will not be installed by default.\n"
-#| " - \"ask\", Ask if you trust each new CA certificates, or not."
 msgid ""
 " - yes: new CA certificates will be trusted and installed;\n"
 " - no : new CA certificates will not be installed by default;\n"
 " - ask: prompt for each new CA certificate."
 msgstr ""
-" - 'sim', novos certificados de CAs serão confiáveis e serão instalados.\n"
-" - 'não', novos certificados de CAs nao serão instalados por padrão.\n"
-" - 'perguntar', Pergunta se você confia em cada novo certificados de CA."
+" - sim: novos certificados de CAs serão confiáveis e serão instalados;\n"
+" - não: novos certificados de CAs não serão instalados por padrão;\n"
+" - perguntar: pergunta a cada novo certificado de CA."
 
 #. Type: multiselect
 #. Description
 #: ../templates:3001
-#, fuzzy
-#| msgid "Select certificates to activate:"
 msgid "New certificates to activate:"
-msgstr "Selecione os certificados a serem ativados:"
+msgstr "Novos certificados a serem ativados:"
 
 #. Type: multiselect
 #. Description
 #: ../templates:3001
-#, fuzzy
-#| msgid ""
-#| "During the upgrade, these new certificates will be added. Do you trust "
-#| "them and want them installed into /etc/ssl/certs?"
 msgid ""
 "During upgrades, new certificates will be added. Please choose those you "
 "trust."
 msgstr ""
-"Durante a atualização, estes novos certificados serão adicionados. Você "
-"confia neles e quer que os mesmos sejam instalados em /etc/ssl/certs ?"
+"Durante as atualizações, novos certificados serão adicionados. Por favor, "
+"selecione aqueles nos quais você confia."
 
 #. Type: multiselect
 #. Description
 #: ../templates:4001
-#, fuzzy
-#| msgid "Select certificates to activate:"
 msgid "Certificates to activate:"
-msgstr "Selecione os certificados a serem ativados:"
+msgstr "Certificados a serem ativados:"
 
 #. Type: multiselect
 #. Description
 #: ../templates:4001
-#, fuzzy
-#| msgid ""
-#| "This package may install new CA (Certificate Authority) certificates when "
-#| "upgrading.  You may want to check such new CA certificates and select "
-#| "only certificates that you trust."
 msgid ""
 "This package installs common CA (Certificate Authority) certificates in /usr/"
 "share/ca-certificates."
 msgstr ""
-"Este pacote pode instalar novos certificados de CAs (Autoridades "
-"Certificadoras) em atualizações futuras. Você pode checar esses novos "
-"certificados de CAs e selecionar somente aqueles certificados nos quais você "
-"confia."
+"Este pacote instala certificados de CAs (Autoridades Certificadoras) comuns "
+"em /usr/share/ca-certificates."
 
 #. Type: multiselect
 #. Description
@@ -128,6 +95,9 @@ msgid ""
 "certificates are installed into /etc/ssl/certs. They will be compiled into a "
 "single /etc/ssl/certs/ca-certificates.crt file."
 msgstr ""
+"Por favor, selecione as autoridades certificadoras que você confia, de modo "
+"que seus certificados sejam instalados em /etc/ssl/certs. Eles serão "
+"compilados em um único arquivo /etc/ssl/certs/ca-certificates.crt."
 
 #~ msgid "${new_crts}"
 #~ msgstr "${new_certs}"

@@ -1,4 +1,6 @@
 # Translation of ca-certificates debconf templates to French
+# Copyright (C) 2006, 2007 Debian French l10n team <debian-l10n-french@lists.debian.org>
+# This file is distributed under the same license as the gdebi package.
 #
 # Christian Perrier <bubulle@debian.org>, 2006, 2007.
 # This file is licensed under the same license as the ca-certificates package
@@ -48,9 +50,9 @@ msgid ""
 " - no : new CA certificates will not be installed by default;\n"
 " - ask: prompt for each new CA certificate."
 msgstr ""
-"- Oui      : les nouveaux certificats seront acceptés et installés ;\n"
-"- Non      : les nouveaux certificats ne seront pas installés par défaut ;\n"
-"- Demander : l'agrément de chacun des nouveaux certificats vous sera\n"
+" - Oui      : les nouveaux certificats seront acceptés et installés ;\n"
+" - Non      : les nouveaux certificats ne seront pas installés par défaut ;\n"
+" - Demander : l'agrément de chacun des nouveaux certificats vous sera\n"
 "             demandé."
 
 #. Type: multiselect
