@@ -78,9 +78,9 @@ if test -d /usr/share/ca-certificates; then
    else
      CERTS_AVAILABLE="$CERTS_AVAILABLE, $crt"
    fi
-   if echo "$CERTS_DISABLED" | grep -F -q -x "$crt" > /dev/null 2>&1; then
+   if (echo "$CERTS_DISABLED" | grep -F -q -x "$crt") > /dev/null 2>&1; then
      : # echo "I: ignore $crt"
-   elif echo "$CERTS_TRUST" | grep -F -q -x "$crt" > /dev/null 2>&1; then
+   elif (echo "$CERTS_TRUST" | grep -F -q -x "$crt") > /dev/null 2>&1; then
      # already trusted
      if test "$CERTS_ENABLED" = ""; then
        CERTS_ENABLED="$crt"

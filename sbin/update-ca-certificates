@@ -17,7 +17,8 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program; if not, write to the Free Software
-# Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02111-1301,
+# USA.
 #
 
 verbose=0
@@ -137,7 +138,7 @@ then
   # only run if set of files has changed
   if [ "$verbose" = 0 ]
   then
-    c_rehash . > /dev/null 2>&1
+    c_rehash . > /dev/null
   else
     c_rehash .
   fi
@@ -149,7 +150,7 @@ HOOKSDIR=/etc/ca-certificates/update.d
 echo -n "Running hooks in $HOOKSDIR...."
 VERBOSE_ARG=
 [ "$verbose" = 0 ] || VERBOSE_ARG=--verbose
-eval run-parts $VERB_ARG --test -- $HOOKSDIR | while read hook
+eval run-parts $VERBOSE_ARG --test -- $HOOKSDIR | while read hook
 do
   ( cat $ADDED
     cat $REMOVED ) | $hook || echo E: $hook exited with code $?.

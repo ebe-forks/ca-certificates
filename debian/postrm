@@ -16,31 +16,36 @@ set -e
 #        * <disappearer's-postrm> `disappear' <r>overwrit>r> <new-version>
 # for details, see /usr/share/doc/packaging-manual/
 
+remove_dangling_symlinks() {
+    echo -n "Removing dangling symlinks from /etc/ssl/certs... "
+    find /etc/ssl/certs -type l -print | while read h
+    do
+        test -f "$h" || rm -f "$h"
+    done
+    echo "done."
+}
+
 case "$1" in
     remove)
-       echo -n "Removing hash symlinks in /etc/ssl/certs ..."
-       find /etc/ssl/certs -type l -print | while read h
-       do
-	 test -f "$h" || rm -f "$h"
-       done
-       echo done.
-       rmdir /usr/local/share/ca-certificates 2>/dev/null || true
-       ;;
+        remove_dangling_symlinks
+        rmdir /usr/local/share/ca-certificates 2>/dev/null || true
+        ;;
 
     purge)
-       rm -f /etc/ssl/certs/ca-certificates.crt*
+        rm -f /etc/ssl/certs/ca-certificates.crt
+        remove_dangling_symlinks
 
-       # Clean up even if openssl is removed before ca-certificates.
-       # (Which is what piuparts does.)
-       [ -d /etc/ssl/certs ] && rmdir --ignore-fail-on-non-empty /etc/ssl/certs
-       [ -d /etc/ssl ] && rmdir --ignore-fail-on-non-empty /etc/ssl
+        # Clean up even if openssl is removed before ca-certificates.
+        # (Which is what piuparts does.)
+        [ -d /etc/ssl/certs ] && rmdir --ignore-fail-on-non-empty /etc/ssl/certs
+        [ -d /etc/ssl ] && rmdir --ignore-fail-on-non-empty /etc/ssl
 
-       rm -f /etc/ca-certificates.conf*
-       if test -e /usr/share/debconf/confmodule; then
-         . /usr/share/debconf/confmodule
-         db_purge
-       fi
-       ;;
+        rm -f /etc/ca-certificates.conf*
+        if test -e /usr/share/debconf/confmodule; then
+            . /usr/share/debconf/confmodule
+            db_purge
+        fi
+        ;;
 
     upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
         ;;
@@ -48,7 +53,6 @@ case "$1" in
     *)
         echo "postrm called with unknown argument \`$1'" >&2
         exit 1
-
 esac
 
 # dh_installdeb will replace this with shell code automatically

@@ -1,3 +1,17 @@
+ca-certificates (20090708) unstable; urgency=low
+
+  * Removed CA files:
+    - cacert.org/root.crt and cacert.org/class3.crt:
+      Both certificate files were deprecated with 20080809.  Users of these
+      root certificates are encouraged to switch to
+      `cacert.org/cacert.org.crt' which contains both class 1 and class 3
+      roots joined in a single file.
+    - quovadis.bm/QuoVadis_Root_Certification_Authority.crt:
+      This certificate has been added into the Mozilla truststore and
+      is available as `mozilla/QuoVadis_Root_CA.crt'.
+
+ -- Philipp Kern <pkern@debian.org>  Wed, 08 Jul 2009 23:19:56 +0200
+
 ca-certificates (20090701) unstable; urgency=low
 
   * Readded Equifax Secure Global eBusiness CA.

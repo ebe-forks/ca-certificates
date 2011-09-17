@@ -1,3 +1,27 @@
+ca-certificates (20090708) unstable; urgency=low
+
+  * Removed CA files:
+    - cacert.org/root.crt and cacert.org/class3.crt:
+      Both certificate files were deprecated with 20080809.  Users of these
+      root certificates are encouraged to switch to
+      `cacert.org/cacert.org.crt' which contains both class 1 and class 3
+      roots joined in a single file.
+    - quovadis.bm/QuoVadis_Root_Certification_Authority.crt:
+      This certificate has been added into the Mozilla truststore and
+      is available as `mozilla/QuoVadis_Root_CA.crt'.
+  * Do not redirect c_rehash error messages to /dev/null.
+    (Closes: #495224)
+  * Remove dangling symlinks on purge, which also gets rid of the hash
+    symlink for ca-certificates.crt.  (Closes: #475240)
+  * Use subshells when grepping for certificates in config, avoiding
+    SIGPIPE because of grep's immediate exit after it finds the pattern.
+    (Closes: #486737)
+  * Fix VERBOSE_ARG usage in update-ca-certificates.  Thanks to
+    Robby Workman of Slackware.
+  * Updated Standards-Version and FSF portal address in the copyright file.
+
+ -- Philipp Kern <pkern@debian.org>  Wed, 08 Jul 2009 23:19:56 +0200
+
 ca-certificates (20090701) unstable; urgency=low
 
   * Reactivated "Equifax Secure Global eBusiness CA".  (Closes: #534674)
