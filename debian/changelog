@@ -1,3 +1,10 @@
+ca-certificates (20081127) unstable; urgency=low
+
+  * Remove /etc/ssl{,/certs} in postrm to please piuparts.  (Closes:
+    #454334)
+
+ -- Philipp Kern <pkern@debian.org>  Thu, 27 Nov 2008 19:13:17 +0100
+
 ca-certificates (20080809) unstable; urgency=low
 
   * New cacert.org.pem joining both CACert Class 1 and Class 3 certificates.
