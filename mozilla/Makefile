@@ -3,7 +3,7 @@
 #
 
 all:
-	ruby certdata2pem.rb < certdata.txt
+	python certdata2pem.py
 
 clean:
 	-rm -f *.crt

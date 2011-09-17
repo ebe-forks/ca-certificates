@@ -1,3 +1,31 @@
+ca-certificates (20090624) unstable; urgency=low
+
+  * Allow local certificate installation.  All certificates found
+    in `/usr/local/share/ca-certificates' will be automatically added
+    to the list of trusted certificates in `/etc/ssl/certs'.
+    (Closes: #352637, #419491, #473677, #476663, #511150)
+  * Updated Mozilla certificates from nss 3.12.3-1 (certdata.txt revision
+    1.51):
+    + COMODO ECC Certification Authority
+    + DigiNotar Root CA
+    + Network Solutions Certificate Authority
+    + WellsSecure Public Root Certificate Authority
+    - Equifax Secure Global eBusiness CA
+    - UTN USERFirst Object Root CA
+  * Reimplemented the Mozilla certdata parser mainly to exclude explicitly
+    untrusted certificates.  This led to the exclusion of the
+    "MD5 Collisions Forged Rogue CA 23c3" and its parent
+    "Equifax Secure Global eBusiness CA".  Furthermore code signing-only
+    certificates are no longer included neither.
+  * Remove the purging of old PEM files in postinst dating back to
+    versions earlier than 20030414.
+  * Hooks are now called at every invocation of `update-ca-certificates'.
+    If no changes were done to `/etc/ssl/certs', the input for the
+    hooks will be empty, though.  Failure exit codes of hooks will not
+    tear down the upgrade process anymore.  They are printed but ignored.
+
+ -- Philipp Kern <pkern@debian.org>  Tue, 24 Jun 2009 21:04:08 +0200
+
 ca-certificates (20081127) unstable; urgency=low
 
   * Remove /etc/ssl{,/certs} in postrm to please piuparts.  (Closes:

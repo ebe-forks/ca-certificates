@@ -1,11 +1,34 @@
-This is ca-certificates, written and maintained by Fumitoshi UKAI <ukai@debian.or.jp>
-on Mon,  7 Jan 2002 21:16:51 +0900.
+ca-certificates was originally written and maintained by Fumitoshi UKAI
+<ukai@debian.or.jp> on Mon,  7 Jan 2002 21:16:51 +0900.
 
 The original source can always be found at:
-	ftp://ftp.debian.org/dists/unstable/main/source/
-	http://alioth.debian.org/projects/ca-certs/
+ftp://ftp.debian.org/dists/unstable/main/source/
 
-Copyright (C) 2001-2003  Fumitoshi UKAI
+
+sbin/update-ca-certificates:
+
+    Copyright (c) 2003  Fumitoshi UKAI <ukai@debian.or.jp>
+    Copyright (c) 2009  Philipp Kern <pkern@debian.org>
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+mozilla/certdata2pem.py:
+
+    Copyright (c) 2009  Philipp Kern <pkern@debian.org>
+    (based on a Ruby script by Fumitoshi UKAI)
+    Licensed under the same license as sbin/update-ca-certificates.
 
 CA certificates from Mozilla as follows:
 # The contents of this file are subject to the Mozilla Public
@@ -40,4 +63,5 @@ CA certificates from Mozilla as follows:
 # GPL.
 
 On Debian GNU/Linux systems, the complete text of the GNU General Public
-License can be found in '/usr/share/common-licenses/GPL'
+License can be found in '/usr/share/common-licenses/GPL'.
+

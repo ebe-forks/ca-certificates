@@ -24,6 +24,7 @@ case "$1" in
 	 test -f "$h" || rm -f "$h"
        done
        echo done.
+       rmdir /usr/local/share/ca-certificates 2>/dev/null || true
        ;;
 
     purge)

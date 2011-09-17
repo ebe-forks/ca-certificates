@@ -26,14 +26,18 @@ This manual page documents briefly the
 commands.
 This manual page was written for the Debian distribution.
 .PP
-\fBupdate-ca-certificates\fP is a program that updates /etc/ssl/certs
-directory to hold SSL certificates and generates certificates.crt that is
-single-file version of CA certificates.
+\fBupdate-ca-certificates\fP is a program that updates the directory
+/etc/ssl/certs to hold SSL certificates and generates certificates.crt,
+a concatenated single-file list of certificates.
 .PP
-It reads /etc/ca-certificates.conf file. Each lines list pathname of
-activated CA certificates under /usr/share/ca-certificates.
-Lines that begin with "#" is comment line. 
-Lines that begin with "!" is deselect, deactivation of the CA certificates. 
+It reads the file /etc/ca-certificates.conf. Each line gives a pathname of
+a CA certificate under /usr/share/ca-certificates that should be trusted.
+Lines that begin with "#" are comment lines and thus ignored.
+Lines that begin with "!" are deselected, causing the deactivation of the CA
+certificate in question. 
+.PP
+Furthermore all certificates found below /usr/local/share/ca-certificates
+are also included as implicitly trusted.
 .PP
 Before terminating, \fBupdate-ca-certificates\fP invokes
 \fBrun-parts\fP on /etc/ca-certificates/update.d and calls each hook with
@@ -61,6 +65,8 @@ all CA certificates that you activated in /etc/ca-certificates.conf.
 .TP
 .I /usr/share/ca-certificates
 Directory of CA certificates.
+.I /usr/local/share/ca-certificates
+Directory of local CA certificates.
 .SH SEE ALSO
 .BR c_rehash (1),
 .SH AUTHOR

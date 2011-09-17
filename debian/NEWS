@@ -1,3 +1,21 @@
+ca-certificates (20090624) unstable; urgency=low
+
+  * This update eases the installation of local certification authorities
+    by providing a canonical location in `/usr/local/share/ca-certificates'.
+    All certificates found in this directory will automatically be included
+    into the list of trusted certificates.  For details please see
+    `/usr/share/doc/ca-certificates/README.Debian'.
+  * New CA certificates:
+    - COMODO ECC Certification Authority
+    - DigiNotar Root CA
+    - Network Solutions Certificate Authority
+    - WellsSecure Public Root Certificate Authority
+  * Removed CA certificates:
+    - Equifax Secure Global eBusiness CA
+    - UTN USERFirst Object Root CA
+
+ -- Philipp Kern <pkern@debian.org>  Wed, 24 Jun 2009 21:04:45 +0200
+
 ca-certificates (20080809) unstable; urgency=low
 
   * New cacert.org.pem joining both CACert Class 1 and Class 3 certificates.

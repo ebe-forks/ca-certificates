@@ -21,6 +21,13 @@ used by the web browsers in Debian.  It will also generate the hash
 symlinks and generate a single-file version in
 “/etc/ssl/certs/ca-certificates.crt”.
 
+If you want to install local certificate authorities to be implicitly
+trusted, please put the certificate files as single files ending with
+“.crt“ into “/usr/local/share/ca-certificates” and re-run
+“update-ca-certificates”.  If you want to prepare a local package
+of your certificates, you should depend on “ca-certificates“, install
+the PEM files into “/usr/local/share/ca-certificates” as above and call
+“update-ca-certificates” in the package's “postinst“.
 
 How certificates will be accepted into the ca-certificates package
 ------------------------------------------------------------------
