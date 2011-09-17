@@ -74,6 +74,12 @@ case "$1" in
 	     if memberp "$ca" "$CERTS_ENABLED"; then
 	       echo "$ca"
 	       # CERTS_ENABLED=$(delca "$ca" "$CERTS_ENABLED")
+         elif memberp "$ca" "$CERTS_AVAILABLE" ||
+              echo "$line" | grep -q '^!'; then
+           echo "!$ca"
+         elif [ -f /usr/share/ca-certificates/"$ca" ] || \
+              [ -f /usr/local/share/ca-certificates/"$ca" ]; then
+           echo "$ca"
 	     else
 	       echo "!$ca"
 	     fi

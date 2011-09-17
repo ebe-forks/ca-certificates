@@ -1,3 +1,11 @@
+ca-certificates (20090814+nmu1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Preserve user changes to the /etc/ca-certificates.conf.
+    (Closes: #514220)
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 30 Jul 2010 12:55:28 -0400
+
 ca-certificates (20090814) unstable; urgency=low
 
   * Call Debconf and its db_purge as early as possible in postrm.
