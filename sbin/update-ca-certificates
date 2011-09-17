@@ -60,7 +60,9 @@ REMOVED="$(mktemp -t "ca-certificates.tmp.XXXXXX")"
 # bundle.
 add() {
   CERT="$1"
-  PEM="$ETCCERTSDIR/$(basename "$CERT" .crt).pem"
+  PEM="$ETCCERTSDIR/$(basename "$CERT" .crt | sed -e 's/ /_/g' \
+                                                  -e 's/[()]/=/g' \
+                                                  -e 's/,/_/g').pem"
   if ! test -e "$PEM" || [ "$(readlink "$PEM")" != "$CERT" ]
   then
     ln -sf "$CERT" "$PEM"
@@ -118,7 +120,7 @@ done
 # administrator.
 if [ -d "$LOCALCERTSDIR" ]
 then
-  find -L "$LOCALCERTSDIR" -type f | while read crt
+  find -L "$LOCALCERTSDIR" -type f -name '*.crt' | while read crt
   do
     add "$crt"
   done

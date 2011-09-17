@@ -1,3 +1,14 @@
+ca-certificates (20090701) unstable; urgency=low
+
+  * Reactivated "Equifax Secure Global eBusiness CA".  (Closes: #534674)
+    Rationale: The rogue collision CA has its validity period in the past.
+    Thus it does not impose a risk upon us at the moment.
+  * Restrict search for local certificates to add on files ending with '.crt'.
+  * Canonicalize PEM names by applying the same set of substitions to
+    local and other certificates like the Mozilla certdata dumper does.
+
+ -- Philipp Kern <pkern@debian.org>  Wed, 01 Jul 2009 14:50:00 +0200
+
 ca-certificates (20090624) unstable; urgency=low
 
   * Allow local certificate installation.  All certificates found
