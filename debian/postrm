@@ -16,6 +16,14 @@ set -e
 #        * <disappearer's-postrm> `disappear' <r>overwrit>r> <new-version>
 # for details, see /usr/share/doc/packaging-manual/
 
+# Clear the debconf database as early as possible and signal debconf that
+# we are done with it.
+if [ "$1" = purge ] && [ -e /usr/share/debconf/confmodule ]; then
+    . /usr/share/debconf/confmodule
+    db_purge
+    db_stop
+fi
+
 remove_dangling_symlinks() {
     if ! [ -d /etc/ssl/certs ]
     then
@@ -45,10 +53,6 @@ case "$1" in
         [ -d /etc/ssl ] && rmdir --ignore-fail-on-non-empty /etc/ssl
 
         rm -f /etc/ca-certificates.conf*
-        if test -e /usr/share/debconf/confmodule; then
-            . /usr/share/debconf/confmodule
-            db_purge
-        fi
         ;;
 
     upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
