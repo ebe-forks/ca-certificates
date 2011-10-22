@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates\n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-02 19:31+0200\n"
-"PO-Revision-Date: 2007-07-29 11:13+0200\n"
+"POT-Creation-Date: 2011-10-22 14:41+0200\n"
+"PO-Revision-Date: 2011-10-09 19:01+0200\n"
 "Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team: Czech <debian-l10n-czech@lists.debian.org>\n"
 "Language: cs\n"
@@ -28,13 +28,25 @@ msgstr ""
 #. Description
 #: ../templates:2001
 msgid "ca-certificates configuration"
-msgstr ""
+msgstr "Nastavení ca-certificates"
 
 #. Type: select
 #. Choices
 #: ../templates:3001
-msgid "yes, no, ask"
-msgstr "ano, ne, zeptat se"
+msgid "yes"
+msgstr "ano"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "no"
+msgstr "ne"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "ask"
+msgstr "zeptat se"
 
 #. Type: select
 #. Description
@@ -106,12 +118,9 @@ msgid ""
 "certificates are installed into /etc/ssl/certs. They will be compiled into a "
 "single /etc/ssl/certs/ca-certificates.crt file."
 msgstr ""
-"Vyberte prosím certifikační autority, kterým věříte a jejichž certifikáty "
-"nainstalovat do /etc/ssl/certs. Vybrané certifikáty budou sloučeny do "
+"Vyberte prosím certifikační autority, kterým věříte a jejichž certifikáty se "
+"mají nainstalovat do /etc/ssl/certs. Vybrané certifikáty budou sloučeny do "
 "jediného souboru /etc/ssl/certs/ca-certificates.crt."
 
-#~ msgid "${new_crts}"
-#~ msgstr "${new_crts}"
-
-#~ msgid "${enable_crts}"
-#~ msgstr "${enable_crts}"
+#~ msgid "yes, no, ask"
+#~ msgstr "ano, ne, zeptat se"

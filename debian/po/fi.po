@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates\n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-02 19:31+0200\n"
+"POT-Creation-Date: 2011-10-22 14:41+0200\n"
 "PO-Revision-Date: 2007-11-01 11:21+0200\n"
 "Last-Translator: Esko Arajärvi <edu@iki.fi>\n"
 "Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
@@ -22,8 +22,20 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../templates:3001
-msgid "yes, no, ask"
-msgstr "kyllä, ei, kysy"
+msgid "yes"
+msgstr "kyllä"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "no"
+msgstr "ei"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "ask"
+msgstr "kysy"
 
 #. Type: select
 #. Description
@@ -97,6 +109,9 @@ msgstr ""
 "Valitse varmentajat, joihin luotat. Heidän varmenteensa asennetaan "
 "hakemistoon /etc/ssl/certs. Ne kootaan yhteen tiedostoon /etc/ssl/certs/ca-"
 "certificates.crt."
+
+#~ msgid "yes, no, ask"
+#~ msgstr "kyllä, ei, kysy"
 
 #~ msgid "${new_crts}"
 #~ msgstr "${new_crts}"

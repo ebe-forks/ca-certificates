@@ -1,14 +1,13 @@
 # Italian (it) translation of debconf templates for ca-certificates
-# Copyright (C) 2007 Free Software Foundation, Inc.
 # This file is distributed under the same license as the ca-certificates package.
-# Luca Monducci <luca.mo@tiscali.it>, 2007.
+# Luca Monducci <luca.mo@tiscali.it>, 2007-2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ca-certificates italian debconf templates\n"
+"Project-Id-Version: ca-certificates 20110502 italian debconf templates\n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-02 19:31+0200\n"
-"PO-Revision-Date: 2007-07-28 20:50+0200\n"
+"POT-Creation-Date: 2011-10-22 14:41+0200\n"
+"PO-Revision-Date: 2011-10-11 18:50+0200\n"
 "Last-Translator: Luca Monducci <luca.mo@tiscali.it>\n"
 "Language-Team: Italian <debian-l10n-italian@lists.debian.org>\n"
 "Language: it\n"
@@ -20,13 +19,25 @@ msgstr ""
 #. Description
 #: ../templates:2001
 msgid "ca-certificates configuration"
-msgstr ""
+msgstr "Configurazione di ca-certificates"
 
 #. Type: select
 #. Choices
 #: ../templates:3001
-msgid "yes, no, ask"
-msgstr "sì, no, chiedi"
+msgid "yes"
+msgstr "sì"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "no"
+msgstr "no"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "ask"
+msgstr "chiedi"
 
 #. Type: select
 #. Description
@@ -101,6 +112,9 @@ msgstr ""
 "Selezionare le autorità di certificazione fidate così da installare i "
 "relativi certificati in /etc/ssl/certs. Questi vengono compilati in un unico "
 "file /etc/ssl/certs/ca-certificates.crt."
+
+#~ msgid "yes, no, ask"
+#~ msgstr "sì, no, chiedi"
 
 #~ msgid "${new_crts}"
 #~ msgstr "${new_crts}"

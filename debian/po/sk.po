@@ -1,51 +1,53 @@
-# translation of eu.po to Euskara
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Slovak translations for ca-certificates package
+# Slovenské preklady pre balík ca-certificates.
+# Copyright (C) 2011 THE ca-certificates'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ca-certificates package.
+# Automatically generated, 2011.
+# Slavko <linux@slavino.sk>, 2011.
 #
-# Piarres Beobide <pi@beobide.net>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: eu\n"
+"Project-Id-Version: ca-certificates 20110502+nmu1\n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
 "POT-Creation-Date: 2011-10-22 14:41+0200\n"
-"PO-Revision-Date: 2007-07-27 11:55+0200\n"
-"Last-Translator: Piarres Beobide <pi@beobide.net>\n"
-"Language-Team: Euskara <Librezale@librezale.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2011-09-18 13:43+0200\n"
+"Last-Translator: Slavko <linux@slavino.sk>\n"
+"Language-Team: Slovak <debian-l10n-slovak@lists.debian.org>\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #. Type: title
 #. Description
 #: ../templates:2001
 msgid "ca-certificates configuration"
-msgstr ""
+msgstr "Nastavenie ca-certificates"
 
 #. Type: select
 #. Choices
 #: ../templates:3001
 msgid "yes"
-msgstr "bai"
+msgstr "áno"
 
 #. Type: select
 #. Choices
 #: ../templates:3001
 msgid "no"
-msgstr "ez"
+msgstr "nie"
 
 #. Type: select
 #. Choices
 #: ../templates:3001
 msgid "ask"
-msgstr "galdetu"
+msgstr "pýtať sa"
 
 #. Type: select
 #. Description
 #: ../templates:3002
 msgid "Trust new certificates from certificate authorities?"
-msgstr "Ziurtagiri autoritateen ziurtagiri berrietaz fidatu?"
+msgstr "Dôverovať novým certifikátom certifikačných autorít?"
 
 #. Type: select
 #. Description
@@ -55,9 +57,9 @@ msgid ""
 "upgrading. You may want to check such new CA certificates and select only "
 "certificates that you trust."
 msgstr ""
-"Pakete honek ZA (Ziurtagiri Autoritate) berri ziurtagiriak instala ditzake "
-"bertsio berritzean. Agian ZA ziurtagiri hauek arakatu eta fidatzen zarenetaz "
-"bakarrik hautatu ditzakezu."
+"Tento balík môže pri aktualizácii inštalovať nové certifikáty certifikačných "
+"autorít (CA). Môžete chcieť  tieto nové certifikáty CA skontrolovať a zvoliť "
+"len certifikáty, ktorým dôverujete."
 
 #. Type: select
 #. Description
@@ -67,15 +69,15 @@ msgid ""
 " - no : new CA certificates will not be installed by default;\n"
 " - ask: prompt for each new CA certificate."
 msgstr ""
-" - bai: ZA berrietako ziurtagiriak instalatu eta fidagarriak dira;\n"
-" - ez: lehenespen bezala ZA berrietako ziurtagiriak ez dira instalatuko\n"
-" - galdetu: ZA berrietako ziuratgiri bakoitzean galdetu."
+" - áno     : nové certifikáty CA budú dôveryhodné a nainštalované;\n"
+" - nie     : nové certifikáty CA nebudú predvolene nainštalované;\n"
+" - pýtať sa: pýtať sa na každý nový certifikát CA."
 
 #. Type: multiselect
 #. Description
 #: ../templates:4001
 msgid "New certificates to activate:"
-msgstr "Gaitzeko ziurtagiri berriak:"
+msgstr "Nové certifikáty, ktoré majú byť aktivované:"
 
 #. Type: multiselect
 #. Description
@@ -84,14 +86,14 @@ msgid ""
 "During upgrades, new certificates will be added. Please choose those you "
 "trust."
 msgstr ""
-"Bertsio berritzeetan, ziurtagiri berriak gehituko dira, Mesedez hautatu "
-"zeinetaz fidatzen zaren."
+"Počas aktualizácie boli pridané nové certifikáty. Prosím, vyberte tie, "
+"ktorým dôverujete."
 
 #. Type: multiselect
 #. Description
 #: ../templates:5001
 msgid "Certificates to activate:"
-msgstr "Gaitzeko Ziurtagiriak:"
+msgstr "Certifikáty, ktoré majú byť aktivované:"
 
 #. Type: multiselect
 #. Description
@@ -100,8 +102,8 @@ msgid ""
 "This package installs common CA (Certificate Authority) certificates in /usr/"
 "share/ca-certificates."
 msgstr ""
-"Pakete honek ZA (Ziurtagiri Autoritate) arrunt ziurtagiriak  /usr/share/ca-"
-"certificates direktorioan gordeko ditu,"
+"Tento balík inštaluje bežné certifikáty certifikačných autorít (CA) do /usr/"
+"share/ca-certificates."
 
 #. Type: multiselect
 #. Description
@@ -111,15 +113,9 @@ msgid ""
 "certificates are installed into /etc/ssl/certs. They will be compiled into a "
 "single /etc/ssl/certs/ca-certificates.crt file."
 msgstr ""
-"Mesedez hautatu fidagarri zaizkizun ziurtagiri autoritateak /etc/ssl/certs-"
-"en instala daitezen. /etc/ssl/certs/ca-certificates fitxategi soilean "
-"konpilatuko dira."
+"Prosím, vyberte certifikačné autority, ktorým dôverujete a ktorých "
+"certifikáty budú inštalované do /etc/ssl/certs. Tieto budú zlúčené do "
+"jedného súboru /etc/ssl/certs/ca-certificates.crt."
 
 #~ msgid "yes, no, ask"
-#~ msgstr "bai, ez, galdetu"
-
-#~ msgid "${new_crts}"
-#~ msgstr "${new_crts}"
-
-#~ msgid "${enable_crts}"
-#~ msgstr "${enable_crts}"
+#~ msgstr "áno, nie, pýtať sa"

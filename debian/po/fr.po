@@ -2,33 +2,46 @@
 # Copyright (C) 2006, 2007 Debian French l10n team <debian-l10n-french@lists.debian.org>
 # This file is distributed under the same license as the gdebi package.
 #
-# Christian Perrier <bubulle@debian.org>, 2006, 2007.
 # This file is licensed under the same license as the ca-certificates package
+# Christian Perrier <bubulle@debian.org>, 2006, 2007, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-02 19:31+0200\n"
-"PO-Revision-Date: 2007-07-27 08:40+0200\n"
+"POT-Creation-Date: 2011-10-22 14:41+0200\n"
+"PO-Revision-Date: 2011-07-16 21:04+0200\n"
 "Last-Translator: Christian Perrier <bubulle@debian.org>\n"
 "Language-Team: French <debian-l10n-french@lists.debian.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Type: title
 #. Description
 #: ../templates:2001
 msgid "ca-certificates configuration"
-msgstr ""
+msgstr "Configuration de ca-certificates"
 
 #. Type: select
 #. Choices
 #: ../templates:3001
-msgid "yes, no, ask"
-msgstr "Oui, Non, Demander"
+msgid "yes"
+msgstr "Oui"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "no"
+msgstr "Non"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "ask"
+msgstr "Demander"
 
 #. Type: select
 #. Description
@@ -104,6 +117,9 @@ msgstr ""
 "Veuillez choisir les tiers de confiance que vous agréez afin que leurs "
 "certificats soient installés dans /etc/ssl/certs. Ils seront rassemblés dans "
 "un seul fichier nommé /etc/ssl/certs/ca-certificates.crt."
+
+#~ msgid "yes, no, ask"
+#~ msgstr "Oui, Non, Demander"
 
 #~ msgid "${new_crts}"
 #~ msgstr "${new_crts}"

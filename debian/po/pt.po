@@ -2,14 +2,14 @@
 # Copyright (C) 2007 Carlos Lisboa <carloslisboa@gmail.com>
 # This file is distributed under the same license as the ca-certificates package.
 # Carlos Lisboa <carloslisboa@gmail.com>, 2007.
-# Miguel Figueiredo <elmig@debianpt.org>, 2007.
+# Miguel Figueiredo <elmig@debianpt.org>, 2007-2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates\n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-02 19:31+0200\n"
-"PO-Revision-Date: 2007-08-01 08:34+0100\n"
+"POT-Creation-Date: 2011-10-22 14:41+0200\n"
+"PO-Revision-Date: 2011-10-12 21:04+0100\n"
 "Last-Translator: Miguel Figueiredo <elmig@debianpt.org>\n"
 "Language-Team: Portuguese <traduz@debianpt.org>\n"
 "Language: pt\n"
@@ -21,13 +21,25 @@ msgstr ""
 #. Description
 #: ../templates:2001
 msgid "ca-certificates configuration"
-msgstr ""
+msgstr "configuração de ca-certificates"
 
 #. Type: select
 #. Choices
 #: ../templates:3001
-msgid "yes, no, ask"
-msgstr "sim, não, perguntar"
+msgid "yes"
+msgstr "sim"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "no"
+msgstr "não"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "ask"
+msgstr "perguntar"
 
 #. Type: select
 #. Description
@@ -57,7 +69,7 @@ msgid ""
 msgstr ""
 " - sim      : novos certificados CA serão confiados e instalados;\n"
 " - não      : novos certificados CA não serão instalados por omissão;\n"
-" - perguntar: perguntar se confia ou não em cada novo certificado CA."
+" - perguntar: perguntar para cada novo certificado CA."
 
 #. Type: multiselect
 #. Description
@@ -72,14 +84,14 @@ msgid ""
 "During upgrades, new certificates will be added. Please choose those you "
 "trust."
 msgstr ""
-"Durante a actualização, serão adicionadoss novos certificados. Por favor "
+"Durante a actualização, serão adicionados novos certificados. Por favor "
 "escolha os que confia."
 
 #. Type: multiselect
 #. Description
 #: ../templates:5001
 msgid "Certificates to activate:"
-msgstr "Xertificados para activar:"
+msgstr "Certificados para activar:"
 
 #. Type: multiselect
 #. Description
@@ -102,6 +114,9 @@ msgstr ""
 "Por favor escolha as autoridades de certificados em que confia para que os "
 "seus certificados sejam instalados em /etc/ssl/certs. Serão compilados num "
 "único ficheiro /etc/ssl/cets/ca-certificates.crt."
+
+#~ msgid "yes, no, ask"
+#~ msgstr "sim, não, perguntar"
 
 #~ msgid "${new_crts}"
 #~ msgstr "${new_crts}"

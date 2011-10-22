@@ -1,15 +1,15 @@
 # Danish translation ca-certificates.
-# Copyright (C) 2010 ca-certificates & nedenstående oversættere.
+# Copyright (C) 2011 ca-certificates & nedenstående oversættere.
 # This file is distributed under the same license as the ca-certificates package.
 # Claus Hindsgaul <claus.hindsgaul@gmail.com>, 2004, 2006.
-# Joe Hansen <joedalton2@yahoo.dk>, 2010.
+# Joe Hansen <joedalton2@yahoo.dk>, 2010, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates_20031007_templates\n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-02 19:31+0200\n"
-"PO-Revision-Date: 2010-10-23 19:21+0100\n"
+"POT-Creation-Date: 2011-10-22 14:41+0200\n"
+"PO-Revision-Date: 2011-10-09 19:21+0100\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <debian-l10n-danish@lists.debian.org>\n"
 "Language: \n"
@@ -21,13 +21,25 @@ msgstr ""
 #. Description
 #: ../templates:2001
 msgid "ca-certificates configuration"
-msgstr ""
+msgstr "konfiguration af ca-certificates"
 
 #. Type: select
 #. Choices
 #: ../templates:3001
-msgid "yes, no, ask"
-msgstr "ja, nej, spørg"
+msgid "yes"
+msgstr "ja"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "no"
+msgstr "nej"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "ask"
+msgstr "spørg"
 
 #. Type: select
 #. Description
@@ -102,3 +114,6 @@ msgstr ""
 "Vælg venligst de certifikatautoriteter du stoler på, så deres certifikater "
 "installeres i /etc/ssl/certs. De vil blive kompileret til en enkelt fil /etc/"
 "ssl/certs/ca-certificates.crt."
+
+#~ msgid "yes, no, ask"
+#~ msgstr "ja, nej, spørg"

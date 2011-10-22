@@ -1,45 +1,53 @@
-# Translators, if you are not familiar with the PO format, gettext
-# documentation is worth reading, especially sections dedicated to
-# this format, e.g. by running:
-# info -n '(gettext)PO Files'
-# info -n '(gettext)Header Entry'
-# Some information specific to po-debconf are available at
-# /usr/share/doc/po-debconf/README-trans
-# or http://www.debian.org/intl/l10n/po-debconf/README-trans
-# Developers do not need to manually edit POT or PO files.
-# , fuzzy
+# Translation of ca-certificates debconf template to Swedish
+# Copyright (C) 2011 Martin Bagge <brother@bsnet.se>
+# This file is distributed under the same license as the ca-certificates package.
 #
-#
+# Daniel Nylander <po@danielnylander.se>, 2007
+# Martin Bagge <brother@bsnet.se>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates 20050804\n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-02 19:31+0200\n"
-"PO-Revision-Date: 2007-07-27 11:47+0100\n"
-"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
-"Language-Team: Swedish <sv@li.org>\n"
+"POT-Creation-Date: 2011-10-22 14:41+0200\n"
+"PO-Revision-Date: 2011-09-05 23:40+0100\n"
+"Last-Translator: Martin Bagge / brother <brother@bsnet.se>\n"
+"Language-Team: Swedish <debian-l10n-swedish@lists.debian.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: Sweden\n"
 
 #. Type: title
 #. Description
 #: ../templates:2001
 msgid "ca-certificates configuration"
-msgstr ""
+msgstr "Inst√§llningar f√∂r ca-certificates"
 
 #. Type: select
 #. Choices
 #: ../templates:3001
-msgid "yes, no, ask"
-msgstr "ja, nej, frÂga"
+msgid "yes"
+msgstr "ja"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "no"
+msgstr "nej"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "ask"
+msgstr "fr√•ga"
 
 #. Type: select
 #. Description
 #: ../templates:3002
 msgid "Trust new certificates from certificate authorities?"
-msgstr "Lita pÂ nya certifikat frÂn certifikatutf‰rdare?"
+msgstr "Lita p√• nya certifikat fr√•n certifikatutf√§rdare?"
 
 #. Type: select
 #. Description
@@ -51,7 +59,7 @@ msgid ""
 msgstr ""
 "Detta paket kan installera nya CA-certifikat (Certificate Authority) vid "
 "uppgradering.  Du kanske vill kontrollera de nya CA-certifikaten och endast "
-"v‰lja de certifikat som du litar pÂ."
+"v√§lja de certifikat som du litar p√•."
 
 #. Type: select
 #. Description
@@ -61,9 +69,9 @@ msgid ""
 " - no : new CA certificates will not be installed by default;\n"
 " - ask: prompt for each new CA certificate."
 msgstr ""
-" - ja: nya CA-certifikat kommer att litas pÂ och installeras;\n"
+" - ja: nya CA-certifikat kommer att litas p√• och installeras;\n"
 " - nej: nya CA-certifikat kommer inte att installeras som standard;\n"
-" - frÂga: frÂga fˆr varje nytt CA-certifikat."
+" - fr√•ga: fr√•ga f√∂r varje nytt CA-certifikat."
 
 #. Type: multiselect
 #. Description
@@ -78,8 +86,8 @@ msgid ""
 "During upgrades, new certificates will be added. Please choose those you "
 "trust."
 msgstr ""
-"Under uppgraderingar kommer nya certifikat att l‰ggas till. V‰lj de som du "
-"litar pÂ."
+"Under uppgraderingar kommer nya certifikat att l√§ggas till. V√§lj de som du "
+"litar p√•."
 
 #. Type: multiselect
 #. Description
@@ -105,9 +113,12 @@ msgid ""
 "certificates are installed into /etc/ssl/certs. They will be compiled into a "
 "single /etc/ssl/certs/ca-certificates.crt file."
 msgstr ""
-"V‰lj de certifikatutf‰rdare som du litar pÂ sÂ att deras certifikat "
+"V√§lj de certifikatutf√§rdare som du litar p√• s√• att deras certifikat "
 "installeras i /etc/ssl/certs. De kommer att kompileras till en enda fil, /"
 "etc/ssl/certs/ca-certificates.crt."
+
+#~ msgid "yes, no, ask"
+#~ msgstr "ja, nej, fr√•ga"
 
 #~ msgid "${new_crts}"
 #~ msgstr "${new_crts}"
@@ -116,7 +127,7 @@ msgstr ""
 #~ msgstr "${enable_crts}"
 
 #~ msgid "Select new certificates to activate:"
-#~ msgstr "V‰lj ett nytt certifikat som ska aktiveras:"
+#~ msgstr "V√§lj ett nytt certifikat som ska aktiveras:"
 
 #~ msgid ""
 #~ "This package installs common CA (Certificate Authority) certificates in /"
@@ -125,8 +136,8 @@ msgstr ""
 #~ "symlinks and generate a single file of all your selected certs, /etc/ssl/"
 #~ "certs/ca-certificates.crt."
 #~ msgstr ""
-#~ "Detta paket installerar allm‰nna CA (Certificate Authority)-certifikat i /"
-#~ "usr/share/ca-certificates. Du kan v‰lja certifikat bland dessa "
-#~ "tillg‰ngliga certifikat fˆr att installeras till /etc/ssl/certs. Detta "
-#~ "paket kommer att gˆra symboliska l‰nkar och generera en enda fil av alla "
+#~ "Detta paket installerar allm√§nna CA (Certificate Authority)-certifikat i /"
+#~ "usr/share/ca-certificates. Du kan v√§lja certifikat bland dessa "
+#~ "tillg√§ngliga certifikat f√∂r att installeras till /etc/ssl/certs. Detta "
+#~ "paket kommer att g√∂ra symboliska l√§nkar och generera en enda fil av alla "
 #~ "dina valda certifikat, /etc/ssl/certs/ca-certificates.crt."

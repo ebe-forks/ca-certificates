@@ -2,9 +2,9 @@ Source: ca-certificates
 Section: misc
 Priority: optional
 Maintainer: Debian QA Group <packages@qa.debian.org>
-Build-Depends: debhelper (>> 4.1.16), po-debconf
+Build-Depends: debhelper (>= 8), po-debconf
 Build-Depends-Indep: python
-Standards-Version: 3.8.2
+Standards-Version: 3.9.2
 
 Package: ca-certificates
 Architecture: all

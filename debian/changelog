@@ -1,3 +1,30 @@
+ca-certificates (20111022) unstable; urgency=low
+
+  * QA upload.
+  * Fix pending l10n issues. Debconf translations:
+    - German (Helge Kreutzmann).  Closes: #634000
+    - French (Christian Perrier).  Closes: #634092
+    - Russian (Yuri Kozlov).  Closes: #635146
+    - Swedish (Martin Bagge / brother).  Closes: #640622
+    - Slovak (Slavko).  Closes: #641987
+    - Spanish; (Javier Fernández-Sanguino).  Closes: #642359
+    - Japanese (Kenshi Muto).  Closes: #644828
+    - Czech (Miroslav Kure).  Closes: #644843
+    - Danish (Joe Hansen).  Closes: #644854
+    - Italian (Luca Monducci).  Closes: #645004
+    - Dutch; (Jeroen Schot).  Closes: #645090
+    - Portuguese (Miguel Figueiredo).  Closes: #645126
+    - Galician (Jorge Barreiro).  Closes: #645138
+    - Catalan; (Jordi Mallach).  Closes: #645182
+    - Brazilian Portuguese (Adriano Rafael Gomes).  Closes: #645526
+  * Split Choices in debconf templates
+  * Add build-arch and build-indep build targets
+  * Bump debhelper compatibility level to 8
+  * Bump Standards to 3.9.2 (checked)
+  * Replace "dh_clean -k" by dh_prep
+
+ -- Christian Perrier <bubulle@debian.org>  Sat, 22 Oct 2011 14:24:00 +0200
+
 ca-certificates (20110502+nmu1) unstable; urgency=high
 
   * Non-maintainer upload by the Security Team.

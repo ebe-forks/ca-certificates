@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates 20090814+nmu2\n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-02 19:31+0200\n"
-"PO-Revision-Date: 2011-03-15 16:20-0300\n"
+"POT-Creation-Date: 2011-10-22 14:41+0200\n"
+"PO-Revision-Date: 2011-10-09 13:22-0300\n"
 "Last-Translator: Adriano Rafael Gomes <adrianorg@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
 "org>\n"
@@ -22,13 +22,25 @@ msgstr ""
 #. Description
 #: ../templates:2001
 msgid "ca-certificates configuration"
-msgstr ""
+msgstr "Configuração do ca-certificates"
 
 #. Type: select
 #. Choices
 #: ../templates:3001
-msgid "yes, no, ask"
-msgstr "sim, não, perguntar"
+msgid "yes"
+msgstr "sim"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "no"
+msgstr "não"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "ask"
+msgstr "perguntar"
 
 #. Type: select
 #. Description
@@ -104,6 +116,9 @@ msgstr ""
 "Por favor, selecione as autoridades certificadoras que você confia, de modo "
 "que seus certificados sejam instalados em /etc/ssl/certs. Eles serão "
 "compilados em um único arquivo /etc/ssl/certs/ca-certificates.crt."
+
+#~ msgid "yes, no, ask"
+#~ msgstr "sim, não, perguntar"
 
 #~ msgid "${new_crts}"
 #~ msgstr "${new_certs}"

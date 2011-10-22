@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-02 19:31+0200\n"
+"POT-Creation-Date: 2011-10-22 14:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,19 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../templates:3001
-msgid "yes, no, ask"
+msgid "yes"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "no"
+msgstr ""
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "ask"
 msgstr ""
 
 #. Type: select

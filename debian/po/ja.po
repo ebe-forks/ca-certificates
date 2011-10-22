@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates\n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-02 19:31+0200\n"
-"PO-Revision-Date: 2007-07-30 14:08+0900\n"
+"POT-Creation-Date: 2011-10-22 14:41+0200\n"
+"PO-Revision-Date: 2011-10-09 22:57+0900\n"
 "Last-Translator: Kenshi Muto <kmuto@debian.org>\n"
 "Language-Team: Japanese <debian-japanese@lists.debian.org>\n"
 "Language: ja\n"
@@ -28,13 +28,25 @@ msgstr ""
 #. Description
 #: ../templates:2001
 msgid "ca-certificates configuration"
-msgstr ""
+msgstr "ca-certificates の設定"
 
 #. Type: select
 #. Choices
 #: ../templates:3001
-msgid "yes, no, ask"
-msgstr "はい, いいえ, 質問する"
+msgid "yes"
+msgstr "はい"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "no"
+msgstr "いいえ"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "ask"
+msgstr "質問する"
 
 #. Type: select
 #. Description
@@ -109,8 +121,5 @@ msgstr ""
 "い。これらは、単一のファイル /etc/ssl/certs/ca-certificates.crt にコンパイル"
 "されます。"
 
-#~ msgid "${new_crts}"
-#~ msgstr "${new_crts}"
-
-#~ msgid "${enable_crts}"
-#~ msgstr "${enable_crts}"
+#~ msgid "yes, no, ask"
+#~ msgstr "はい, いいえ, 質問する"

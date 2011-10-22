@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates 20070304\n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-02 19:31+0200\n"
+"POT-Creation-Date: 2011-10-22 14:41+0200\n"
 "PO-Revision-Date: 2007-07-30 18:25+0930\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <vi-bugs@googlegroups.com>\n"
@@ -26,8 +26,20 @@ msgstr ""
 #. Type: select
 #. Choices
 #: ../templates:3001
-msgid "yes, no, ask"
-msgstr "có, không, hỏi"
+msgid "yes"
+msgstr "có"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "no"
+msgstr "không"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "ask"
+msgstr "hỏi"
 
 #. Type: select
 #. Description
@@ -102,6 +114,9 @@ msgstr ""
 "Hãy chọn những nhà cầm quyền chứng nhận bạn tin cậy để cài đặt các chứng "
 "nhận của chúng vào « /etc/ssl/certs ». Chúng sẽ được biên dịch vào một tập "
 "tin « /etc/ssl/certs/ca-certificates.crt » riêng lẻ."
+
+#~ msgid "yes, no, ask"
+#~ msgstr "có, không, hỏi"
 
 # Variable: do not translate/ biến: đừng dịch
 #~ msgid "${new_crts}"

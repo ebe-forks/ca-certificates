@@ -1,14 +1,14 @@
 # German translation of ca-certificates templates
 # Erik Schanze <eriks@debian.org>, 2004-2006.
-# Helge Kreutzmann <debian@helgefjell.de>, 2007.
+# Helge Kreutzmann <debian@helgefjell.de>, 2007, 2011.
 # This file is distributed under the same license as the ca-certificates package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: ca-certificates 20070304\n"
+"Project-Id-Version: ca-certificates 20110502\n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-02 19:31+0200\n"
-"PO-Revision-Date: 2007-07-27 20:21+0200\n"
+"POT-Creation-Date: 2011-10-22 14:41+0200\n"
+"PO-Revision-Date: 2011-07-15 21:45+0200\n"
 "Last-Translator: Helge Kreutzmann <debian@helgefjell.de>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
 "Language: de\n"
@@ -22,13 +22,25 @@ msgstr ""
 #. Description
 #: ../templates:2001
 msgid "ca-certificates configuration"
-msgstr ""
+msgstr "ca-certificates-Konfiguration"
 
 #. Type: select
 #. Choices
 #: ../templates:3001
-msgid "yes, no, ask"
-msgstr "Ja, Nein, Fragen"
+msgid "yes"
+msgstr "Ja"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "no"
+msgstr "Nein"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "ask"
+msgstr "Fragen"
 
 #. Type: select
 #. Description
@@ -104,6 +116,9 @@ msgstr ""
 "Bitte wählen Sie die Zertifizierungsstellen aus, denen Sie vertrauen, damit "
 "deren Zertifikate in /etc/ssl/certs installiert werden. Sie werden in eine "
 "einzige Datei /etc/ssl/certs/ca-certificates.crt zusammengestellt."
+
+#~ msgid "yes, no, ask"
+#~ msgstr "Ja, Nein, Fragen"
 
 #~ msgid "${new_crts}"
 #~ msgstr "${new_crts}"

@@ -1,14 +1,15 @@
 # Catalan translation of ca-certificates debconf templates.
-# Copyright (c) 2004, 2010 Software in the Public Interest, Inc.
+# Copyright (c) 2004, 2010, 2011 Software in the Public Interest, Inc.
 # This file is distributed under the same license as the ca-certificates package.
 # Josep Monés i Teixidor <jmones@puntbarra.com>, 2004.
-# Jordi Mallach <jordi@debian.org>, 2010.
+# Jordi Mallach <jordi@debian.org>, 2010, 2011.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates 20090814+nmu2\n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-02 19:31+0200\n"
-"PO-Revision-Date: 2010-10-23 12:12+0200\n"
+"POT-Creation-Date: 2011-10-22 14:41+0200\n"
+"PO-Revision-Date: 2011-10-13 12:47+0200\n"
 "Last-Translator: Jordi Mallach <jordi@debian.org>\n"
 "Language-Team: Catalan <debian-l10n-catalan@lists.debian.org>\n"
 "Language: ca\n"
@@ -20,13 +21,25 @@ msgstr ""
 #. Description
 #: ../templates:2001
 msgid "ca-certificates configuration"
-msgstr ""
+msgstr "Configuració de ca-certificates"
 
 #. Type: select
 #. Choices
 #: ../templates:3001
-msgid "yes, no, ask"
-msgstr "sí, no, demana"
+msgid "yes"
+msgstr "sí"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "no"
+msgstr "no"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "ask"
+msgstr "demana"
 
 #. Type: select
 #. Description
@@ -103,6 +116,9 @@ msgstr ""
 "Seleccioneu les autoritats certificadores en què confieu per a que "
 "s'instaŀlen els seus certificats a /etc/ssl/certs. Aquests es compilaran en "
 "un sol fitxer /etc/ssl/certs/ca-certificates.crt."
+
+#~ msgid "yes, no, ask"
+#~ msgstr "sí, no, demana"
 
 #~ msgid "${new_crts}"
 #~ msgstr "${new_crts}"

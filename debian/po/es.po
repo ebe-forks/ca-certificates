@@ -6,7 +6,7 @@
 #  - Initial translation
 #         César Gómez Martín <cesar.gomez@gmail.com>
 #  - Update
-#         Javier Fernández-Sanguino <jfs@debian.org>, 2006-2007
+#         Javier Fernández-Sanguino <jfs@debian.org>, 2006-2011
 #
 #   Traductores, si no conoce el formato PO, merece la pena leer la
 #   documentación de gettext, especialmente las secciones dedicadas a este
@@ -29,8 +29,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ca-certificates\n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-02 19:31+0200\n"
-"PO-Revision-Date: 2007-07-27 19:01+0200\n"
+"POT-Creation-Date: 2011-10-22 14:41+0200\n"
+"PO-Revision-Date: 2011-09-21 23:37+0200\n"
 "Last-Translator: Javier Fernández-Sanguino <jfs@debian.org>\n"
 "Language-Team: Debian l10n spanish <debian-l10n-spanish@lists.debian.org>\n"
 "Language: \n"
@@ -45,13 +45,25 @@ msgstr ""
 #. Description
 #: ../templates:2001
 msgid "ca-certificates configuration"
-msgstr ""
+msgstr "Configuración de ca-certificates"
 
 #. Type: select
 #. Choices
 #: ../templates:3001
-msgid "yes, no, ask"
-msgstr "sí, no, preguntar"
+msgid "yes"
+msgstr "sí"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "no"
+msgstr "no"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "ask"
+msgstr "preguntar"
 
 #. Type: select
 #. Description
@@ -128,6 +140,9 @@ msgstr ""
 "Escoja las autoridades de certificación en las que confía para instalarlas "
 "en «/etc/ssl/certs». Se incluirán todas en un único archivo «/etc/ssl/certs/"
 "ca-certificates.crt»."
+
+#~ msgid "yes, no, ask"
+#~ msgstr "sí, no, preguntar"
 
 #~ msgid "${new_crts}"
 #~ msgstr "${new_crts}"

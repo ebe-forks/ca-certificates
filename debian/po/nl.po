@@ -1,42 +1,46 @@
-# translation of ca-certificates_20070304_nl.po to Dutch
-#
-#    Translators, if you are not familiar with the PO format, gettext
-#    documentation is worth reading, especially sections dedicated to
-#    this format, e.g. by running:
-#         info -n '(gettext)PO Files'
-#         info -n '(gettext)Header Entry'
-#    Some information specific to po-debconf are available at
-#            /usr/share/doc/po-debconf/README-trans
-#         or http://www.debian.org/intl/l10n/po-debconf/README-trans#
-#    Developers do not need to manually edit POT or PO files.
-#
+# Dutch translation of ca-certificates debconf templates.
+# Copyright (C) 2011 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ca-certificates package.
 # Frans Pop <aragorn@tiscali.nl>, 2004, 2006.
 # Frans Pop <elendil@planet.nl>, 2007.
+# Jeroen Schot <schot@a-eskwadraat.nl>, 2011.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: ca-certificates_20060816_nl\n"
+"Project-Id-Version: ca-certificates 20110502+nmu1\n"
 "Report-Msgid-Bugs-To: ca-certificates@packages.debian.org\n"
-"POT-Creation-Date: 2011-05-02 19:31+0200\n"
-"PO-Revision-Date: 2007-07-27 09:44+0200\n"
-"Last-Translator: Frans Pop <elendil@planet.nl>\n"
-"Language-Team: Dutch <debian-l10n-dutch@lists.debian.org>\n"
+"POT-Creation-Date: 2011-10-22 14:41+0200\n"
+"PO-Revision-Date: 2011-10-10 09:58+0200\n"
+"Last-Translator: Jeroen Schot <schot@a-eskwadraat.nl>\n"
+"Language-Team: Debian l10n Dutch <debian-l10n-dutch@lists.debian.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
 
 #. Type: title
 #. Description
 #: ../templates:2001
 msgid "ca-certificates configuration"
-msgstr ""
+msgstr "ca-certificates configuratie"
 
 #. Type: select
 #. Choices
 #: ../templates:3001
-msgid "yes, no, ask"
-msgstr "ja, nee, selectie"
+msgid "yes"
+msgstr "ja"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "no"
+msgstr "nee"
+
+#. Type: select
+#. Choices
+#: ../templates:3001
+msgid "ask"
+msgstr "selectie"
 
 #. Type: select
 #. Description
@@ -113,8 +117,5 @@ msgstr ""
 "zullen worden opgenomen in '/etc/ssl/certs' en worden gebundeld in het "
 "bestand '/etc/ssl/certs/ca-certificates.crt'."
 
-#~ msgid "${new_crts}"
-#~ msgstr "${new_crts}"
-
-#~ msgid "${enable_crts}"
-#~ msgstr "${enable_crts}"
+#~ msgid "yes, no, ask"
+#~ msgstr "ja, nee, selectie"
