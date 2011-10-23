@@ -3,3 +3,5 @@
 # MD5 Collision Proof of Concept CA
 "MD5 Collisions Forged Rogue CA 25c3"
 
+# DigiNotar Root CA (see debbug#639744)
+"DigiNotar Root CA"
