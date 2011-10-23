@@ -1,3 +1,11 @@
+ca-certificates (20090814+nmu3squeeze1) stable; urgency=low
+
+  * Non-maintainer upload.
+  * No-change upload with incremented version number to avoid a
+    version number conflict with '20090814+nmu3'.
+
+ -- Thijs Kinkhorst <thijs@debian.org>  Tue, 13 Sep 2011 11:29:21 +0200
+
 ca-certificates (20090814+nmu3) squeeze-security; urgency=high
 
   * Non-maintainer upload by the Security Team.
