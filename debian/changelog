@@ -1,3 +1,22 @@
+ca-certificates (20111022.1) UNRELEASED; urgency=low
+
+  TODO: set version to release date, unstable, and delete this line
+
+  [ Michael Shuler ]
+  * Add 3.0 (native) source format
+  * Add Vcs-Git/Browser fields
+  * Add myself as new Maintainer with Uploaders  Closes: #588219
+  * Update mozilla certdata.txt file to the latest version
+    Removed:
+    - 
+    Added:
+    - 
+    Changed:
+    - 
+  *
+
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 23 Oct 2011 14:13:58 -0500
+
 ca-certificates (20111022) unstable; urgency=low
 
   * QA upload.
