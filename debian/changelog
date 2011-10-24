@@ -1,11 +1,5 @@
-ca-certificates (20111022.1) UNRELEASED; urgency=low
+ca-certificates (20111023) unstable; urgency=low
 
-  TODO: set version to release date
-        s/UNRELEASED/unstable/
-        dch --news with CA adds/removes list
-        ? #643667 Broken symlinks on upgrade due to plain c_rehash call
-
-  [ Michael Shuler ]
   * Add 3.0 (native) source format
   * Add Vcs-Git/Browser fields
   * Add myself as new Maintainer with Uploaders  Closes: #588219
@@ -56,7 +50,7 @@ ca-certificates (20111022.1) UNRELEASED; urgency=low
   * "Bogus *" CAs above address Comodo MITM 03/11  Closes: #619587
   * Update CAcert-Class 3-Subroot-certificate  Closes: #630232
 
- -- Michael Shuler <michael@pbandjelly.org>  Sun, 23 Oct 2011 21:37:30 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 23 Oct 2011 23:14:47 -0500
 
 ca-certificates (20111022) unstable; urgency=low
 

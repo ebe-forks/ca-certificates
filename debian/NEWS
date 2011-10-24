@@ -1,3 +1,54 @@
+ca-certificates (20111023) unstable; urgency=low
+
+  * Update mozilla/certdata.txt to latest (NSS branch version 1.64.2.13)
+    Certificates added (+) and removed (-):
+    + "AffirmTrust Commercial"
+    + "AffirmTrust Networking"
+    + "AffirmTrust Premium"
+    + "AffirmTrust Premium ECC"
+    + "A-Trust-nQual-03"
+    + "Bogus Global Trustee"
+    + "Bogus GMail"
+    + "Bogus Google"
+    + "Bogus kuix.de"
+    + "Bogus live.com"
+    + "Bogus Mozilla Addons"
+    + "Bogus Skype"
+    + "Bogus Yahoo 1"
+    + "Bogus Yahoo 2"
+    + "Bogus Yahoo 3"
+    + "Certinomis - Autorité Racine"
+    + "Certum Trusted Network CA"
+    + "Explicitly Distrust DigiNotar Cyber CA"
+    + "Explicitly Distrust DigiNotar Cyber CA 2nd"
+    + "Explicitly Distrust DigiNotar Root CA"
+    + "Explicitly Distrust DigiNotar Services 1024 CA"
+    + "Explicitly Distrusted DigiNotar PKIoverheid"
+    + "Explicitly Distrusted DigiNotar PKIoverheid G2"
+    + "Go Daddy Root Certificate Authority - G2"
+    + "Root CA Generalitat Valenciana"
+    + "Starfield Root Certificate Authority - G2"
+    + "Starfield Services Root Certificate Authority - G2"
+    + "TWCA Root Certification Authority"
+    - "AOL Time Warner Root Certification Authority 1"
+    - "AOL Time Warner Root Certification Authority 2"
+    - "DigiNotar Root CA"
+    - "Entrust.net Global Secure Personal CA"
+    - "Entrust.net Global Secure Server CA"
+    - "Entrust.net Secure Personal CA"
+    - "IPS Chained CAs root"
+    - "IPS CLASE1 root"
+    - "IPS CLASE3 root"
+    - "IPS CLASEA1 root"
+    - "IPS CLASEA3 root"
+    - "IPS Timestamping root"
+    - "Thawte Personal Freemail CA"
+    - "Thawte Time Stamping CA"
+  * "Bogus *" CAs above address Comodo MITM 03/11  Closes: #619587
+  * Update CAcert-Class 3-Subroot-certificate  Closes: #630232
+
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 23 Oct 2011 23:16:57 -0500
+
 ca-certificates (20090708) unstable; urgency=low
 
   * Removed CA files:
