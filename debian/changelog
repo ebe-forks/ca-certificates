@@ -3,11 +3,7 @@ ca-certificates (20111022.1) UNRELEASED; urgency=low
   TODO: set version to release date
         s/UNRELEASED/unstable/
         dch --news with CA adds/removes list
-        delete this line
-
         ? #643667 Broken symlinks on upgrade due to plain c_rehash call
-        #630232 New signatures for CAcert-Class 3-Subroot-certificate
-        
 
   [ Michael Shuler ]
   * Add 3.0 (native) source format
@@ -57,9 +53,10 @@ ca-certificates (20111022.1) UNRELEASED; urgency=low
     - "IPS Timestamping root"
     - "Thawte Personal Freemail CA"
     - "Thawte Time Stamping CA"
-  * "Bogus *" CAs above address Comodo MITM 03/11.  Closes: #619587
+  * "Bogus *" CAs above address Comodo MITM 03/11  Closes: #619587
+  * Update CAcert-Class 3-Subroot-certificate  Closes: #630232
 
- -- Michael Shuler <michael@pbandjelly.org>  Sun, 23 Oct 2011 18:36:20 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 23 Oct 2011 21:37:30 -0500
 
 ca-certificates (20111022) unstable; urgency=low
 
