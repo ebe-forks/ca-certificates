@@ -139,7 +139,7 @@ EOF
 	fi
 	# fix bogus symlink to ca-certificates.crt on upgrades; see
 	# Debian #643667; drop after wheezy
-	if dpkg --compare-versions "$2" lt-nl 20110502+nmu2+643667; then
+	if dpkg --compare-versions "$2" lt-nl 20111025; then
 	    update-ca-certificates --fresh
 	else
 	    update-ca-certificates

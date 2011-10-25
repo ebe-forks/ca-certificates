@@ -1,4 +1,4 @@
-ca-certificates (20111024) unstable; urgency=low
+ca-certificates (20111025) unstable; urgency=low
 
   * Update mozilla/certdata.txt to latest (NSS branch version 1.64.2.13)
     Certificates added (+) and removed (-):
