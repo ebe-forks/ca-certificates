@@ -60,9 +60,9 @@ ca-certificates (20111024) unstable; urgency=low
   * Drop bogus c_rehash on upgrades, which caused issue when
     ca-certificates.crt was still in place; instead, call
     update-ca-certificates --fresh on upgrades to this version, and
-    the usual update-ca-certificates otherwise  Closes: #643667
+    the usual update-ca-certificates otherwise  Closes: #643667, 537382
 
- -- Michael Shuler <michael@pbandjelly.org>  Mon, 24 Oct 2011 19:17:28 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Mon, 24 Oct 2011 19:55:10 -0500
 
 ca-certificates (20111022) unstable; urgency=low
 
