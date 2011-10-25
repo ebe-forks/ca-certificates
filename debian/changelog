@@ -1,3 +1,18 @@
+ca-certificates (20111024) UNRELEASED; urgency=low
+
+  [ Steve Langasek ]
+  * sbin/update-ca-certificates: move the ca-certificates.crt bundle out of
+    the way before calling c_rehash, so that symlinks don't accidentally get
+    pointed here, breaking openssl certificate verification  LP: #854927
+
+  [ Loïc Minier ]
+  * Drop bogus c_rehash on upgrades, which caused issue when
+    ca-certificates.crt was still in place; instead, call
+    update-ca-certificates --fresh on upgrades to this version, and
+    the usual update-ca-certificates otherwise  Closes: #643667
+
+ -- Michael Shuler <michael@pbandjelly.org>  Mon, 24 Oct 2011 18:44:13 -0500
+
 ca-certificates (20111023) unstable; urgency=low
 
   * Add 3.0 (native) source format

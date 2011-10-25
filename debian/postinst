@@ -137,13 +137,12 @@ EOF
 	        -e 's/^[[:space:]]*1[[:space:]]*/!/' \
 	    >> /etc/ca-certificates.conf
 	fi
-	update-ca-certificates
-	# Call c_rehash when upgrading from older versions to that we
-	# have both the old and new style of symlink
-	if [ ! -z "$2" ]; then
-	  if dpkg --compare-versions "$2" le 20090814+nmu3; then
-	    c_rehash
-	  fi
+	# fix bogus symlink to ca-certificates.crt on upgrades; see
+	# Debian #643667; drop after wheezy
+	if dpkg --compare-versions "$2" lt-nl 20110502+nmu2+643667; then
+	    update-ca-certificates --fresh
+	else
+	    update-ca-certificates
 	fi
     ;;
 
