@@ -1,8 +1,10 @@
 ca-certificates (20111025.1) UNRELEASED; urgency=low
 
   * Blacklist "Bogus *" and "Explicitly Distrust DigiNotar *" certificates
+  * Clarify CA audit note in README.debian; thanks to C.J. Adams-Collier for
+    the patch  Closes: #594383
 
- -- Michael Shuler <michael@pbandjelly.org>  Fri, 28 Oct 2011 07:06:00 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Fri, 28 Oct 2011 15:49:51 -0500
 
 ca-certificates (20111025) unstable; urgency=low
 
