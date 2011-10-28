@@ -5,3 +5,23 @@
 
 # DigiNotar Root CA (see debbug#639744)
 "DigiNotar Root CA"
+
+# Explicitly Distrust DigiNotar certs added by Mozilla
+"Explicitly Distrust DigiNotar Root CA"
+"Explicitly Distrust DigiNotar Services 1024 CA"
+"Explicitly Distrust DigiNotar Cyber CA"
+"Explicitly Distrust DigiNotar Cyber CA 2nd"
+"Explicitly Distrusted DigiNotar PKIoverheid"
+"Explicitly Distrusted DigiNotar PKIoverheid G2"
+
+# Bogus certs added by Mozilla (see #619587)
+"Bogus Mozilla Addons"
+"Bogus Global Trustee"
+"Bogus GMail"
+"Bogus Google"
+"Bogus Skype"
+"Bogus Yahoo 1"
+"Bogus Yahoo 2"
+"Bogus Yahoo 3"
+"Bogus live.com"
+"Bogus kuix.de"
