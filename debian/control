@@ -23,8 +23,7 @@ Description: Common CA certificates
  It includes, among others, certificate authorities used by the Debian
  infrastructure and those shipped with Mozilla's browsers.
  .
- Please note that certificate authorities whose certificates are
- included in this package are not in any way audited for
- trustworthiness and RFC 3647 compliance, and that full responsibility
- to assess them belongs to the local system administrator.
-
+ Please note that we can neither confirm nor deny whether the certificate
+ authorities whose certificates are included in this package have in any
+ way been audited for trustworthiness or RFC 3647 compliance.  Full
+ responsibility to assess them belongs to the local system administrator.
