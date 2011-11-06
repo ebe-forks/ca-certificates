@@ -1,13 +1,12 @@
 ca-certificates (20111025.2) UNRELEASED; urgency=low
 
-  * Blacklist "Bogus *" and "Explicitly Distrust DigiNotar *" certificates.
   * Clarify CA audit note in package description and README.debian. Thanks
     to C.J. Adams-Collier for the patch.  Closes: #594383
   * Remove French Government IGC/A CA certificates. The RSA certificate is
     included in the Mozilla bundle and the DSA certificate is not in use.
     Closes: #646767
 
- -- Michael Shuler <michael@pbandjelly.org>  Sat, 29 Oct 2011 08:16:09 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 06 Nov 2011 17:38:21 -0600
 
 ca-certificates (20111025) unstable; urgency=low
 
