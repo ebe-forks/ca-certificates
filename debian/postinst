@@ -1,4 +1,4 @@
-#! /bin/sh -e
+#! /bin/sh
 # postinst script for ca-certificates
 #
 # see: dh_installdeb(1)
@@ -19,6 +19,8 @@
 #     so that unnecessary prompting doesn't happen if a package's
 #     installation fails and the `postinst' is called with `abort-upgrade',
 #     `abort-remove' or `abort-deconfigure'.
+
+set -e
 
 each_value() {
  echo "$1" |tr ',' '\n' | sed -e 's/^[[:space:]]*//' 
