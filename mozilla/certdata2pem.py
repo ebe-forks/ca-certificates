@@ -92,15 +92,19 @@ if os.path.exists('blacklist.txt'):
 # Build up trust database.
 trust = dict()
 for obj in objects:
-    if obj['CKA_CLASS'] != 'CKO_NETSCAPE_TRUST':
+    if not (obj['CKA_CLASS'] == 'CKO_NETSCAPE_TRUST' or
+            obj['CKA_CLASS'] == 'CKO_NSS_TRUST'):
         continue
     if obj['CKA_LABEL'] in blacklist:
         print "Certificate %s blacklisted, ignoring." % obj['CKA_LABEL']
-    elif obj['CKA_TRUST_SERVER_AUTH'] == 'CKT_NETSCAPE_TRUSTED_DELEGATOR':
+    elif (obj['CKA_TRUST_SERVER_AUTH'] == 'CKT_NETSCAPE_TRUSTED_DELEGATOR' or
+          obj['CKA_TRUST_SERVER_AUTH'] == 'CKT_NSS_TRUSTED_DELEGATOR'):
         trust[obj['CKA_LABEL']] = True
-    elif obj['CKA_TRUST_EMAIL_PROTECTION'] == 'CKT_NETSCAPE_TRUSTED_DELEGATOR':
+    elif (obj['CKA_TRUST_EMAIL_PROTECTION'] == 'CKT_NETSCAPE_TRUSTED_DELEGATOR' or
+          obj['CKA_TRUST_EMAIL_PROTECTION'] == 'CKT_NSS_TRUSTED_DELEGATOR'):
         trust[obj['CKA_LABEL']] = True
-    elif obj['CKA_TRUST_SERVER_AUTH'] == 'CKT_NETSCAPE_UNTRUSTED':
+    elif (obj['CKA_TRUST_SERVER_AUTH'] == 'CKT_NETSCAPE_UNTRUSTED' or
+          obj['CKA_TRUST_SERVER_AUTH'] == 'CKT_NSS_NOT_TRUSTED'):
         print '!'*74
         print "UNTRUSTED BUT NOT BLACKLISTED CERTIFICATE FOUND: %s" % obj['CKA_LABEL']
         print '!'*74

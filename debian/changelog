@@ -11,9 +11,9 @@ ca-certificates (20111025.4) UNRELEASED; urgency=low
   * Use 'set -e' in body of debian/postinst
   * Update mozilla/certdata.txt to primary Mozilla repository version 1.80
     (no added/removed CAs)
-  ! TODO: update mozilla/certdata2pem.py to grok [NETSCAPE||NSS]...
+  * Update mozilla/certdata2pem.py to parse NETSCAPE or NSS data
 
- -- Michael Shuler <michael@pbandjelly.org>  Sun, 11 Dec 2011 15:00:20 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 11 Dec 2011 17:26:19 -0600
 
 ca-certificates (20111025) unstable; urgency=low
 
