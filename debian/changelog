@@ -8,6 +8,7 @@ ca-certificates (20111025.4) UNRELEASED; urgency=low
   * Remove expired signet.pl CAs.  Closes: #647849
   * Remove expired brasil.gov.br CA.
   * Edit 20111025 changelog/NEWS entries to correctly list installed CAs
+  * Use 'set -e' in body of debian/postinst
 
  -- Michael Shuler <michael@pbandjelly.org>  Mon, 05 Dec 2011 21:12:55 -0600
 
