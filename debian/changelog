@@ -9,11 +9,11 @@ ca-certificates (20111025.4) UNRELEASED; urgency=low
   * Remove expired brasil.gov.br CA.
   * Edit 20111025 changelog/NEWS entries to correctly list installed CAs
   * Use 'set -e' in body of debian/postinst
-  * Update mozilla/certdata.txt to primary Mozilla repository version 1.80
+  * Update mozilla/certdata.txt to version 1.80
     (no added/removed CAs)
   * Update mozilla/certdata2pem.py to parse NETSCAPE or NSS data
 
- -- Michael Shuler <michael@pbandjelly.org>  Sun, 11 Dec 2011 17:26:19 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 11 Dec 2011 18:28:53 -0600
 
 ca-certificates (20111025) unstable; urgency=low
 
