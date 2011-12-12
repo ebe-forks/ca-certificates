@@ -1,4 +1,4 @@
-ca-certificates (20111025.4) UNRELEASED; urgency=low
+ca-certificates (20111211) unstable; urgency=low
 
   * Clarify CA audit note in package description and README.debian. Thanks
     to C.J. Adams-Collier for the patch.  Closes: #594383
@@ -13,7 +13,7 @@ ca-certificates (20111025.4) UNRELEASED; urgency=low
     (no added/removed CAs)
   * Update mozilla/certdata2pem.py to parse NETSCAPE or NSS data
 
- -- Michael Shuler <michael@pbandjelly.org>  Sun, 11 Dec 2011 18:28:53 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 11 Dec 2011 19:05:32 -0600
 
 ca-certificates (20111025) unstable; urgency=low
 
