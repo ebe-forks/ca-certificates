@@ -33,6 +33,14 @@ the PEM files into “/usr/local/share/ca-certificates” as above and call
 How certificates will be accepted into the ca-certificates package
 ------------------------------------------------------------------
 
+**** Notice! ****
+ Option 1, listed below, is deprecated.  Please, see Debian bug report
+ #647848 for discussion on establishing a new Debian CA Certificate
+ Policy for CA inclusion, maintenance, and enforcement in Debian
+ ca-certificates.  Option 2, below, is the only current method.
+ - http://bugs.debian.org/647848
+*****************
+
  Option 1:
  - File a *GPG-signed* bug report against ca-certificates with
    *severity normal*.  The bug report must include an attached
