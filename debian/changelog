@@ -1,4 +1,4 @@
-ca-certificates (20120112) unstable; urgency=low
+ca-certificates (20120212) unstable; urgency=low
 
   * Update mozilla/certdata.txt to version 1.81
     Certificates added (+) and removed (-):
@@ -12,7 +12,7 @@ ca-certificates (20120112) unstable; urgency=low
   * Add notice to README.Debian deprecating CA inclusions and refer to
     #647848 for Debian CA Certificate Policy discussion.
 
- -- Michael Shuler <michael@pbandjelly.org>  Sun, 12 Feb 2012 14:02:02 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 12 Feb 2012 15:12:59 -0600
 
 ca-certificates (20111211) unstable; urgency=low
 
