@@ -1,3 +1,9 @@
+ca-certificates (20120212.1) UNRELEASED; urgency=low
+
+  * Add Polish translation, thanks to Michał Kułach.  Closes: #660002
+
+ -- Michael Shuler <michael@pbandjelly.org>  Thu, 16 Feb 2012 15:46:30 -0600
+
 ca-certificates (20120212) unstable; urgency=low
 
   * Update mozilla/certdata.txt to version 1.81
