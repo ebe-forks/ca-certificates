@@ -1,8 +1,9 @@
-ca-certificates (20120212.1) UNRELEASED; urgency=low
+ca-certificates (20120212.2) UNRELEASED; urgency=low
 
   * Add Polish translation, thanks to Michał Kułach.  Closes: #660002
+  * Add Turkish translation, thanks to Atila KOÇ.  Closes: #661785
 
- -- Michael Shuler <michael@pbandjelly.org>  Thu, 16 Feb 2012 15:46:30 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Sat, 03 Mar 2012 16:58:12 -0600
 
 ca-certificates (20120212) unstable; urgency=low
 
