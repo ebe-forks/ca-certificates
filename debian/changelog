@@ -1,14 +1,14 @@
-ca-certificates (20120621) UNRELEASED; urgency=low
+ca-certificates (20120622) UNRELEASED; urgency=low
 
   * Add Polish translation, thanks to Michał Kułach.  Closes: #660002
   * Add Turkish translation, thanks to Atila KOÇ.  Closes: #661785
   * Update mozilla/certdata.txt to version 1.83
     Mozilla Public License updated to v2.0
-    (No certificates added/removed.)
+    (no added/removed CAs)
   * Update debian/copyright to reflect MPL v2.0
-  * TODO: update NEWS with previous cert adds/removes
+  * Update debian/NEWS with added/removed certs from 20111211 and 20120212
 
- -- Michael Shuler <michael@pbandjelly.org>  Sun, 21 Jun 2012 09:59:19 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Fri, 22 Jun 2012 19:27:48 -0500
 
 ca-certificates (20120212) unstable; urgency=low
 
