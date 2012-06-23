@@ -1,3 +1,27 @@
+ca-certificates (20120212) unstable; urgency=low
+
+  * Update mozilla/certdata.txt to version 1.81
+    Certificates added (+) and removed (-):
+    + "Security Communication RootCA2"
+    + "EC-ACC"
+    + "Hellenic Academic and Research Institutions RootCA 2011"
+    - "Verisign Class 2 Public Primary Certification Authority"
+    - "Verisign Class 4 Public Primary Certification Authority - G2"
+    - "TC TrustCenter, Germany, Class 2 CA"
+    - "TC TrustCenter, Germany, Class 3 CA"
+
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 12 Feb 2012 15:12:59 -0600
+
+ca-certificates (20111211) unstable; urgency=low
+
+  * Remove French Government IGC/A CA certificates. The RSA certificate is
+    included in the Mozilla bundle and the DSA certificate is not in use.
+    Closes: #646767
+  * Remove expired signet.pl CAs.  Closes: #647849
+  * Remove expired brasil.gov.br CA.
+
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 11 Dec 2011 19:05:32 -0600
+
 ca-certificates (20111025) unstable; urgency=low
 
   * Update mozilla/certdata.txt to latest (NSS branch version 1.64.2.13)
