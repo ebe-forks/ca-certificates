@@ -11,6 +11,7 @@ ca-certificates (20120623) unstable; urgency=low
     (no added/removed CAs)
   * Update debian/copyright to reflect MPL v2.0
   * Update debian/NEWS with added/removed certs from 20111211 and 20120212
+  * Update to Standards-Version: 3.9.3 (no changes needed)
 
  -- Michael Shuler <michael@pbandjelly.org>  Sat, 23 Jun 2012 07:58:35 -0500
 
