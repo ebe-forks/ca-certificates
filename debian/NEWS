@@ -1,6 +1,6 @@
 ca-certificates (20120212) unstable; urgency=low
 
-  * Update mozilla/certdata.txt to version 1.81
+  Update mozilla/certdata.txt to version 1.81
     Certificates added (+) and removed (-):
     + "Security Communication RootCA2"
     + "EC-ACC"
@@ -14,17 +14,16 @@ ca-certificates (20120212) unstable; urgency=low
 
 ca-certificates (20111211) unstable; urgency=low
 
-  * Remove French Government IGC/A CA certificates. The RSA certificate is
+  Remove French Government IGC/A CA certificates. The RSA certificate is
     included in the Mozilla bundle and the DSA certificate is not in use.
-    Closes: #646767
-  * Remove expired signet.pl CAs.  Closes: #647849
-  * Remove expired brasil.gov.br CA.
+  Remove expired signet.pl CAs.
+  Remove expired brasil.gov.br CA.
 
  -- Michael Shuler <michael@pbandjelly.org>  Sun, 11 Dec 2011 19:05:32 -0600
 
 ca-certificates (20111025) unstable; urgency=low
 
-  * Update mozilla/certdata.txt to latest (NSS branch version 1.64.2.13)
+  Update mozilla/certdata.txt to latest (NSS branch version 1.64.2.13)
     Certificates added (+) and removed (-):
     + "AffirmTrust Commercial"
     + "AffirmTrust Networking"
@@ -52,7 +51,7 @@ ca-certificates (20111025) unstable; urgency=low
     - "IPS Timestamping root"
     - "Thawte Personal Freemail CA"
     - "Thawte Time Stamping CA"
-  * Update CAcert-Class 3-Subroot-certificate  Closes: #630232
+  Update CAcert-Class 3-Subroot-certificate  Closes: #630232
 
  -- Michael Shuler <michael@pbandjelly.org>  Sun, 23 Oct 2011 23:16:57 -0500
 
