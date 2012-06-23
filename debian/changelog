@@ -1,18 +1,18 @@
-ca-certificates (20120624) UNRELEASED; urgency=low
+ca-certificates (20120623) unstable; urgency=low
 
   * Add Polish translation, thanks to Michał Kułach.  Closes: #660002
   * Add Turkish translation, thanks to Atila KOÇ.  Closes: #661785
   * Correct update-ca-certificates(8) alignment  Closes: #666932
   * Add note to update-ca-certificates(8) about .crt extension needed for
     local CA certificates under /usr/local/share/ca-certificates
-    Closes: 595279
+    Closes: #595279
   * Update mozilla/certdata.txt to version 1.83
     Mozilla Public License updated to v2.0
     (no added/removed CAs)
   * Update debian/copyright to reflect MPL v2.0
   * Update debian/NEWS with added/removed certs from 20111211 and 20120212
 
- -- Michael Shuler <michael@pbandjelly.org>  Fri, 22 Jun 2012 19:52:50 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Sat, 23 Jun 2012 07:58:35 -0500
 
 ca-certificates (20120212) unstable; urgency=low
 
