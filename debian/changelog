@@ -1,3 +1,16 @@
+ca-certificates (20120710) UNRELEASED; urgency=low
+
+  * Update mozilla/certdata.txt to version 1.85
+    Certificates added (+) (none removed):
+    + "Actalis Authentication Root CA"
+    + "Trustis FPS Root CA"
+    + "StartCom Certification Authority"
+    + "StartCom Certification Authority G2"
+    + "Buypass Class 2 Root CA"
+    + "Buypass Class 3 Root CA"
+
+ -- Michael Shuler <michael@pbandjelly.org>  Tue, 10 Jul 2012 13:31:18 -0500
+
 ca-certificates (20120623) unstable; urgency=low
 
   * Add Polish translation, thanks to Michał Kułach.  Closes: #660002
