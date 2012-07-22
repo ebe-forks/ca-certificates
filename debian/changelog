@@ -1,4 +1,4 @@
-ca-certificates (20120710) UNRELEASED; urgency=low
+ca-certificates (20120722) UNRELEASED; urgency=low
 
   * Update mozilla/certdata.txt to version 1.85
     Certificates added (+) (none removed):
@@ -8,8 +8,10 @@ ca-certificates (20120710) UNRELEASED; urgency=low
     + "StartCom Certification Authority G2"
     + "Buypass Class 2 Root CA"
     + "Buypass Class 3 Root CA"
+  * Correct piuparts package remove/purge behavior  Closes: #682125
+    - Remove deletes of /etc/ssl{,/certs} from debian/postrm
 
- -- Michael Shuler <michael@pbandjelly.org>  Tue, 10 Jul 2012 14:05:27 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 22 Jul 2012 09:39:26 -0500
 
 ca-certificates (20120623) unstable; urgency=low
 
