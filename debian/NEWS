@@ -1,4 +1,4 @@
-ca-certificates (20120710) UNRELEASED; urgency=low
+ca-certificates (20120722) UNRELEASED; urgency=low
 
   Update mozilla/certdata.txt to version 1.85
     Certificates added (+) (none removed):
