@@ -1,6 +1,6 @@
 ca-certificates (20121103) UNRELEASED; urgency=low
 
-  Update mozilla/certdata.txt to version 1.85
+  Update mozilla/certdata.txt to version 1.86
     Certificates added (+) (none removed):
     + "Actalis Authentication Root CA"
     + "Trustis FPS Root CA"
@@ -8,6 +8,9 @@ ca-certificates (20121103) UNRELEASED; urgency=low
     + "StartCom Certification Authority G2"
     + "Buypass Class 2 Root CA"
     + "Buypass Class 3 Root CA"
+    + "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı"
+    + "T-TeleSec GlobalRoot Class 3"
+    + "EE Certification Centre Root CA"
   Remove CAcert CA certificates due to non-free license
 
  -- Michael Shuler <michael@pbandjelly.org>  Sat, 03 Nov 2012 15:48:32 -0500
