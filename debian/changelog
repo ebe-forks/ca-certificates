@@ -1,4 +1,4 @@
-ca-certificates (20121103) UNRELEASED; urgency=low
+ca-certificates (20121103) unstable; urgency=low
 
   * Update mozilla/certdata.txt to version 1.86  Closes: #683728
     Certificates added (+) (none removed):
@@ -15,7 +15,7 @@ ca-certificates (20121103) UNRELEASED; urgency=low
     - Remove deletes of /etc/ssl{,/certs} from debian/postrm
   * Remove CAcert CA certificates due to non-free license  Closes: #687693
 
- -- Michael Shuler <michael@pbandjelly.org>  Sat, 03 Nov 2012 15:47:55 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Sat, 03 Nov 2012 16:39:12 -0500
 
 ca-certificates (20120623) unstable; urgency=low
 
