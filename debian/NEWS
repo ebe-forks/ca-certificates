@@ -1,4 +1,4 @@
-ca-certificates (20120722) UNRELEASED; urgency=low
+ca-certificates (20121103) UNRELEASED; urgency=low
 
   Update mozilla/certdata.txt to version 1.85
     Certificates added (+) (none removed):
@@ -8,8 +8,9 @@ ca-certificates (20120722) UNRELEASED; urgency=low
     + "StartCom Certification Authority G2"
     + "Buypass Class 2 Root CA"
     + "Buypass Class 3 Root CA"
+  Remove CAcert CA certificates due to non-free license
 
- -- Michael Shuler <michael@pbandjelly.org>  Tue, 10 Jul 2012 14:06:21 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Sat, 03 Nov 2012 15:48:32 -0500
 
 ca-certificates (20120212) unstable; urgency=low
 
