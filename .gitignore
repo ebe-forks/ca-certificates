@@ -3,5 +3,4 @@ configure-stamp
 debian/ca-certificates*
 debian/config
 debian/files
-cacert.org/cacert.org.crt
 mozilla/*.crt

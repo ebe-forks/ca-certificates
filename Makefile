@@ -3,7 +3,7 @@
 #
 
 CERTSDIR = /usr/share/ca-certificates
-SUBDIRS = mozilla cacert.org debconf.org spi-inc.org
+SUBDIRS = mozilla debconf.org spi-inc.org
 
 all:
 	for dir in $(SUBDIRS); do \
