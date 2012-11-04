@@ -1,4 +1,4 @@
-ca-certificates (20121103) unstable; urgency=low
+ca-certificates (20121104) unstable; urgency=low
 
   Update mozilla/certdata.txt to version 1.86
     Certificates added (+) (none removed):
@@ -11,9 +11,8 @@ ca-certificates (20121103) unstable; urgency=low
     + "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı"
     + "T-TeleSec GlobalRoot Class 3"
     + "EE Certification Centre Root CA"
-  Remove CAcert CA certificates due to non-free license
 
- -- Michael Shuler <michael@pbandjelly.org>  Sat, 03 Nov 2012 15:48:32 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 04 Nov 2012 16:18:05 -0600
 
 ca-certificates (20120212) unstable; urgency=low
 
