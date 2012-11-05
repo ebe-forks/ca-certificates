@@ -1,4 +1,4 @@
-ca-certificates (20121104) unstable; urgency=low
+ca-certificates (20121105) unstable; urgency=low
 
   * Update mozilla/certdata.txt to version 1.86  Closes: #683728
     Certificates added (+) (none removed):
@@ -14,7 +14,7 @@ ca-certificates (20121104) unstable; urgency=low
   * Correct piuparts package remove/purge behavior  Closes: #682125
     - Remove deletes of /etc/ssl{,/certs} from debian/postrm
 
- -- Michael Shuler <michael@pbandjelly.org>  Sun, 04 Nov 2012 16:17:48 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Mon, 05 Nov 2012 10:56:05 -0600
 
 ca-certificates (20120623) unstable; urgency=low
 

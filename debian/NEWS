@@ -1,4 +1,4 @@
-ca-certificates (20121104) unstable; urgency=low
+ca-certificates (20121105) unstable; urgency=low
 
   Update mozilla/certdata.txt to version 1.86
     Certificates added (+) (none removed):
@@ -12,7 +12,7 @@ ca-certificates (20121104) unstable; urgency=low
     + "T-TeleSec GlobalRoot Class 3"
     + "EE Certification Centre Root CA"
 
- -- Michael Shuler <michael@pbandjelly.org>  Sun, 04 Nov 2012 16:18:05 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Mon, 05 Nov 2012 10:56:28 -0600
 
 ca-certificates (20120212) unstable; urgency=low
 
