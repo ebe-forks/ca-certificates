@@ -10,7 +10,7 @@ ca-certificates (20121114) unstable; urgency=low
 
   [ Michael Shuler ]
   * Add note to previous mozilla/certdata.txt changelog entry to document
-    CKT_NSS_MUST_VERIFY_TRUST changes
+    CKT_NSS_MUST_VERIFY_TRUST changes.
 
  -- Michael Shuler <michael@pbandjelly.org>  Wed, 14 Nov 2012 23:58:59 -0600
 
@@ -20,6 +20,9 @@ ca-certificates (20121105) unstable; urgency=low
     - Replace legacy "no explicit trust" flag of CKT_NSS_TRUST_UNKNOWN for
       CKT_NSS_MUST_VERIFY_TRUST, instead of a mix of both flags:
       https://bugzilla.mozilla.org/show_bug.cgi?id=757189
+      This upstream fix does not change the CA certificates installed in
+      ca-certificates as both flags are ignored. Only those CA certificates
+      with the CKT_NSS_TRUSTED_DELEGATOR flag in certdata.txt are installed.
     Certificates added (+) (none removed):
     + "Actalis Authentication Root CA"
     + "Trustis FPS Root CA"
