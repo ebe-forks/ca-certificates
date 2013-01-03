@@ -5,3 +5,7 @@
 
 # DigiNotar Root CA (see debbug#639744)
 "DigiNotar Root CA"
+
+# TURKTRUST CA
+"TURKTRUST Certificate Services Provider Root 1"
+"TURKTRUST Certificate Services Provider Root 2"
