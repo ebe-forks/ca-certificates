@@ -1,3 +1,11 @@
+ca-certificates (20130109) UNRELEASED; urgency=low
+
+  * Update mozilla/certdata.txt to version 1.87  Closes: #697366
+    Certificates removed (-) (none added):
+    - "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı"
+
+ -- Michael Shuler <michael@pbandjelly.org>  Wed, 09 Jan 2013 16:38:56 -0600
+
 ca-certificates (20121114) unstable; urgency=low
 
   [ Don Armstrong ]
