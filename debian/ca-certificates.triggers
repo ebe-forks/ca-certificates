@@ -1,4 +1,2 @@
-interest-noawait update-ca-certificates
-interest-noawait update-ca-certificates-fresh
 interest update-ca-certificates
 interest update-ca-certificates-fresh

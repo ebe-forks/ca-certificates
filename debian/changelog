@@ -1,10 +1,13 @@
-ca-certificates (20130109) UNRELEASED; urgency=low
+ca-certificates (20130119) unstable; urgency=low
 
   * Update mozilla/certdata.txt to version 1.87  Closes: #697366
     Certificates removed (-) (none added):
     - "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı"
+  * Remove unneeded and confusing usage of interest-noawait; remove unneeded
+    Pre-Depends on dpkg. Thanks to Guillem Jover for the help and patch.
+    Closes: #537051
 
- -- Michael Shuler <michael@pbandjelly.org>  Wed, 09 Jan 2013 16:38:56 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Sat, 19 Jan 2013 14:02:09 -0600
 
 ca-certificates (20121114) unstable; urgency=low
 
