@@ -1,11 +1,16 @@
 ca-certificates (20130208) experimental; urgency=low
 
+TODO: NEWS entries
+
   * Install CAcert root and class3 certificates individually, no longer
     installing the concatenation of the two. The individual certificates
     are installed as cacert.org_root.crt and cacert.org_class3.crt for ease
     of identification. Additionally, this allows openssl maintainers to drop
     a problematic patch to c_rehash for handling multi-certificate files.
     (see #642314)  Closes: #692323
+  * Remove old debconf.org CA. The 2008 debconf.org CA, which was never in
+    ca-certificates, is an intermediate CA issued by SPI, so the old cert is
+    no longer needed.  Closes: #693405
 
  -- Michael Shuler <michael@pbandjelly.org>  Fri, 08 Feb 2013 18:45:45 -0600
 
