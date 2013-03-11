@@ -11,8 +11,10 @@ ca-certificates (20130311) experimental; urgency=low
     never in ca-certificates, is an intermediate CA issued by SPI, so the old
     cert is no longer needed.  Closes: #693405
   * Remove expired 2003 SPI CA.
+  * Update Standards-Version: 3.9.4 (no changes needed)
+  * Update Vcs-* fields for lintian vcs-field-not-canonical
 
- -- Michael Shuler <michael@pbandjelly.org>  Mon, 11 Mar 2013 09:57:11 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Mon, 11 Mar 2013 13:29:31 -0500
 
 ca-certificates (20130119) unstable; urgency=low
 
