@@ -1,4 +1,4 @@
-ca-certificates (20130208) experimental; urgency=low
+ca-certificates (20130311) experimental; urgency=low
 
 TODO: NEWS entries
 
@@ -8,11 +8,12 @@ TODO: NEWS entries
     of identification. Additionally, this allows openssl maintainers to drop
     a problematic patch to c_rehash for handling multi-certificate files.
     (see #642314)  Closes: #692323
-  * Remove old debconf.org CA. The 2008 debconf.org CA, which was never in
-    ca-certificates, is an intermediate CA issued by SPI, so the old cert is
-    no longer needed.  Closes: #693405
+  * Remove expired 2003 debconf.org CA. The 2008 debconf.org CA, which was
+    never in ca-certificates, is an intermediate CA issued by SPI, so the old
+    cert is no longer needed.  Closes: #693405
+  * Remove expired 2003 SPI CA.
 
- -- Michael Shuler <michael@pbandjelly.org>  Fri, 08 Feb 2013 18:45:45 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Mon, 11 Mar 2013 09:57:11 -0500
 
 ca-certificates (20130119) unstable; urgency=low
 
