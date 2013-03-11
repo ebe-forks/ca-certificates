@@ -13,6 +13,7 @@ ca-certificates (20130311) experimental; urgency=low
   * Remove expired 2003 SPI CA.
   * Update Standards-Version: 3.9.4 (no changes needed)
   * Update Vcs-* fields for lintian vcs-field-not-canonical
+  * Update to machine-readable debian/copyright file v1.0
 
  -- Michael Shuler <michael@pbandjelly.org>  Mon, 11 Mar 2013 13:29:31 -0500
 
