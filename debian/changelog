@@ -1,7 +1,6 @@
 ca-certificates (20130311) experimental; urgency=low
 
-TODO: NEWS entries
-
+  * TODO: NEWS entries
   * Install CAcert root and class3 certificates individually, no longer
     installing the concatenation of the two. The individual certificates
     are installed as cacert.org_root.crt and cacert.org_class3.crt for ease
