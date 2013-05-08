@@ -1,4 +1,4 @@
-ca-certificates (20130120) UNRELEASED; urgency=low
+ca-certificates (20130508) UNRELEASED; urgency=low
 
   * Remove obsolete debconf.org CA. Debconf now uses an SPI signed
     intermediary for its certificates. (Closes: #693405)

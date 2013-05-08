@@ -1,3 +1,10 @@
+ca-certificates (20130508) unstable; urgency=low
+
+  Remove obsolete debconf.org CA.
+  Remove obsolete SPI CA certiticate expired in 2007.
+
+ -- Thijs Kinkhorst <thijs@debian.org>  Wed, 08 May 2013 15:35:11 +0200
+
 ca-certificates (20130119) unstable; urgency=low
 
   Update mozilla/certdata.txt to version 1.87
