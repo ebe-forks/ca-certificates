@@ -1,8 +1,10 @@
 ca-certificates (20130120) UNRELEASED; urgency=low
 
-  * Checked for policy 3.9.4, no changes needed.
   * Remove obsolete debconf.org CA. Debconf now uses an SPI signed
     intermediary for its certificates. (Closes: #693405)
+  * Remove obsolete SPI CA certiticate expired in 2007; current
+    SPI CA which expires in 2018 remains.
+  * Checked for policy 3.9.4, no changes needed.
 
  -- Thijs Kinkhorst <thijs@debian.org>  Wed, 08 May 2013 15:24:16 +0200
 
