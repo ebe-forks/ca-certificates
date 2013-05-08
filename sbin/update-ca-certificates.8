@@ -23,8 +23,7 @@ update-ca-certificates \- update /etc/ssl/certs and certificates.crt
 .SH DESCRIPTION
 This manual page documents briefly the
 .B update-ca-certificates
-commands.
-This manual page was written for the Debian distribution.
+command.
 .PP
 \fBupdate-ca-certificates\fP is a program that updates the directory
 /etc/ssl/certs to hold SSL certificates and generates certificates.crt,
@@ -34,10 +33,11 @@ It reads the file /etc/ca-certificates.conf. Each line gives a pathname of
 a CA certificate under /usr/share/ca-certificates that should be trusted.
 Lines that begin with "#" are comment lines and thus ignored.
 Lines that begin with "!" are deselected, causing the deactivation of the CA
-certificate in question. 
+certificate in question. Certificates must have a .crt extension in order to
+be included by update-ca-certificates.
 .PP
-Furthermore all certificates found below /usr/local/share/ca-certificates
-are also included as implicitly trusted.
+Furthermore all certificates with a .crt extension found below
+/usr/local/share/ca-certificates are also included as implicitly trusted.
 .PP
 Before terminating, \fBupdate-ca-certificates\fP invokes
 \fBrun-parts\fP on /etc/ca-certificates/update.d and calls each hook with
@@ -60,7 +60,7 @@ Fresh updates.  Remove symlinks in /etc/ssl/certs directory.
 A configuration file.
 .TP
 .I /etc/ssl/certs/ca-certificates.crt
-A single-file version of CA certificates.  This hold
+A single-file version of CA certificates.  This holds
 all CA certificates that you activated in /etc/ca-certificates.conf.
 .TP
 .I /usr/share/ca-certificates
@@ -69,7 +69,7 @@ Directory of CA certificates.
 .I /usr/local/share/ca-certificates
 Directory of local CA certificates (with .crt extension).
 .SH SEE ALSO
-.BR c_rehash (1),
+.BR c_rehash (1)
 .SH AUTHOR
 This manual page was written by Fumitoshi UKAI <ukai@debian.or.jp>,
 for the Debian project (but may be used by others).

@@ -5,6 +5,7 @@ ca-certificates (20130508) UNRELEASED; urgency=low
   * Remove obsolete SPI CA certiticate expired in 2007; current
     SPI CA which expires in 2018 remains.
   * Checked for policy 3.9.4, no changes needed.
+  * Clean up man page (LP#: 850997).
 
  -- Thijs Kinkhorst <thijs@debian.org>  Wed, 08 May 2013 15:24:16 +0200
 
