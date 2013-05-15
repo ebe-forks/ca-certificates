@@ -1,13 +1,22 @@
 ca-certificates (20130508) UNRELEASED; urgency=low
 
-  * Remove obsolete debconf.org CA. Debconf now uses an SPI signed
-    intermediary for its certificates. (Closes: #693405)
-  * Remove obsolete SPI CA certiticate expired in 2007; current
-    SPI CA which expires in 2018 remains.
-  * Checked for policy 3.9.4, no changes needed.
+  * TODO: NEWS entries, https://bugzilla.mozilla.org/show_bug.cgi?id=850003
+  * Install CAcert root and class3 certificates individually, no longer
+    installing the concatenation of the two. The individual certificates
+    are installed as cacert.org_root.crt and cacert.org_class3.crt for ease
+    of identification. Additionally, this allows openssl maintainers to drop
+    a problematic patch to c_rehash for handling multi-certificate files.
+    (see #642314)  Closes: #692323
+  * Remove 2005 debconf.org CA. DebConf now uses an intermediate certificate
+    issued by SPI, so the old CA is no longer needed.  Closes: #693405
+  * Remove obsolete SPI CA certiticate.
+  * Update Standards-Version: 3.9.4 (no changes needed)
+  * Update Vcs-* fields for lintian vcs-field-not-canonical
+  * Update to machine-readable debian/copyright file v1.0
   * Clean up man page (LP#: 850997).
 
- -- Thijs Kinkhorst <thijs@debian.org>  Wed, 08 May 2013 15:24:16 +0200
+ -- Michael Shuler <michael@pbandjelly.org>  Wed, 15 May 2013 11:57:18 -0500
+>>>>>>> debian-experimental
 
 ca-certificates (20130119) unstable; urgency=low
 

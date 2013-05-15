@@ -5,9 +5,8 @@
 all:
 
 clean:
-	rm -f cacert.org.crt
 
 install:
-	cat root.crt class3.crt > cacert.org.crt
-	install -m 644 cacert.org.crt $(CERTSDIR)/cacert.org.crt
-
+	for p in *.crt; do \
+	 install -m 644 $$p $(CERTSDIR)/cacert.org_$$p ; \
+	done
