@@ -16,7 +16,6 @@ ca-certificates (20130508) UNRELEASED; urgency=low
   * Clean up man page (LP#: 850997).
 
  -- Michael Shuler <michael@pbandjelly.org>  Wed, 15 May 2013 11:57:18 -0500
->>>>>>> debian-experimental
 
 ca-certificates (20130119) unstable; urgency=low
 
