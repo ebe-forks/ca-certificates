@@ -7,8 +7,8 @@ ca-certificates (20130508) UNRELEASED; urgency=low
     of identification. Additionally, this allows openssl maintainers to drop
     a problematic patch to c_rehash for handling multi-certificate files.
     (see #642314)  Closes: #692323
-  * Remove 2005 debconf.org CA. DebConf now uses an intermediate certificate
-    issued by SPI, so the old CA is no longer needed.  Closes: #693405
+  * Remove obsolete debconf.org CA certificate. DebConf now uses an
+    intermediate certificate signed by SPI.  Closes: #693405
   * Remove obsolete SPI CA certiticate.
   * Update Standards-Version: 3.9.4 (no changes needed)
   * Update Vcs-* fields for lintian vcs-field-not-canonical
