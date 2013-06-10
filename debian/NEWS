@@ -1,9 +1,14 @@
-ca-certificates (20130508) unstable; urgency=low
+ca-certificates (20130610) unstable; urgency=low
+
+  CAcert root and class3 certificates are now installed as individual
+  files, no longer as the concatenation of the two. The certificates
+  are installed as cacert.org_root.crt and cacert.org_class3.crt for
+  ease of identification.
 
   Remove obsolete debconf.org CA.
-  Remove obsolete SPI CA certiticate expired in 2007.
+  Remove obsolete SPI CA certificate expired in 2007.
 
- -- Thijs Kinkhorst <thijs@debian.org>  Wed, 08 May 2013 15:35:11 +0200
+ -- Thijs Kinkhorst <thijs@debian.org>  Mon, 10 Jun 2013 19:57:05 +0200
 
 ca-certificates (20130119) unstable; urgency=low
 
@@ -218,4 +223,3 @@ ca-certificates (20040808) unstable; urgency=low
    - debian.org: revoked due to crack incident.
 
  -- Fumitoshi UKAI <ukai@debian.or.jp>  Sun,  8 Aug 2004 22:43:36 +0900
-
