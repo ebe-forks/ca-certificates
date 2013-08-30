@@ -1,3 +1,9 @@
+ca-certificates (20130830) UNRELEASED; urgency=low
+
+  * Add ca-certificates-local source package example to documentation
+
+ -- Michael Shuler <michael@pbandjelly.org>  Fri, 30 Aug 2013 09:34:43 -0500
+
 ca-certificates (20130610) unstable; urgency=low
 
   [ Michael Shuler ]
