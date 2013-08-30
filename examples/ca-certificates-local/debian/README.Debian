@@ -8,19 +8,18 @@ package will be implicitly trusted.
 This is an example stub source package that includes a dummy CA
 certificate in the local/ directory. Remove the dummy certificate, copy
 your trusted local root CA (in PEM format with the filename ending in
-.crt) to the local/ directory, edit files in the debian/ directory as
+".crt") to the local/ directory, edit files in the debian/ directory as
 desired, and build your custom package.
 
 ----------------------------
 
 Steps to build your custom local root CA package from this example:
 
-- First, check that your local root CA is in PEM file format, the
-  filename ends in .crt, and that it is properly usable by openssl. This
-  example uses the included dummy CA certificate. Check that your local
-  root CA certificate produces similar output:
+- First, check that your local root CA is in PEM-encoded format, the
+  filename ends in ".crt", and that it is properly usable by openssl;
+  for example:
 
-  $ openssl x509 -text -in local/Deep_Thought_Dummy_Root_CA.crt
+  $ openssl x509 -text -in Deep_Thought_Dummy_Root_CA.crt
   Certificate:
       Data:
           Version: 3 (0x2)
@@ -87,8 +86,8 @@ Steps to build your custom local root CA package from this example:
 - Next, remove the dummy CA certificate, copy your local root CA
   certificate(s) to the local/ directory, and build the package:
 
-  $ rm local/Deep_Thought_Dummy_Root_CA.crt
-  $ cp /path/to/Your_Local_Root_CA.crt local/
+  $ rm local/Local_Root_CA.crt
+  $ cp /path/to/YourOrg_Root_CA.crt local/
   $ dpkg-buildpackage -b
 
 - Install the package (or copy it to your local apt repository for
