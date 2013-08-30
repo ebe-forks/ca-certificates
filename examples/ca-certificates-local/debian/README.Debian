@@ -81,8 +81,8 @@ Steps to build your custom local root CA package from this example:
 - Next copy this example source package somewhere to build as a normal
   user, for instance your home directory:
 
-  $ cp -a /usr/share/doc/ca-certificates/examples/ca-certificates-local-0.1 ~/
-  $ cd ~/ca-certificates-local-0.1/
+  $ cp -a /usr/share/doc/ca-certificates/examples/ca-certificates-local ~/
+  $ cd ~/ca-certificates-local/
 
 - Next, remove the dummy CA certificate, copy your local root CA
   certificate(s) to the local/ directory, and build the package:
