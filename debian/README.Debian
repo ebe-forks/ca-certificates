@@ -54,4 +54,4 @@ How certificates will be accepted into the ca-certificates package
 
 With the exception of SPI (http://www.spi-inc.org/) and CAcert
 (http://www.cacert.org/), only those CAs included in the Mozilla trust
-store will be added to the ca-certificates package in Debian.
+store will be included in the ca-certificates package in Debian.
