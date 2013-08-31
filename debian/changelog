@@ -1,6 +1,8 @@
 ca-certificates (20130831) UNRELEASED; urgency=low
 
 TODO: NEWS entries
+      add nssckbi.h to copyright... with no copyright
+      mv mozilla/README.source to debian/
   * Add ca-certificates-local source package example to documentation
   * Update local certificate handling in README.Debian.
     Closes: #718173, LP: #487845
