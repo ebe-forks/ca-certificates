@@ -6,7 +6,7 @@ ca-certificates (20130830) UNRELEASED; urgency=low
   * Update CA inclusion policy for ca-certificates in README.Debian. With
     the exception of SPI and CAcert, only those CAs included in Mozilla's
     trust store will be included in ca-certificates in Debian.
-    Closes: #647848, #609942
+    Closes: #647848, #609942, LP#: 103074
   * Clarify that not all software that uses SSL uses ca-certificates in
     README.Debian.  Closes: #664769
 
