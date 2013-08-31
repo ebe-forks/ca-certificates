@@ -9,6 +9,8 @@ ca-certificates (20130830) UNRELEASED; urgency=low
     Closes: #647848, #609942, LP: #103074
   * Clarify that not all software that uses SSL uses ca-certificates in
     README.Debian.  Closes: #664769
+  * Update mozilla/certdata.txt to NSS version 1.94 and include nssckbi.h
+    in the source, since certdata.txt no longer contains the version number.
 
  -- Michael Shuler <michael@pbandjelly.org>  Fri, 30 Aug 2013 09:34:43 -0500
 
