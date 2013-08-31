@@ -2,11 +2,11 @@ ca-certificates (20130830) UNRELEASED; urgency=low
 
   * Add ca-certificates-local source package example to documentation
   * Update local certificate handling in README.Debian.
-    Closes: #718173
+    Closes: #718173, LP: #487845
   * Update CA inclusion policy for ca-certificates in README.Debian. With
     the exception of SPI and CAcert, only those CAs included in Mozilla's
     trust store will be included in ca-certificates in Debian.
-    Closes: #647848, #609942, LP#: 103074
+    Closes: #647848, #609942, LP: #103074
   * Clarify that not all software that uses SSL uses ca-certificates in
     README.Debian.  Closes: #664769
 
@@ -30,7 +30,7 @@ ca-certificates (20130610) unstable; urgency=low
     intermediate certificate signed by SPI. (Closes: #693405)
   * Remove obsolete SPI CA certiticate.
   * Update Standards-Version: 3.9.4 (no changes needed)
-  * Clean up man page (LP#: 850997).
+  * Clean up man page (LP: #850997).
 
  -- Thijs Kinkhorst <thijs@debian.org>  Mon, 10 Jun 2013 19:52:15 +0200
 
