@@ -1,0 +1,17 @@
+Mozilla switched to mercurial in 2013 and certdata.txt no longer contains
+the CVS version number.  The NSS version number can be found in the nssckbi.h
+file in the same directory:
+
+ #define NSS_BUILTINS_LIBRARY_VERSION "1.94"
+
+Sources:
+
+ Full repository clone (~2GB):
+  hg clone https://hg.mozilla.org/releases/mozilla-release
+
+ certdata.txt:
+  https://hg.mozilla.org/releases/mozilla-release/raw-file/default/security/nss/lib/ckfw/builtins/certdata.txt
+
+ nssckbi.h:
+  https://hg.mozilla.org/releases/mozilla-release/raw-file/default/security/nss/lib/ckfw/builtins/nssckbi.h
+
