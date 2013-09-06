@@ -25,18 +25,14 @@ License: GPL-2+
  License can be found in '/usr/share/common-licenses/GPL-2'.
 
 Files: mozilla/certdata.txt
-Copyright: 1994-2000 Netscape Communications Corporation
-Comment: certdata.txt >= CVS Revision: 1.83
-         NSS no longer contains explicit copyright - upstream bug:
+       mozilla/nssckbi.h
+Copyright: Mozilla Contributors
+Comment: Original Copyright: 1994-2000 Netscape Communications Corporation
+                             (certdata.txt <= CVS Revision: 1.82)
+         NSS no longer contains explicit copyright. Upstream indicates
+         that "Mozilla Contributors" is an appropriate attibution for the
+         required Copyright: field in Debian's machine-readable format.
          https://bugzilla.mozilla.org/show_bug.cgi?id=850003
-         # This Source Code Form is subject to the terms of the Mozilla Public
-         # License, v. 2.0. If a copy of the MPL was not distributed with this
-         # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-         certdata.txt <= CVS Revision: 1.82
-         # The Initial Developer of the Original Code is
-         # Netscape Communications Corporation.
-         # Portions created by the Initial Developer are Copyright (C) 1994-2000
-         # the Initial Developer. All Rights Reserved.
 License: MPL-2.0
  Mozilla Public License Version 2.0
  ==================================
