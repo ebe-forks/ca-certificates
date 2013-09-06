@@ -1,3 +1,21 @@
+ca-certificates (20130906) unstable; urgency=low
+
+  Update mozilla/certdata.txt to version 1.94
+    Certificates added (+) and removed (-):
+    + "CA Disig Root R1"
+    + "CA Disig Root R2"
+    + "China Internet Network Information Center EV Certificates Root"
+    + "D-TRUST Root Class 3 CA 2 2009"
+    + "D-TRUST Root Class 3 CA 2 EV 2009"
+    + "PSCProcert"
+    + "Swisscom Root CA 2"
+    + "Swisscom Root EV CA 2"
+    + "TURKTRUST Certificate Services Provider Root 2007"
+    - "Equifax Secure eBusiness CA 2"
+    - "TC TrustCenter Universal CA III"
+
+ -- Michael Shuler <michael@pbandjelly.org>  Fri, 06 Sep 2013 10:34:50 -0500
+
 ca-certificates (20130610) unstable; urgency=low
 
   CAcert root and class3 certificates are now installed as individual
