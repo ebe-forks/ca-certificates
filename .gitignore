@@ -1,3 +1,4 @@
+*.swp
 build-stamp
 configure-stamp
 debian/ca-certificates
@@ -5,5 +6,4 @@ debian/ca-certificates.debhelper.log
 debian/ca-certificates.substvars
 debian/config
 debian/files
-cacert.org/cacert.org.crt
 mozilla/*.crt
