@@ -14,7 +14,7 @@ ca-certificates (20130906) unstable; urgency=low
     - "Equifax Secure eBusiness CA 2"
     - "TC TrustCenter Universal CA III"
 
- -- Michael Shuler <michael@pbandjelly.org>  Fri, 06 Sep 2013 10:34:50 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Fri, 06 Sep 2013 11:31:06 -0500
 
 ca-certificates (20130610) unstable; urgency=low
 

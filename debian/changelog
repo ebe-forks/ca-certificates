@@ -1,7 +1,4 @@
-ca-certificates (20130906) UNRELEASED; urgency=low
-
-  TODO:
-      add nssckbi.h to copyright... with no copyright
+ca-certificates (20130906) unstable; urgency=low
 
   * Add ca-certificates-local source package example to documentation
   * Update local certificate handling in README.Debian.
@@ -12,8 +9,11 @@ ca-certificates (20130906) UNRELEASED; urgency=low
     Closes: #647848, #609942, LP: #103074
   * Clarify that not all software that uses SSL uses ca-certificates in
     README.Debian.  Closes: #664769
-  * Update mozilla/certdata.txt to version 1.94 and include nssckbi.h in
-    the source, since certdata.txt no longer contains a version number.
+  * Add mozilla/nssckbi.h to source, since certdata.txt no longer contains
+    a version number.
+  * Update debian/copyright to "Copyright: Mozilla Contributors" for
+    mozilla/{certdata.txt,nssckbi.h}.
+  * Update mozilla/certdata.txt to version 1.94
     Certificates added (+) and removed (-):
     + "CA Disig Root R1"
     + "CA Disig Root R2"
@@ -27,7 +27,7 @@ ca-certificates (20130906) UNRELEASED; urgency=low
     - "Equifax Secure eBusiness CA 2"
     - "TC TrustCenter Universal CA III"
 
- -- Michael Shuler <michael@pbandjelly.org>  Fri, 06 Sep 2013 10:34:50 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Fri, 06 Sep 2013 11:31:06 -0500
 
 ca-certificates (20130610) unstable; urgency=low
 
