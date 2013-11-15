@@ -1,3 +1,14 @@
+ca-certificates (20131115) UNRELEASED; urgency=low
+
+  * Update mozilla/certdata.txt to version 1.95
+    Certificates added (+) and removed (-):
+    + "SG TRUST SERVICES RACINE"
+    + "ACCVRAIZ1"
+    + "TWCA Global Root CA"
+    - "Wells Fargo Root CA"
+
+ -- Michael Shuler <michael@pbandjelly.org>  Fri, 15 Nov 2013 12:01:18 -0600
+
 ca-certificates (20130906) unstable; urgency=low
 
   * Add ca-certificates-local source package example to documentation
