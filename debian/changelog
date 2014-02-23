@@ -1,6 +1,8 @@
-ca-certificates (20140223) UNRELEASED; urgency=medium
+ca-certificates (20140223) unstable; urgency=medium
 
   * No longer ship cacert.org certificates.  Closes: #718434, LP: #1258286
+  * Fix certdata2pem.py for multiple CAs using the same CKA_LABEL.  Thanks
+    to Marc Deslauriers for the patch.  Closes: #683403
   * Update mozilla/certdata.txt to version 1.97.
     Certificates added (+) and removed (-):
     + "ACCVRAIZ1"
