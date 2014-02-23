@@ -1,13 +1,26 @@
-ca-certificates (20131209) UNRELEASED; urgency=low
+ca-certificates (20140223) unstable; urgency=medium
 
-  Update mozilla/certdata.txt to version 1.96
+  Debian will no longer ship cacert.org certificates.
+
+  Update mozilla/certdata.txt to version 1.97.
     Certificates added (+) and removed (-):
-    + "SG TRUST SERVICES RACINE"
     + "ACCVRAIZ1"
+    + "Atos TrustedRoot 2011"
+    + "E-Tugra Certification Authority"
+    + "SG TRUST SERVICES RACINE"
+    + "T-TeleSec GlobalRoot Class 2"
     + "TWCA Global Root CA"
+    + "TeliaSonera Root CA v1"
+    - "Entrust.net Secure Server CA"
+    - "Firmaprofesional Root CA"
+    - "GTE CyberTrust Global Root"
+    - "RSA Root Certificate 1"
+    - "TDC OCES Root CA"
+    - "ValiCert Class 1 VA"
+    - "ValiCert Class 2 VA"
     - "Wells Fargo Root CA"
 
- -- Michael Shuler <michael@pbandjelly.org>  Mon, 09 Dec 2013 14:40:39 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 23 Feb 2014 15:21:39 -0600
 
 ca-certificates (20130906) unstable; urgency=low
 

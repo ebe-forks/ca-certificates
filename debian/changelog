@@ -1,17 +1,23 @@
-ca-certificates (20140223) UNRELEASED; urgency=low
+ca-certificates (20140223) UNRELEASED; urgency=medium
 
-  * Update mozilla/certdata.txt to version 1.96.
-    certdata.txt v1.95 added/removed the following CAs:
-    Certificates added (+) and removed (-):
-    + "SG TRUST SERVICES RACINE"
-    + "ACCVRAIZ1"
-    + "TWCA Global Root CA"
-    - "Wells Fargo Root CA"
-    certdata.txt v1.96 added/removed no root CAs, but did include an explicit
-    distrust of "Distrusted AC DG Tresor SSL", an intermediate certificate that
-    chains up to to "IGC/A" root, operated by ANSSI.
-    https://blog.mozilla.org/security/2013/12/09/revoking-trust-in-one-anssi-certificate/
   * No longer ship cacert.org certificates.  Closes: #718434, LP: #1258286
+  * Update mozilla/certdata.txt to version 1.97.
+    Certificates added (+) and removed (-):
+    + "ACCVRAIZ1"
+    + "Atos TrustedRoot 2011"
+    + "E-Tugra Certification Authority"
+    + "SG TRUST SERVICES RACINE"
+    + "T-TeleSec GlobalRoot Class 2"
+    + "TWCA Global Root CA"
+    + "TeliaSonera Root CA v1"
+    - "Entrust.net Secure Server CA"
+    - "Firmaprofesional Root CA"
+    - "GTE CyberTrust Global Root"
+    - "RSA Root Certificate 1"
+    - "TDC OCES Root CA"
+    - "ValiCert Class 1 VA"
+    - "ValiCert Class 2 VA"
+    - "Wells Fargo Root CA"
 
  -- Michael Shuler <michael@pbandjelly.org>  Sun, 23 Feb 2014 15:21:39 -0600
 
