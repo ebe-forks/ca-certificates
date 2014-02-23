@@ -7,7 +7,7 @@ Uploaders: Raphael Geissert <geissert@debian.org>,
            Christian Perrier <bubulle@debian.org>
 Build-Depends: debhelper (>= 8), po-debconf
 Build-Depends-Indep: python
-Standards-Version: 3.9.4
+Standards-Version: 3.9.5
 Vcs-Git: git://anonscm.debian.org/collab-maint/ca-certificates.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/ca-certificates.git
 
