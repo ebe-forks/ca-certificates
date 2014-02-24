@@ -4,7 +4,7 @@ ca-certificates (20140223) unstable; urgency=medium
   * Fix certdata2pem.py for multiple CAs using the same CKA_LABEL.  Thanks
     to Marc Deslauriers for the patch.  Closes: #683403, LP: #1031333
   * Update mozilla/certdata.txt to version 1.97.
-    Certificates added (+) and removed (-):
+    Certificates added (+), removed (-), and renamed (~):
     + "ACCVRAIZ1"
     + "Atos TrustedRoot 2011"
     + "E-Tugra Certification Authority"
@@ -12,6 +12,9 @@ ca-certificates (20140223) unstable; urgency=medium
     + "T-TeleSec GlobalRoot Class 2"
     + "TWCA Global Root CA"
     + "TeliaSonera Root CA v1"
+    + "Verisign Class 3 Public Primary Certification Authority"
+    ~ "Verisign Class 3 Public Primary Certification Authority"_2
+      (both Verisign Class 3 CAs now included with duplicate CKA_LABEL fix)
     - "Entrust.net Secure Server CA"
     - "Firmaprofesional Root CA"
     - "GTE CyberTrust Global Root"
