@@ -69,6 +69,8 @@ add() {
     ln -sf "$CERT" "$PEM"
     echo +$PEM >> "$ADDED"
   fi
+  # Add trailing newline to certificate, if it is missing (#635570)
+  sed -i '$a\' "$CERT"
   cat "$CERT" >> "$TEMPBUNDLE"
 }
 
