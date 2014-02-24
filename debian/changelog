@@ -1,9 +1,3 @@
-ca-certificates (20140224) UNRELEASED; urgency=medium
-
-  * Add trailing newline to certificate, if it is missing.  Closes: #635570
-
- -- Michael Shuler <michael@pbandjelly.org>  Sun, 23 Feb 2014 23:22:29 -0600
-
 ca-certificates (20140223) unstable; urgency=medium
 
   * No longer ship cacert.org certificates.  Closes: #718434, LP: #1258286
@@ -11,6 +5,7 @@ ca-certificates (20140223) unstable; urgency=medium
     to Marc Deslauriers for the patch.  Closes: #683403, LP: #1031333
   * Sort local CA certificates on update-ca-certificates runs.  Thanks to
     Vaclav Ovsik for the suggestion and patch.  Closes: #727136
+  * Add trailing newline to certificate, if it is missing.  Closes: #635570
   * Update mozilla/certdata.txt to version 1.97.
     Certificates added (+), removed (-), and renamed (~):
     + "ACCVRAIZ1"
@@ -32,7 +27,7 @@ ca-certificates (20140223) unstable; urgency=medium
     - "ValiCert Class 2 VA"
     - "Wells Fargo Root CA"
 
- -- Michael Shuler <michael@pbandjelly.org>  Sun, 23 Feb 2014 15:21:39 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 23 Feb 2014 23:22:29 -0600
 
 ca-certificates (20130906) unstable; urgency=low
 
