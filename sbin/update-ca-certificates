@@ -121,7 +121,7 @@ done
 # administrator.
 if [ -d "$LOCALCERTSDIR" ]
 then
-  find -L "$LOCALCERTSDIR" -type f -name '*.crt' | while read crt
+  find -L "$LOCALCERTSDIR" -type f -name '*.crt' | sort | while read crt
   do
     add "$crt"
   done
