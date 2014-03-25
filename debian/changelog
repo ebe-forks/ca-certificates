@@ -1,4 +1,4 @@
-ca-certificates (20140325) UNRELEASED; urgency=low
+ca-certificates (20140325) unstable; urgency=medium
 
   * Update mozilla/certdata.txt to version 1.97+revert_of_936304
     Mozilla reverted the removal of 1024-bit root certificates for

@@ -1,3 +1,18 @@
+ca-certificates (20140325) unstable; urgency=medium
+
+  Update mozilla/certdata.txt to version 1.97+revert_of_936304
+    Mozilla reverted the removal of 1024-bit root certificates for
+    Entrust.net, GTE CyberTrust, and ValiCert (RSA), but did not update the
+    version number in nssckbi.h.
+    Certificates added (+) (none removed):
+    + "Entrust.net Secure Server CA"
+    + "GTE CyberTrust Global Root"
+    + "RSA Root Certificate 1"
+    + "ValiCert Class 1 VA"
+    + "ValiCert Class 2 VA"
+
+ -- Michael Shuler <michael@pbandjelly.org>  Tue, 25 Mar 2014 13:28:19 -0500
+
 ca-certificates (20140223) unstable; urgency=medium
 
   Debian will no longer ship cacert.org certificates.
