@@ -1,3 +1,41 @@
+ca-certificates (20130119+deb7u1) stable; urgency=low
+
+  * Stable update including one patch and current mozilla/certdata.txt.
+    Closes: #501123
+  * Fix certdata2pem.py for multiple CAs using the same CKA_LABEL.  Thanks
+    to Marc Deslauriers for the patch.  Closes: #683403, LP: #1031333
+  * Update mozilla/certdata.txt to version 1.97 (version now in nssckbi.h).
+    Certificates added (+), removed (-), and renamed (~):
+    + "ACCVRAIZ1"                                                         
+    + "Atos TrustedRoot 2011"
+    + "CA Disig Root R1"
+    + "CA Disig Root R2"
+    + "China Internet Network Information Center EV Certificates Root"
+    + "D-TRUST Root Class 3 CA 2 2009"
+    + "D-TRUST Root Class 3 CA 2 EV 2009"
+    + "E-Tugra Certification Authority"
+    + "PSCProcert"
+    + "SG TRUST SERVICES RACINE"
+    + "StartCom Certification Authority"
+    ~ "StartCom Certification Authority"_2
+      (both StartCom CAs now included with duplicate CKA_LABEL fix)
+    + "Swisscom Root CA 2"
+    + "Swisscom Root EV CA 2"
+    + "T-TeleSec GlobalRoot Class 2"
+    + "TURKTRUST Certificate Services Provider Root 2007"
+    + "TWCA Global Root CA"
+    + "TeliaSonera Root CA v1"
+    + "Verisign Class 3 Public Primary Certification Authority"
+    ~ "Verisign Class 3 Public Primary Certification Authority"_2
+      (both Verisign Class 3 CAs now included with duplicate CKA_LABEL fix)
+    - "Equifax Secure eBusiness CA 2"
+    - "Firmaprofesional Root CA"
+    - "TC TrustCenter Universal CA III"
+    - "TDC OCES Root CA"
+    - "Wells Fargo Root CA"
+
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 30 Mar 2014 17:49:01 -0500
+
 ca-certificates (20130119) unstable; urgency=low
 
   * Update mozilla/certdata.txt to version 1.87  Closes: #697366
