@@ -1,3 +1,10 @@
+ca-certificates (20140330) UNRELEASED; urgency=medium
+
+  * Include d/{changelog,NEWS} entries in 20140223 for duplicate CKA_LABEL
+    rename of "StartCom Certification Authority"_2
+
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 30 Mar 2014 21:41:55 -0500
+
 ca-certificates (20140325) unstable; urgency=medium
 
   * Update mozilla/certdata.txt to version 1.97+revert_of_936304
@@ -27,6 +34,9 @@ ca-certificates (20140223) unstable; urgency=medium
     + "Atos TrustedRoot 2011"
     + "E-Tugra Certification Authority"
     + "SG TRUST SERVICES RACINE"
+    + "StartCom Certification Authority"
+    ~ "StartCom Certification Authority"_2
+      (both StartCom CAs now included with duplicate CKA_LABEL fix)
     + "T-TeleSec GlobalRoot Class 2"
     + "TWCA Global Root CA"
     + "TeliaSonera Root CA v1"

@@ -23,6 +23,9 @@ ca-certificates (20140223) unstable; urgency=medium
     + "Atos TrustedRoot 2011"
     + "E-Tugra Certification Authority"
     + "SG TRUST SERVICES RACINE"
+    + "StartCom Certification Authority"
+    ~ "StartCom Certification Authority"_2
+      (both StartCom CAs now included with duplicate CKA_LABEL fix)
     + "T-TeleSec GlobalRoot Class 2"
     + "TWCA Global Root CA"
     + "TeliaSonera Root CA v1"
