@@ -1,14 +1,13 @@
-ca-certificates (20140707) UNRELEASED; urgency=medium
+ca-certificates (20140807) UNRELEASED; urgency=medium
 
-  * Update mozilla/certdata.txt to version 2.0
+  * Update mozilla/certdata.txt to version 2.1
     Certificates added (+) and removed (-):
-ToDo:
     + ...
     - ...
   * Include d/{changelog,NEWS} entries in 20140223 for duplicate CKA_LABEL
     rename of "StartCom Certification Authority"_2
 
- -- Michael Shuler <michael@pbandjelly.org>  Mon, 07 Jul 2014 22:12:24 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Thu, 07 Aug 2014 23:04:11 -0500
 
 ca-certificates (20140325) unstable; urgency=medium
 
