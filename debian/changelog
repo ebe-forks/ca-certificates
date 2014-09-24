@@ -4,6 +4,7 @@ ca-certificates (20140807) UNRELEASED; urgency=medium
     Certificates added (+) and removed (-):
     + ...
     - ...
+  * Remove debian/config in debian/rules clean target
   * Include d/{changelog,NEWS} entries in 20140223 for duplicate CKA_LABEL
     rename of "StartCom Certification Authority"_2
 
