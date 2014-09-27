@@ -15,7 +15,9 @@ The CA certificates contained in this package are installed into
 
 The configuration file /etc/ca-certificates.conf is seeded with
 trust information through Debconf.  Just call 'dpkg-reconfigure
-ca-certificates' to adjust the settings.
+ca-certificates' to adjust the settings to trust or disable the installed
+certificate authorities.  By default, all installed certificate authorities
+are configured to be trusted.
 
 'update-ca-certificates' will then update /etc/ssl/certs/ which may be
 used by various software in Debian.  It will also generate the hash

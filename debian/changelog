@@ -1,14 +1,30 @@
-ca-certificates (20140807) UNRELEASED; urgency=medium
+ca-certificates (20140927) unstable; urgency=medium
 
-  * Update mozilla/certdata.txt to version 2.1
-    Certificates added (+) and removed (-):
-    + ...
-    - ...
-  * Remove debian/config in debian/rules clean target
+  * Update Mozilla certificate authority bundle to version 2.1.
+    The following certificate authorities were added (+):
+    + "DigiCert Assured ID Root G2"
+    + "DigiCert Assured ID Root G3"
+    + "DigiCert Global Root G2"
+    + "DigiCert Global Root G3"
+    + "DigiCert Trusted Root G4"
+    + "QuoVadis Root CA 1 G3"
+    + "QuoVadis Root CA 2 G3"
+    + "QuoVadis Root CA 3 G3"
+    + "WoSign"
+    + "WoSign China"
+    The following certificate authorities were removed (-):
+    - "Entrust.net Secure Server CA"
+    - "RSA Root Certificate 1"
+    - "TDC Internet Root CA"
+    - "ValiCert Class 1 VA"
+    - "ValiCert Class 2 VA"
+  * Include clear list of CAs added/removed, as above, and include better note
+    in README.Debian for trust reconfiguration.  Closes: #743365
+  * Remove debian/config in debian/rules clean target.
   * Include d/{changelog,NEWS} entries in 20140223 for duplicate CKA_LABEL
-    rename of "StartCom Certification Authority"_2
+    rename of "StartCom Certification Authority"_2.
 
- -- Michael Shuler <michael@pbandjelly.org>  Thu, 07 Aug 2014 23:04:11 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Sat, 27 Sep 2014 15:14:00 -0500
 
 ca-certificates (20140325) unstable; urgency=medium
 
