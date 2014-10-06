@@ -5,6 +5,7 @@ Files: debian/*
        examples/*
        mozilla/*
        sbin/*
+       spi-inc.org/Makefile
 Copyright: 2003 Fumitoshi UKAI <ukai@debian.or.jp>
            2009 Philipp Kern <pkern@debian.org>
            2011 Michael Shuler <michael@pbandjelly.org>
