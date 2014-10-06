@@ -5,8 +5,11 @@ ca-certificates (20141006) UNRELEASED; urgency=medium
     file-without-copyright-information warning.
   * debian/source/lintian-overrides:
     Add file-without-copyright-information override for SPI certificate file.
-  * Restore SELinux label after generating ca-certificates.crt file.
+  * sbin/update-ca-certificates:
+    Restore SELinux label after generating ca-certificates.crt file.
     Thanks to Laurent Bigonville for the patch.  Closes: #742957
+    Tidy indentation whitespace.
+    Thanks to Antonio Terceiro for the patch.  Closes: #742663
 
  -- Michael Shuler <michael@pbandjelly.org>  Mon, 06 Oct 2014 15:05:15 -0500
 

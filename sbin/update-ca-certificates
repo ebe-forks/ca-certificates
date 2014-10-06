@@ -26,13 +26,13 @@ fresh=0
 while [ $# -gt 0 ];
 do
   case $1 in
-  --verbose|-v)
-  	verbose=1;;
-  --fresh|-f)
-	fresh=1;;
-  --help|-h|*)
-	echo "$0: [--verbose] [--fresh]"
-	exit;;
+    --verbose|-v)
+      verbose=1;;
+    --fresh|-f)
+      fresh=1;;
+    --help|-h|*)
+      echo "$0: [--verbose] [--fresh]"
+      exit;;
   esac
   shift
 done
@@ -88,13 +88,13 @@ if [ "$fresh" = 1 ]; then
   echo -n "Clearing symlinks in $ETCCERTSDIR..."
   find . -type l -print | while read symlink
   do
-     case $(readlink $symlink) in
-     $CERTSDIR*) rm -f $symlink;;
-     esac
+    case $(readlink $symlink) in
+      $CERTSDIR*) rm -f $symlink;;
+    esac
   done
   find . -type l -print | while read symlink
   do
-     test -f $symlink || rm -f $symlink
+    test -f $symlink || rm -f $symlink
   done
   echo "done."
 fi
