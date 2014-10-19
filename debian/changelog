@@ -1,4 +1,4 @@
-ca-certificates (20141006) UNRELEASED; urgency=medium
+ca-certificates (20141019) unstable; urgency=medium
 
   * debian/copyright:
     Add coverage for all files reported by lintian
@@ -14,7 +14,7 @@ ca-certificates (20141006) UNRELEASED; urgency=medium
     Update to Standards-Version: 3.9.6 (no other changes needed).
     Update Vcs-Browser link to cgit URL.
 
- -- Michael Shuler <michael@pbandjelly.org>  Mon, 06 Oct 2014 15:05:15 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 19 Oct 2014 10:36:49 -0500
 
 ca-certificates (20140927) unstable; urgency=medium
 
