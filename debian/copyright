@@ -3,6 +3,7 @@ Source: http://ftp.debian.org/debian/pool/main/c/ca-certificates/
 
 Files: debian/*
        examples/*
+       Makefile
        mozilla/*
        sbin/*
        spi-inc.org/Makefile
