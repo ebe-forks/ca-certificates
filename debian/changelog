@@ -1,3 +1,11 @@
+ca-certificates (20141020) UNRELEASED; urgency=medium
+
+  * debian/postinst:
+    Set mode and group of /usr/local/share/ca-certificates based on current
+    /usr/local permissions and ownership.  Closes: #611501
+
+ -- Michael Shuler <michael@pbandjelly.org>  Mon, 20 Oct 2014 22:49:56 -0500
+
 ca-certificates (20141019) unstable; urgency=medium
 
   * debian/copyright:
