@@ -1,10 +1,16 @@
-ca-certificates (20141020) UNRELEASED; urgency=medium
+ca-certificates (20141119) UNRELEASED; urgency=medium
 
   * debian/postinst:
     Set mode and group of /usr/local/share/ca-certificates based on current
     /usr/local permissions and ownership.  Closes: #611501
+  * mozilla/{certdata.txt,nssckbi.h}:
+    Update Mozilla certificate authority bundle to version 2.2.
+    The following certificate authorities were added (+):
+    + ...
+    The following certificate authorities were removed (-):
+    - ...
 
- -- Michael Shuler <michael@pbandjelly.org>  Mon, 20 Oct 2014 22:49:56 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Wed, 19 Nov 2014 13:07:27 -0600
 
 ca-certificates (20141019) unstable; urgency=medium
 
