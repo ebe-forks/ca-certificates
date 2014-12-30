@@ -23,6 +23,7 @@
 
 verbose=0
 fresh=0
+default=0
 CERTSCONF=/etc/ca-certificates.conf
 CERTSDIR=/usr/share/ca-certificates
 LOCALCERTSDIR=/usr/local/share/ca-certificates
@@ -36,6 +37,9 @@ do
     --verbose|-v)
       verbose=1;;
     --fresh|-f)
+      fresh=1;;
+    --default|-d)
+      default=1
       fresh=1;;
     --certsconf)
       shift
@@ -124,6 +128,14 @@ if [ "$fresh" = 1 ]; then
 fi
 
 echo -n "Updating certificates in $ETCCERTSDIR... "
+
+# Add default certificate authorities if requested
+if [ "$default" = 1 ]; then
+  find -L "$CERTSDIR" -type f -name '*.crt' | sort | while read crt
+  do
+    add "$crt"
+  done
+fi
 
 # Handle certificates that should be removed.  This is an explicit act
 # by prefixing lines in the configuration files with exclamation marks (!).
