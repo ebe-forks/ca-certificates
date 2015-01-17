@@ -11,11 +11,19 @@ ca-certificates (20150117) UNRELEASED; urgency=medium
   * mozilla/{certdata.txt,nssckbi.h}:
     Update Mozilla certificate authority bundle to version 2.2.
     The following certificate authorities were added (+):
-    + ...
+    + "COMODO RSA Certification Authority"
+    + "GlobalSign ECC Root CA - R4"
+    + "GlobalSign ECC Root CA - R5"
+    + "USERTrust ECC Certification Authority"
+    + "USERTrust RSA Certification Authority"  Closes: #762709
     The following certificate authorities were removed (-):
-    - ...
+    - "America Online Root Certification Authority 1"
+    - "America Online Root Certification Authority 2"
+    - "GTE CyberTrust Global Root"
+    - "Thawte Premium Server CA"
+    - "Thawte Server CA"
 
- -- Michael Shuler <michael@pbandjelly.org>  Sat, 17 Jan 2015 13:32:34 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Sat, 17 Jan 2015 15:44:26 -0600
 
 ca-certificates (20141019) unstable; urgency=medium
 
