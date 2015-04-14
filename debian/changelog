@@ -1,4 +1,4 @@
-ca-certificates (20150117) UNRELEASED; urgency=medium
+ca-certificates (20150413) UNRELEASED; urgency=medium
 
   * debian/postinst:
     Set mode and group of /usr/local/share/ca-certificates based on current
@@ -8,6 +8,9 @@ ca-certificates (20150117) UNRELEASED; urgency=medium
     Add an option to set the certs in a directory to the defaults.
     Thanks for the patches, Paul Wise.  Closes: #774059, #774201
     Fix shellcheck warnings and a little indentation.
+  * sbin/update-ca-certificates.8:
+    Correct concatenated file name in man page from certificates.crt to
+    ca-certificates.crt.  Closes: #782230
   * mozilla/{certdata.txt,nssckbi.h}:
     Update Mozilla certificate authority bundle to version 2.2.
     The following certificate authorities were added (+):
@@ -23,7 +26,7 @@ ca-certificates (20150117) UNRELEASED; urgency=medium
     - "Thawte Premium Server CA"
     - "Thawte Server CA"
 
- -- Michael Shuler <michael@pbandjelly.org>  Sat, 17 Jan 2015 15:44:26 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Mon, 13 Apr 2015 22:20:06 -0500
 
 ca-certificates (20141019) unstable; urgency=medium
 

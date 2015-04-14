@@ -16,7 +16,7 @@
 .\" .sp <n>    insert n+1 empty lines
 .\" for manpage-specific macros, see man(7)
 .SH NAME
-update-ca-certificates \- update /etc/ssl/certs and certificates.crt
+update-ca-certificates \- update /etc/ssl/certs and ca-certificates.crt
 .SH SYNOPSIS
 .B update-ca-certificates
 .RI [ options ]
@@ -26,7 +26,7 @@ This manual page documents briefly the
 command.
 .PP
 \fBupdate-ca-certificates\fP is a program that updates the directory
-/etc/ssl/certs to hold SSL certificates and generates certificates.crt,
+/etc/ssl/certs to hold SSL certificates and generates ca-certificates.crt,
 a concatenated single-file list of certificates.
 .PP
 It reads the file /etc/ca-certificates.conf. Each line gives a pathname of
