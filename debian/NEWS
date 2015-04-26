@@ -1,3 +1,30 @@
+ca-certificates (20150426) unstable; urgency=medium
+
+  Update Mozilla certificate authority bundle to version 2.4.
+    The following certificate authorities were added (+):
+    + "CFCA EV ROOT"
+    + "COMODO RSA Certification Authority"
+    + "Entrust Root Certification Authority - EC1"
+    + "Entrust Root Certification Authority - G2"
+    + "GlobalSign ECC Root CA - R4"
+    + "GlobalSign ECC Root CA - R5"
+    + "IdenTrust Commercial Root CA 1"
+    + "IdenTrust Public Sector Root CA 1"
+    + "S-TRUST Universal Root CA"
+    + "Staat der Nederlanden EV Root CA"
+    + "Staat der Nederlanden Root CA - G3"
+    + "USERTrust ECC Certification Authority"
+    + "USERTrust RSA Certification Authority"  Closes: #762709
+    The following certificate authorities were removed (-):
+    - "America Online Root Certification Authority 1"
+    - "America Online Root Certification Authority 2"
+    - "E-Guven Kok Elektronik Sertifika Hizmet Saglayicisi"
+    - "GTE CyberTrust Global Root"
+    - "Thawte Premium Server CA"
+    - "Thawte Server CA"
+
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 26 Apr 2015 10:37:48 -0500
+
 ca-certificates (20140927) unstable; urgency=medium
 
   Update Mozilla Certificate Authority bundle to version 2.1.
