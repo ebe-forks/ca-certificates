@@ -1,3 +1,11 @@
+ca-certificates (20150603) UNRELEASED; urgency=medium
+
+  * debian/postinst:
+    Handle /usr/local/share/ca-certificates permissions and ownership on
+    upgrade.  Closes: #611501
+
+ -- Michael Shuler <michael@pbandjelly.org>  Wed, 03 Jun 2015 01:00:43 -0500
+
 ca-certificates (20150426) unstable; urgency=medium
 
   * debian/postinst:

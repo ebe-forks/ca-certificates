@@ -44,6 +44,11 @@ case "$1" in
             if mkdir -m $(stat -c %a /usr/local) /usr/local/share/ca-certificates 2>/dev/null; then
                 chgrp $(stat -c %g /usr/local) /usr/local/share/ca-certificates
             fi
+        # Handle upgrades and allow local admin to override:
+        # e.g. dpkg-statoverride --add root staff 2775 /usr/local/share/ca-certificates
+        elif ! dpkg-statoverride --list /usr/local/share/ca-certificates >/dev/null; then
+            chmod $(stat -c %a /usr/local) /usr/local/share/ca-certificates
+            chown $(stat -c %u /usr/local):$(stat -c %g /usr/local) /usr/local/share/ca-certificates
         fi
 
         . /usr/share/debconf/confmodule
