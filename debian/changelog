@@ -1,10 +1,23 @@
-ca-certificates (20150603) UNRELEASED; urgency=medium
+ca-certificates (20150709) UNRELEASED; urgency=medium
 
   * debian/postinst:
     Handle /usr/local/share/ca-certificates permissions and ownership on
     upgrade.  Closes: #611501
+  * mozilla/{certdata.txt,nssckbi.h}:
+    Update Mozilla certificate authority bundle to version 2.5.
+TODO: verify adds/removes
+    The following certificate authorities were added (+):
+    + "Certinomis - Root CA"
+    + "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H5"
+    + "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H6"
+    The following certificate authorities were removed (-):
+    - "Buypass Class 3 CA 1"
+    - "SG TRUST SERVICES RACINE"
+    - "TC TrustCenter Class 2 CA II"
+    - "TC TrustCenter Universal CA I"
+    - "TURKTRUST Certificate Services Provider Root 1"
 
- -- Michael Shuler <michael@pbandjelly.org>  Wed, 03 Jun 2015 01:00:43 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Thu, 09 Jul 2015 16:02:11 -0500
 
 ca-certificates (20150426) unstable; urgency=medium
 
