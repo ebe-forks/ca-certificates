@@ -1,14 +1,15 @@
 ca-certificates (20151022) UNRELEASED; urgency=medium
 
+  * debian/{compat,control}:
+    Updated d/compat to version 9 and updated Build-Depends.
   * debian/postinst:
     Handle /usr/local/share/ca-certificates permissions and ownership on
     upgrade.  Closes: #611501
-  * mozilla/{certdata.txt,nssckbi.h}:
-    Update Mozilla certificate authority bundle to version 2.5.
   * mozilla/certdata2pem.py:
     Add Python 3 support to ca-certificates.
     Thanks to Andrew Wilcox for the patch!  Closes: #789753
-TODO: verify adds/removes
+  * mozilla/{certdata.txt,nssckbi.h}:
+    Update Mozilla certificate authority bundle to version 2.5.
     The following certificate authorities were added (+):
     + "Certinomis - Root CA"
     + "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H5"
