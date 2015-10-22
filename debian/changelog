@@ -1,4 +1,4 @@
-ca-certificates (20150709) UNRELEASED; urgency=medium
+ca-certificates (20151022) UNRELEASED; urgency=medium
 
   * debian/{compat,control}:
     Updated d/compat to version 9 and updated Build-Depends.
@@ -20,7 +20,7 @@ ca-certificates (20150709) UNRELEASED; urgency=medium
     - "TC TrustCenter Universal CA I"
     - "TURKTRUST Certificate Services Provider Root 1"
 
- -- Michael Shuler <michael@pbandjelly.org>  Thu, 09 Jul 2015 16:02:11 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Thu, 22 Oct 2015 17:09:46 -0500
 
 ca-certificates (20150426) unstable; urgency=medium
 
