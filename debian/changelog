@@ -15,6 +15,7 @@ ca-certificates (20151022) UNRELEASED; urgency=medium
     + "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H6"
     The following certificate authorities were removed (-):
     - "Buypass Class 3 CA 1"
+    - "ComSign Secured CA"
     - "SG TRUST SERVICES RACINE"
     - "TC TrustCenter Class 2 CA II"
     - "TC TrustCenter Universal CA I"
