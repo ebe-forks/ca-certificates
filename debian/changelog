@@ -1,10 +1,13 @@
-ca-certificates (20150709) UNRELEASED; urgency=medium
+ca-certificates (20151022) UNRELEASED; urgency=medium
 
   * debian/postinst:
     Handle /usr/local/share/ca-certificates permissions and ownership on
     upgrade.  Closes: #611501
   * mozilla/{certdata.txt,nssckbi.h}:
     Update Mozilla certificate authority bundle to version 2.5.
+  * mozilla/certdata2pem.py:
+    Add Python 3 support to ca-certificates.
+    Thanks to Andrew Wilcox for the patch!  Closes: #789753
 TODO: verify adds/removes
     The following certificate authorities were added (+):
     + "Certinomis - Root CA"
@@ -17,7 +20,7 @@ TODO: verify adds/removes
     - "TC TrustCenter Universal CA I"
     - "TURKTRUST Certificate Services Provider Root 1"
 
- -- Michael Shuler <michael@pbandjelly.org>  Thu, 09 Jul 2015 16:02:11 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Thu, 22 Oct 2015 15:32:23 -0500
 
 ca-certificates (20150426) unstable; urgency=medium
 
