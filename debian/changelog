@@ -1,12 +1,13 @@
-ca-certificates (20151022) UNRELEASED; urgency=medium
+ca-certificates (20151124) UNRELEASED; urgency=medium
 
   * debian/{compat,control}:
     Updated d/compat to version 9 and updated Build-Depends.
   * debian/postinst:
     Handle /usr/local/share/ca-certificates permissions and ownership on
     upgrade.  Closes: #611501
-  * mozilla/{certdata.txt,nssckbi.h}:
-    Update Mozilla certificate authority bundle to version 2.5.
+  * mozilla/certdata2pem.py:
+    Add Python 3 support to ca-certificates.
+    Thanks to Andrew Wilcox and Richard Ipsum for the patch!  Closes: #789753
   * mozilla/{certdata.txt,nssckbi.h}:
     Update Mozilla certificate authority bundle to version 2.5.
     The following certificate authorities were added (+):
@@ -21,7 +22,7 @@ ca-certificates (20151022) UNRELEASED; urgency=medium
     - "TC TrustCenter Universal CA I"
     - "TURKTRUST Certificate Services Provider Root 1"
 
- -- Michael Shuler <michael@pbandjelly.org>  Thu, 22 Oct 2015 17:09:46 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Tue, 24 Nov 2015 22:34:53 -0600
 
 ca-certificates (20150426) unstable; urgency=medium
 
