@@ -1,5 +1,6 @@
-ca-certificates (20151124) UNRELEASED; urgency=medium
+ca-certificates (20151204) unstable; urgency=medium
 
+  * Removed SPI CA.  Closes: #796208
   * debian/{compat,control}:
     Updated d/compat to version 9 and updated Build-Depends.
   * debian/postinst:
@@ -22,7 +23,7 @@ ca-certificates (20151124) UNRELEASED; urgency=medium
     - "TC TrustCenter Universal CA I"
     - "TURKTRUST Certificate Services Provider Root 1"
 
- -- Michael Shuler <michael@pbandjelly.org>  Tue, 24 Nov 2015 22:34:53 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Fri, 04 Dec 2015 22:50:13 -0600
 
 ca-certificates (20150426) unstable; urgency=medium
 

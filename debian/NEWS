@@ -1,3 +1,21 @@
+ca-certificates (20151204) unstable; urgency=medium
+
+  * Removed SPI CA.  Closes: #796208
+  * Updated Mozilla certificate authority bundle to version 2.5.
+    The following certificate authorities were added (+):
+    + "Certinomis - Root CA"
+    + "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H5"
+    + "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H6"
+    The following certificate authorities were removed (-):
+    - "Buypass Class 3 CA 1"
+    - "ComSign Secured CA"
+    - "SG TRUST SERVICES RACINE"
+    - "TC TrustCenter Class 2 CA II"
+    - "TC TrustCenter Universal CA I"
+    - "TURKTRUST Certificate Services Provider Root 1"
+
+ -- Michael Shuler <michael@pbandjelly.org>  Fri, 04 Dec 2015 22:50:13 -0600
+
 ca-certificates (20150426) unstable; urgency=medium
 
   Update Mozilla certificate authority bundle to version 2.4.
