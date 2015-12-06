@@ -2,6 +2,7 @@ ca-certificates (20130119+deb7u2) oldstable; urgency=medium
 
   * mozilla/{certdata.txt,nssckbi.h}:
     Update Mozilla certificate authority bundle to version 2.5.
+    Closes: #806239
     The following certificate authorities were added (+):
     + "Certinomis - Root CA"
     + "CFCA EV ROOT"
@@ -17,7 +18,7 @@ ca-certificates (20130119+deb7u2) oldstable; urgency=medium
     + "GlobalSign ECC Root CA - R5"
     + "IdenTrust Commercial Root CA 1"
     + "IdenTrust Public Sector Root CA 1"
-    + "QuoVadis Root CA 1 G3"
+    + "QuoVadis Root CA 1 G3"  Closes: #793027
     + "QuoVadis Root CA 2 G3"
     + "QuoVadis Root CA 3 G3"
     + "S-TRUST Universal Root CA"
