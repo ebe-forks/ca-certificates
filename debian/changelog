@@ -2,6 +2,7 @@ ca-certificates (20141019+deb8u1) stable; urgency=medium
 
   * mozilla/{certdata.txt,nssckbi.h}:
     Update Mozilla certificate authority bundle to version 2.5.
+    Closes: #806239
     The following certificate authorities were added (+):
     + "Certinomis - Root CA"
     + "CFCA EV ROOT"
