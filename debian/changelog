@@ -1,3 +1,55 @@
+ca-certificates (20130119+deb7u2) oldstable; urgency=medium
+
+  * mozilla/{certdata.txt,nssckbi.h}:
+    Update Mozilla certificate authority bundle to version 2.5.
+    The following certificate authorities were added (+):
+    + "Certinomis - Root CA"
+    + "CFCA EV ROOT"
+    + "COMODO RSA Certification Authority"
+    + "DigiCert Assured ID Root G2"
+    + "DigiCert Assured ID Root G3"
+    + "DigiCert Global Root G2"
+    + "DigiCert Global Root G3"
+    + "DigiCert Trusted Root G4"
+    + "Entrust Root Certification Authority - EC1"
+    + "Entrust Root Certification Authority - G2"
+    + "GlobalSign ECC Root CA - R4"
+    + "GlobalSign ECC Root CA - R5"
+    + "IdenTrust Commercial Root CA 1"
+    + "IdenTrust Public Sector Root CA 1"
+    + "QuoVadis Root CA 1 G3"
+    + "QuoVadis Root CA 2 G3"
+    + "QuoVadis Root CA 3 G3"
+    + "S-TRUST Universal Root CA"
+    + "Staat der Nederlanden EV Root CA"
+    + "Staat der Nederlanden Root CA - G3"
+    + "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H5"
+    + "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H6"
+    + "USERTrust ECC Certification Authority"
+    + "USERTrust RSA Certification Authority"
+    + "WoSign"
+    + "WoSign China"
+    The following certificate authorities were removed (-):
+    - "America Online Root Certification Authority 1"
+    - "America Online Root Certification Authority 2"
+    - "Buypass Class 3 CA 1"
+    - "ComSign Secured CA"
+    - "E-Guven Kok Elektronik Sertifika Hizmet Saglayicisi"
+    - "Entrust.net Secure Server CA"
+    - "GTE CyberTrust Global Root"
+    - "RSA Root Certificate 1"
+    - "SG TRUST SERVICES RACINE"
+    - "TC TrustCenter Class 2 CA II"
+    - "TC TrustCenter Universal CA I"
+    - "TDC Internet Root CA"
+    - "Thawte Premium Server CA"
+    - "Thawte Server CA"
+    - "TURKTRUST Certificate Services Provider Root 1"
+    - "ValiCert Class 1 VA"
+    - "ValiCert Class 2 VA"
+
+ -- Michael Shuler <michael@pbandjelly.org>  Sat, 05 Dec 2015 21:47:09 -0600
+
 ca-certificates (20130119+deb7u1) stable; urgency=low
 
   * Stable update including one patch and current mozilla/certdata.txt.
