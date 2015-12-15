@@ -10,7 +10,8 @@ ca-certificates (20151214) UNRELEASED; urgency=medium
     Add Python 3 support to ca-certificates.
     Thanks to Andrew Wilcox and Richard Ipsum for the patch!  Closes: #789753
   * sbin/update-ca-certificates:
-    Update local certificates directory when calling --fresh.  Closes: #783615
+    Update local certificates directory when calling --fresh.
+    Thanks for the patch, Daniel Lutz!  Closes: #783615
   * mozilla/{certdata.txt,nssckbi.h}:
     Update Mozilla certificate authority bundle to version 2.6.
     The following certificate authorities were added (+):
