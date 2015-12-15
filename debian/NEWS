@@ -1,7 +1,9 @@
 ca-certificates (20141019+deb8u1) stable; urgency=medium
 
-  Update Mozilla certificate authority bundle to version 2.5.
+  Update Mozilla certificate authority bundle to version 2.6.
     The following certificate authorities were added (+):
+    + "CA WoSign ECC Root"
+    + "Certification Authority of WoSign G2"
     + "Certinomis - Root CA"
     + "CFCA EV ROOT"
     + "COMODO RSA Certification Authority"
@@ -11,6 +13,7 @@ ca-certificates (20141019+deb8u1) stable; urgency=medium
     + "GlobalSign ECC Root CA - R5"
     + "IdenTrust Commercial Root CA 1"
     + "IdenTrust Public Sector Root CA 1"
+    + "OISTE WISeKey Global Root GB CA"
     + "S-TRUST Universal Root CA"
     + "Staat der Nederlanden EV Root CA"
     + "Staat der Nederlanden Root CA - G3"
@@ -19,10 +22,13 @@ ca-certificates (20141019+deb8u1) stable; urgency=medium
     + "USERTrust ECC Certification Authority"
     + "USERTrust RSA Certification Authority"
     The following certificate authorities were removed (-):
+    - "A-Trust-nQual-03"
     - "America Online Root Certification Authority 1"
     - "America Online Root Certification Authority 2"
     - "Buypass Class 3 CA 1"
     - "ComSign Secured CA"
+    - "Digital Signature Trust Co. Global CA 1"
+    - "Digital Signature Trust Co. Global CA 3"
     - "E-Guven Kok Elektronik Sertifika Hizmet Saglayicisi"
     - "GTE CyberTrust Global Root"
     - "SG TRUST SERVICES RACINE"
@@ -31,8 +37,11 @@ ca-certificates (20141019+deb8u1) stable; urgency=medium
     - "Thawte Premium Server CA"
     - "Thawte Server CA"
     - "TURKTRUST Certificate Services Provider Root 1"
+    - "TURKTRUST Certificate Services Provider Root 2"
+    - "UTN DATACorp SGC Root CA"
+    - "Verisign Class 4 Public Primary Certification Authority - G3"
 
- -- Michael Shuler <michael@pbandjelly.org>  Sat, 05 Dec 2015 21:04:01 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Mon, 14 Dec 2015 20:46:50 -0600
 
 ca-certificates (20140927) unstable; urgency=medium
 
