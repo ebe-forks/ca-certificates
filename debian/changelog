@@ -1,9 +1,11 @@
 ca-certificates (20130119+deb7u2) oldstable; urgency=medium
 
   * mozilla/{certdata.txt,nssckbi.h}:
-    Update Mozilla certificate authority bundle to version 2.5.
+    Update Mozilla certificate authority bundle to version 2.6.
     Closes: #806239
     The following certificate authorities were added (+):
+    + "CA WoSign ECC Root"
+    + "Certification Authority of WoSign G2"
     + "Certinomis - Root CA"
     + "CFCA EV ROOT"
     + "COMODO RSA Certification Authority"
@@ -18,6 +20,7 @@ ca-certificates (20130119+deb7u2) oldstable; urgency=medium
     + "GlobalSign ECC Root CA - R5"
     + "IdenTrust Commercial Root CA 1"
     + "IdenTrust Public Sector Root CA 1"
+    + "OISTE WISeKey Global Root GB CA"
     + "QuoVadis Root CA 1 G3"  Closes: #793027
     + "QuoVadis Root CA 2 G3"
     + "QuoVadis Root CA 3 G3"
@@ -31,10 +34,13 @@ ca-certificates (20130119+deb7u2) oldstable; urgency=medium
     + "WoSign"
     + "WoSign China"
     The following certificate authorities were removed (-):
+    - "A-Trust-nQual-03"
     - "America Online Root Certification Authority 1"
     - "America Online Root Certification Authority 2"
     - "Buypass Class 3 CA 1"
     - "ComSign Secured CA"
+    - "Digital Signature Trust Co. Global CA 1"
+    - "Digital Signature Trust Co. Global CA 3"
     - "E-Guven Kok Elektronik Sertifika Hizmet Saglayicisi"
     - "Entrust.net Secure Server CA"
     - "GTE CyberTrust Global Root"
@@ -46,10 +52,13 @@ ca-certificates (20130119+deb7u2) oldstable; urgency=medium
     - "Thawte Premium Server CA"
     - "Thawte Server CA"
     - "TURKTRUST Certificate Services Provider Root 1"
+    - "TURKTRUST Certificate Services Provider Root 2"
+    - "UTN DATACorp SGC Root CA"
     - "ValiCert Class 1 VA"
     - "ValiCert Class 2 VA"
+    - "Verisign Class 4 Public Primary Certification Authority - G3"
 
- -- Michael Shuler <michael@pbandjelly.org>  Sat, 05 Dec 2015 21:47:09 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Mon, 14 Dec 2015 20:57:37 -0600
 
 ca-certificates (20130119+deb7u1) stable; urgency=low
 
@@ -59,7 +68,7 @@ ca-certificates (20130119+deb7u1) stable; urgency=low
     to Marc Deslauriers for the patch.  Closes: #683403, LP: #1031333
   * Update mozilla/certdata.txt to version 1.97 (version now in nssckbi.h).
     Certificates added (+), removed (-), and renamed (~):
-    + "ACCVRAIZ1"                                                         
+    + "ACCVRAIZ1"
     + "Atos TrustedRoot 2011"
     + "CA Disig Root R1"
     + "CA Disig Root R2"
