@@ -1,4 +1,4 @@
-ca-certificates (20151204) unstable; urgency=medium
+ca-certificates (20151214) UNRELEASED; urgency=medium
 
   * Removed SPI CA.  Closes: #796208
   * debian/{compat,control}:
@@ -10,20 +10,29 @@ ca-certificates (20151204) unstable; urgency=medium
     Add Python 3 support to ca-certificates.
     Thanks to Andrew Wilcox and Richard Ipsum for the patch!  Closes: #789753
   * mozilla/{certdata.txt,nssckbi.h}:
-    Update Mozilla certificate authority bundle to version 2.5.
+    Update Mozilla certificate authority bundle to version 2.6.
     The following certificate authorities were added (+):
+    + "CA WoSign ECC Root"
+    + "Certification Authority of WoSign G2"
     + "Certinomis - Root CA"
+    + "OISTE WISeKey Global Root GB CA"
     + "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H5"
     + "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H6"
     The following certificate authorities were removed (-):
+    - "A-Trust-nQual-03"
     - "Buypass Class 3 CA 1"
     - "ComSign Secured CA"
+    - "Digital Signature Trust Co. Global CA 1"
+    - "Digital Signature Trust Co. Global CA 3"
     - "SG TRUST SERVICES RACINE"
     - "TC TrustCenter Class 2 CA II"
     - "TC TrustCenter Universal CA I"
     - "TURKTRUST Certificate Services Provider Root 1"
+    - "TURKTRUST Certificate Services Provider Root 2"
+    - "UTN DATACorp SGC Root CA"
+    - "Verisign Class 4 Public Primary Certification Authority - G3"
 
- -- Michael Shuler <michael@pbandjelly.org>  Fri, 04 Dec 2015 22:50:13 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Mon, 14 Dec 2015 18:51:50 -0600
 
 ca-certificates (20150426) unstable; urgency=medium
 
