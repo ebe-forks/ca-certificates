@@ -68,7 +68,7 @@ ca-certificates (20130119+deb7u1) stable; urgency=low
     to Marc Deslauriers for the patch.  Closes: #683403, LP: #1031333
   * Update mozilla/certdata.txt to version 1.97 (version now in nssckbi.h).
     Certificates added (+), removed (-), and renamed (~):
-    + "ACCVRAIZ1"
+    + "ACCVRAIZ1"                                                         
     + "Atos TrustedRoot 2011"
     + "CA Disig Root R1"
     + "CA Disig Root R2"
