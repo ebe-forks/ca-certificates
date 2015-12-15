@@ -117,7 +117,7 @@ if [ "$fresh" = 1 ]; then
   find . -type l -print | while read symlink
   do
     case $(readlink "$symlink") in
-      $CERTSDIR*) rm -f "$symlink";;
+      $CERTSDIR*|$LOCALCERTSDIR*) rm -f $symlink;;
     esac
   done
   find . -type l -print | while read symlink
