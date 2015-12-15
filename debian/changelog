@@ -1,4 +1,4 @@
-ca-certificates (20151214) UNRELEASED; urgency=medium
+ca-certificates (20151214) unstable; urgency=medium
 
   * Removed SPI CA.  Closes: #796208
   * debian/{compat,control}:
