@@ -44,7 +44,7 @@ install: build
 	$(MAKE) install DESTDIR=$(CURDIR)/debian/ca-certificates
 	(cd $(CURDIR)/debian/ca-certificates/usr/share/ca-certificates; \
 	 crts=""; \
-	 for crt in $$(find . -type f -name '*.crt' -print); \
+	 for crt in $$(find . -type f -name '*.crt' -print | LC_ALL=C sort); \
 	 do \
 	   crt=$$(echo $$crt | sed -e 's/\.\///'); \
 	   if test "$$crts" = ""; then \
