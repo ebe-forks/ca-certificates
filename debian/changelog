@@ -2,6 +2,8 @@ ca-certificates (20160104) UNRELEASED; urgency=medium
 
   * debian/rules:
     Sort certificate list for reproducible builds.  Closes: #808711
+  * mozilla/certdata2pem.py:
+    Drop old CK*_NETSCAPE trust flag checks
 
  -- Michael Shuler <michael@pbandjelly.org>  Mon, 04 Jan 2016 10:55:26 -0600
 
