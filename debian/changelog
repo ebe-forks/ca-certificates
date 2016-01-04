@@ -1,4 +1,4 @@
-ca-certificates (20161014) UNRELEASED; urgency=medium
+ca-certificates (20160104) UNRELEASED; urgency=medium
 
   * debian/rules:
     Sort certificate list for reproducible builds.  Closes: #808711
