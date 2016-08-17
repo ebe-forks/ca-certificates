@@ -21,7 +21,7 @@ ca-certificates (20160816) unstable; urgency=medium
   [ Michael Shuler ]
   * debian/control:
     Update to Standards-Version: 3.9.8
-    Update to Vcs-Browser: https URL
+    Update to Vcs-Browser/Vcs-Git: https URLs
 
  -- Michael Shuler <michael@pbandjelly.org>  Tue, 16 Aug 2016 21:50:14 -0500
 
