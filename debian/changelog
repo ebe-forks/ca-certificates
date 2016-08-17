@@ -1,3 +1,24 @@
+ca-certificates (20160628~nmu1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * mozilla/{certdata.txt,nssckbi.h}:
+    Update Mozilla certificate authority bundle to version 2.7.
+    The following certificate authorities were added (+):
+    + "SZAFIR ROOT CA2"
+    + "Certum Trusted Network CA 2"
+    The following certificate authorities were removed (-):
+    - "Verisign Class 1 Public Primary Certification Authority - G2"
+    - "Verisign Class 3 Public Primary Certification Authority - G2"
+    - "Staat der Nederlanden Root CA"
+    - "NetLock Qualified (Class QA) Root"
+    - "NetLock Notary (Class A) Root"
+    - "NetLock Business (Class B) Root"
+    - "NetLock Express (Class C) Root"
+    - "CA Disig"
+    - "Verisign Class 3 Public Primary Certification Authority"
+
+ -- Jonathan Wiltshire <jmw@debian.org>  Tue, 28 Jun 2016 10:00:38 +0200
+
 ca-certificates (20160104) unstable; urgency=medium
 
   * debian/rules:
