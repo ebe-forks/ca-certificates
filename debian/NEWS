@@ -1,4 +1,4 @@
-ca-certificates (20161102) UNRELEASED; urgency=medium
+ca-certificates (20161102) unstable; urgency=medium
 
   Update Mozilla certificate authority bundle to version 2.9.
     The following certificate authorities were added (+):
@@ -24,7 +24,7 @@ ca-certificates (20161102) UNRELEASED; urgency=medium
     - "Verisign Class 3 Public Primary Certification Authority"
     - "Verisign Class 3 Public Primary Certification Authority - G2"
 
- -- Michael Shuler <michael@pbandjelly.org>  Wed, 02 Nov 2016 20:16:57 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Wed, 02 Nov 2016 21:15:03 -0500
 
 ca-certificates (20151214) unstable; urgency=medium
 

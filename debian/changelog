@@ -1,4 +1,4 @@
-ca-certificates (20161102) UNRELEASED; urgency=medium
+ca-certificates (20161102) unstable; urgency=medium
 
   [ Michael Shuler ]
   * debian/control:
@@ -40,7 +40,7 @@ ca-certificates (20161102) UNRELEASED; urgency=medium
     * debian/po/id.po:
       Add Indonesian debconf translation. Thank you, Izharul! Closes: #835156
 
- -- Michael Shuler <michael@pbandjelly.org>  Wed, 02 Nov 2016 20:16:57 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Wed, 02 Nov 2016 21:15:03 -0500
 
 ca-certificates (20160104) unstable; urgency=medium
 
