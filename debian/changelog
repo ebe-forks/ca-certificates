@@ -1,5 +1,6 @@
 ca-certificates (20141019+deb8u2) stable; urgency=medium
 
+  [ Michael Shuler ]
   * mozilla/{certdata.txt,nssckbi.h}:
     Update Mozilla certificate authority bundle to version 2.9.
     Thanks for the initial 2.7 patch, Jonathan Wiltshire. Closes: #828845
@@ -26,7 +27,13 @@ ca-certificates (20141019+deb8u2) stable; urgency=medium
     - "Verisign Class 3 Public Primary Certification Authority"
     - "Verisign Class 3 Public Primary Certification Authority - G2"
 
- -- Michael Shuler <michael@pbandjelly.org>  Wed, 02 Nov 2016 21:15:03 -0500
+  [ Andreas Beckmann ]
+  * debian/postinst:
+    Run update-certificates without hooks to initially populate
+    /etc/ssl/certs.  (The hooks are deferred to the noawait trigger.)
+    Closes: #825730
+
+ -- Michael Shuler <michael@pbandjelly.org>  Fri, 18 Nov 2016 09:09:47 -0600
 
 ca-certificates (20141019+deb8u1) stable; urgency=medium
 
