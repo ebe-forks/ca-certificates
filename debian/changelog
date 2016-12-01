@@ -4,7 +4,8 @@ ca-certificates (20161130) UNRELEASED; urgency=medium
   * Add ca-certificates udeb package. Closes: #845456
 
   [ Michael Shuler ]
-  * debian/control:
+  * debian/{compat,control}:
+    Update to compat level 10 and debhelper (>= 10)
     Shorten package description.
   * debian/po/id.po
     Update Indonesian debconf translation file for build time line reorder

@@ -5,7 +5,7 @@ Maintainer: Michael Shuler <michael@pbandjelly.org>
 Uploaders: Raphael Geissert <geissert@debian.org>,
            Thijs Kinkhorst <thijs@debian.org>,
            Christian Perrier <bubulle@debian.org>
-Build-Depends: debhelper (>= 9), po-debconf
+Build-Depends: debhelper (>= 10), po-debconf
 Build-Depends-Indep: python, openssl
 Standards-Version: 3.9.8
 Vcs-Git: https://anonscm.debian.org/git/collab-maint/ca-certificates.git
