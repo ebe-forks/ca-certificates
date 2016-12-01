@@ -6,6 +6,8 @@ ca-certificates (20161130) UNRELEASED; urgency=medium
   [ Michael Shuler ]
   * debian/control:
     Shorten package description.
+  * debian/po/id.po
+    Update Indonesian debconf translation file for build time line reorder
 
  -- Michael Shuler <michael@pbandjelly.org>  Wed, 30 Nov 2016 20:34:44 -0600
 
