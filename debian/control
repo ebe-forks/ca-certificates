@@ -18,11 +18,8 @@ Enhances: openssl
 Multi-Arch: foreign
 Breaks: ca-certificates-java (<<20121112+nmu1)
 Description: Common CA certificates
- This package includes PEM files of CA certificates to allow SSL-based
- applications to check for the authenticity of SSL connections.
- .
- It includes, among others, certificate authorities used by the Debian
- infrastructure and those shipped with Mozilla's browsers.
+ Contains the certificate authorities shipped with Mozilla's browser to allow
+ SSL-based applications to check for the authenticity of SSL connections.
  .
  Please note that Debian can neither confirm nor deny whether the
  certificate authorities whose certificates are included in this package

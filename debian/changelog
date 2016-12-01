@@ -3,6 +3,10 @@ ca-certificates (20161130) UNRELEASED; urgency=medium
   [ Philipp Kern ]
   * Add ca-certificates udeb package. Closes: #845456
 
+  [ Michael Shuler ]
+  * debian/control:
+    Shorten package description.
+
  -- Michael Shuler <michael@pbandjelly.org>  Wed, 30 Nov 2016 20:34:44 -0600
 
 ca-certificates (20161102) unstable; urgency=medium
