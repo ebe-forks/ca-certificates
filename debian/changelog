@@ -1,4 +1,4 @@
-ca-certificates (20161130) UNRELEASED; urgency=medium
+ca-certificates (20161130) unstable; urgency=medium
 
   [ Philipp Kern ]
   * Add ca-certificates udeb package. Closes: #845456
@@ -10,7 +10,7 @@ ca-certificates (20161130) UNRELEASED; urgency=medium
   * debian/po/id.po
     Update Indonesian debconf translation file for build time line reorder
 
- -- Michael Shuler <michael@pbandjelly.org>  Wed, 30 Nov 2016 20:34:44 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Wed, 30 Nov 2016 21:20:53 -0600
 
 ca-certificates (20161102) unstable; urgency=medium
 
