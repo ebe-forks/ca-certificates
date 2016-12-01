@@ -6,7 +6,7 @@ Uploaders: Raphael Geissert <geissert@debian.org>,
            Thijs Kinkhorst <thijs@debian.org>,
            Christian Perrier <bubulle@debian.org>
 Build-Depends: debhelper (>= 9), po-debconf
-Build-Depends-Indep: python
+Build-Depends-Indep: python, openssl
 Standards-Version: 3.9.8
 Vcs-Git: https://anonscm.debian.org/git/collab-maint/ca-certificates.git
 Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/ca-certificates.git
@@ -29,3 +29,15 @@ Description: Common CA certificates
  have in any way been audited for trustworthiness or RFC 3647 compliance.
  Full responsibility to assess them belongs to the local system
  administrator.
+
+Package: ca-certificates-udeb
+Package-Type: udeb
+Section: debian-installer
+Architecture: all
+Depends: ${misc:Depends}
+Description: Common CA certificates - udeb
+ Contains the certificate authorities shipped with Mozilla's browser,
+ all enabled by default.
+ .
+ This package is for use in the installer environment only.
+ Do not install on a normal system.

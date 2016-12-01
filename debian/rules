@@ -17,7 +17,7 @@ build-arch: build-stamp
 
 build-indep: build-stamp
 
-build-stamp: configure-stamp 
+build-stamp: configure-stamp
 	dh_testdir
 
 	# Add here commands to compile the package.
@@ -56,16 +56,22 @@ install: build
 	 cd $(CURDIR)/debian; \
 	 sed -e "s|#INITIAL_CERTS#|$$crts|" \
 		config.in > config)
+	# udeb handling
+	install -d -m 0755 "$(CURDIR)/debian/ca-certificates-udeb/etc/ssl/certs"
+	(cd mozilla; \
+	 $(MAKE) install CERTSDIR="$(CURDIR)/debian/ca-certificates-udeb/etc/ssl/certs")
+	c_rehash -v "$(CURDIR)/debian/ca-certificates-udeb/etc/ssl/certs"
 
 # Build architecture-independent files here.
 binary-indep: build install
 	dh_testdir
 	dh_testroot
+	dh_link
 	dh_installdebconf -n
 	dh_installdocs
 	dh_installexamples
 	dh_installman sbin/update-ca-certificates.8
-	dh_installchangelogs 
+	dh_installchangelogs
 	dh_compress -X examples
 	dh_fixperms
 	dh_installdeb
