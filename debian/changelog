@@ -1,3 +1,10 @@
+ca-certificates (20141019+deb8u3) stable; urgency=medium
+
+  * sbin/update-ca-certificates:
+    Update local certificates directory when calling --fresh. Closes: #783615
+
+ -- Michael Shuler <michael@pbandjelly.org>  Wed, 18 Jan 2017 15:54:56 -0600
+
 ca-certificates (20141019+deb8u2) stable; urgency=medium
 
   [ Michael Shuler ]
