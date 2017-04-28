@@ -1,9 +1,14 @@
-ca-certificates (20141019+deb8u3) stable; urgency=medium
+ca-certificates (20141019+deb8u3) jessie; urgency=medium
 
+  [ Michael Shuler ]
   * sbin/update-ca-certificates:
     Update local certificates directory when calling --fresh. Closes: #783615
 
- -- Michael Shuler <michael@pbandjelly.org>  Wed, 18 Jan 2017 15:54:56 -0600
+  [ Andreas Beckmann ]
+  * Backport another commit to make running update-certificates without hooks
+    actually work (instead of showing a usage message). Closes: #825730
+
+ -- Andreas Beckmann <anbe@debian.org>  Sat, 29 Apr 2017 01:19:23 +0200
 
 ca-certificates (20141019+deb8u2) stable; urgency=medium
 
