@@ -1,19 +1,22 @@
-ca-certificates (20170123) UNRELEASED; urgency=medium
+ca-certificates (20170717) UNRELEASED; urgency=medium
 
   * mozilla/{certdata.txt,nssckbi.h}:
-    Update Mozilla certificate authority bundle to version 2.11.
+    Update Mozilla certificate authority bundle to version 2.14.
     The following certificate authorities were added (+):
     + "AC RAIZ FNMT-RCM"
     + "Amazon Root CA 1"
     + "Amazon Root CA 2"
     + "Amazon Root CA 3"
     + "Amazon Root CA 4"
+    + "D-TRUST Root CA 3 2013"
     + "LuxTrust Global Root 2"
     + "Symantec Class 1 Public Primary Certification Authority - G4"
     + "Symantec Class 1 Public Primary Certification Authority - G6"
     + "Symantec Class 2 Public Primary Certification Authority - G4"
     + "Symantec Class 2 Public Primary Certification Authority - G6"
+    + "TUBITAK Kamu SM SSL Kok Sertifikasi - Surum 1"
     The following certificate authorities were removed (-):
+    - "ApplicationCA - Japanese Government"
     - "Buypass Class 2 CA 1"
     - "EBG Elektronik Sertifika Hizmet Saglayicisi"
     - "Equifax Secure CA"
@@ -21,12 +24,15 @@ ca-certificates (20170123) UNRELEASED; urgency=medium
     - "Equifax Secure Global eBusiness CA"
     - "IGC/A"
     - "Juur-SK"
+    - "Microsec e-Szigno Root CA"
     - "Root CA Generalitat Valenciana"
     - "RSA Security 2048 v3"
     - "S-TRUST Authentication and Encryption Root CA 2005 PN"
+    - "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H6"
     - "Verisign Class 1 Public Primary Certification Authority"
     - "Verisign Class 2 Public Primary Certification Authority - G2"
     - "Verisign Class 3 Public Primary Certification Authority"
+    - "WellsSecure Public Root Certificate Authority"
 
  -- Michael Shuler <michael@pbandjelly.org>  Mon, 23 Jan 2017 16:57:18 -0600
 
