@@ -30,6 +30,14 @@ ca-certificates (20170123) UNRELEASED; urgency=medium
 
  -- Michael Shuler <michael@pbandjelly.org>  Mon, 23 Jan 2017 16:57:18 -0600
 
+ca-certificates (20161130+nmu1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Add StartCom and WoSign certificates to mozilla/blacklist.txt as they are
+    now untrusted by the major browser vendors. Closes: #858539
+
+ -- Chris Lamb <lamby@debian.org>  Fri, 19 May 2017 16:53:16 +0200
+
 ca-certificates (20161130) unstable; urgency=medium
 
   [ Philipp Kern ]
