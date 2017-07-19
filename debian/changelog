@@ -1,8 +1,42 @@
-ca-certificates (20130119+deb7u2) oldstable; urgency=medium
+ca-certificates (20130119+deb7u2) wheezy; urgency=medium
 
+  * Add StartCom and WoSign certificates to mozilla/blacklist.txt as they are
+    now untrusted by the major browser vendors. Closes: #858539
   * mozilla/{certdata.txt,nssckbi.h}:
-    Update Mozilla certificate authority bundle to version 2.6.
+    Update Mozilla certificate authority bundle to version 2.14.
     Closes: #806239
+    The following certificate authorities were added (+):
+    + "AC RAIZ FNMT-RCM"
+    + "Amazon Root CA 1"
+    + "Amazon Root CA 2"
+    + "Amazon Root CA 3"
+    + "Amazon Root CA 4"
+    + "D-TRUST Root CA 3 2013"
+    + "LuxTrust Global Root 2"
+    + "Symantec Class 1 Public Primary Certification Authority - G4"
+    + "Symantec Class 1 Public Primary Certification Authority - G6"
+    + "Symantec Class 2 Public Primary Certification Authority - G4"
+    + "Symantec Class 2 Public Primary Certification Authority - G6"
+    + "TUBITAK Kamu SM SSL Kok Sertifikasi - Surum 1"
+    The following certificate authorities were removed (-):
+    - "ApplicationCA - Japanese Government"
+    - "Buypass Class 2 CA 1"
+    - "EBG Elektronik Sertifika Hizmet Saglayicisi"
+    - "Equifax Secure CA"
+    - "Equifax Secure eBusiness CA 1"
+    - "Equifax Secure Global eBusiness CA"
+    - "IGC/A"
+    - "Juur-SK"
+    - "Microsec e-Szigno Root CA"
+    - "Root CA Generalitat Valenciana"
+    - "RSA Security 2048 v3"
+    - "S-TRUST Authentication and Encryption Root CA 2005 PN"
+    - "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H6"
+    - "Verisign Class 1 Public Primary Certification Authority"
+    - "Verisign Class 2 Public Primary Certification Authority - G2"
+    - "Verisign Class 3 Public Primary Certification Authority"
+    - "WellsSecure Public Root Certificate Authority"
+    ...
     The following certificate authorities were added (+):
     + "CA WoSign ECC Root"
     + "Certification Authority of WoSign G2"
@@ -21,7 +55,7 @@ ca-certificates (20130119+deb7u2) oldstable; urgency=medium
     + "IdenTrust Commercial Root CA 1"
     + "IdenTrust Public Sector Root CA 1"
     + "OISTE WISeKey Global Root GB CA"
-    + "QuoVadis Root CA 1 G3"  Closes: #793027
+    + "QuoVadis Root CA 1 G3"
     + "QuoVadis Root CA 2 G3"
     + "QuoVadis Root CA 3 G3"
     + "S-TRUST Universal Root CA"
@@ -58,7 +92,7 @@ ca-certificates (20130119+deb7u2) oldstable; urgency=medium
     - "ValiCert Class 2 VA"
     - "Verisign Class 4 Public Primary Certification Authority - G3"
 
- -- Michael Shuler <michael@pbandjelly.org>  Mon, 14 Dec 2015 20:57:37 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Tue, 18 Jul 2017 21:58:24 -0500
 
 ca-certificates (20130119+deb7u1) stable; urgency=low
 
