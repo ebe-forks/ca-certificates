@@ -4,7 +4,6 @@ ca-certificates (20130119+deb7u2) wheezy; urgency=medium
     now untrusted by the major browser vendors. Closes: #858539
   * mozilla/{certdata.txt,nssckbi.h}:
     Update Mozilla certificate authority bundle to version 2.14.
-    Closes: #806239
     The following certificate authorities were added (+):
     + "AC RAIZ FNMT-RCM"
     + "Amazon Root CA 1"
