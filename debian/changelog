@@ -1,4 +1,4 @@
-ca-certificates (20170717) UNRELEASED; urgency=medium
+ca-certificates (20170717) unstable; urgency=medium
 
   * debian/ca-certificates.postinst:
     Prevent postinst failure on read-only /usr/local. Closes: #843722
@@ -42,7 +42,7 @@ ca-certificates (20170717) UNRELEASED; urgency=medium
     - "Verisign Class 3 Public Primary Certification Authority"
     - "WellsSecure Public Root Certificate Authority"
 
- -- Michael Shuler <michael@pbandjelly.org>  Mon, 23 Jan 2017 16:57:18 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Thu, 20 Jul 2017 00:18:08 -0500
 
 ca-certificates (20161130+nmu1) unstable; urgency=medium
 
