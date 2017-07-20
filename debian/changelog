@@ -36,7 +36,7 @@ ca-certificates (20161130+nmu1+deb9u1) stable; urgency=medium
     - "Verisign Class 3 Public Primary Certification Authority"
     - "WellsSecure Public Root Certificate Authority"
 
- -- Michael Shuler <michael@pbandjelly.org>  Tue, 18 Jul 2017 20:19:56 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Thu, 20 Jul 2017 00:56:40 -0500
 
 ca-certificates (20161130+nmu1) unstable; urgency=medium
 
