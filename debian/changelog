@@ -1,5 +1,6 @@
 ca-certificates (20170717) unstable; urgency=medium
 
+  * Update to Standards-Version: 4.0.0
   * debian/ca-certificates.postinst:
     Prevent postinst failure on read-only /usr/local. Closes: #843722
   * mozilla/certdata2pem.py:
