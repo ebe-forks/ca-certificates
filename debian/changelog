@@ -7,6 +7,7 @@ ca-certificates (20170717) unstable; urgency=medium
     Remove email-only roots from mozilla trust store. Closes: #721976
   * mozilla/{certdata.txt,nssckbi.h}:
     Update Mozilla certificate authority bundle to version 2.14.
+    Closes: #858064
     The following certificate authorities were added (+):
     + "AC RAIZ FNMT-RCM"
     + "Amazon Root CA 1"
