@@ -1,3 +1,24 @@
+ca-certificates (20170814) UNRELEASED; urgency=medium
+
+  * mozilla/{certdata.txt,nssckbi.h}:
+    Update Mozilla certificate authority bundle to version 2.16.
+    No new certificate authorities were added in this update.
+    The following certificate authorities were removed (-):
+    - "AddTrust Low-Value Services Root"
+    - "AddTrust Public Services Root"
+    - "AddTrust Qualified Certificates Root"
+    - "China Internet Network Information Center EV Certificates Root"
+    - "CNNIC ROOT"
+    - "Comodo Secure Services root"
+    - "Comodo Trusted Services root"
+    - "GeoTrust Global CA 2"
+    - "Swisscom Root CA 1"
+    - "Swisscom Root CA 2"
+    - "Swisscom Root EV CA 2"
+    - "UTN USERFirst Hardware Root CA"
+
+ -- Michael Shuler <michael@pbandjelly.org>  Mon, 14 Aug 2017 11:37:33 -0500
+
 ca-certificates (20170717) unstable; urgency=medium
 
   * Update to Standards-Version: 4.0.1
