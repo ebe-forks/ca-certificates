@@ -8,8 +8,8 @@ Uploaders: Raphael Geissert <geissert@debian.org>,
 Build-Depends: debhelper (>= 10), po-debconf
 Build-Depends-Indep: python, openssl
 Standards-Version: 4.0.1
-Vcs-Git: https://anonscm.debian.org/git/collab-maint/ca-certificates.git
-Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/ca-certificates.git
+Vcs-Git: https://salsa.debian.org/debian/ca-certificates.git
+Vcs-Browser: https://salsa.debian.org/debian/ca-certificates
 
 Package: ca-certificates
 Architecture: all
