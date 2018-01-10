@@ -1,4 +1,4 @@
-ca-certificates (20130119+deb7u2) wheezy; urgency=medium
+ca-certificates (20130119+deb7u2) wheezy-security; urgency=medium
 
   * Add StartCom and WoSign certificates to mozilla/blacklist.txt as they are
     now untrusted by the major browser vendors. Closes: #858539
