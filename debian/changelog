@@ -1,5 +1,6 @@
 ca-certificates (20170814) UNRELEASED; urgency=medium
 
+  [ Michael Shuler ]
   * mozilla/{certdata.txt,nssckbi.h}:
     Update Mozilla certificate authority bundle to version 2.16.
     No new certificate authorities were added in this update.
@@ -16,6 +17,9 @@ ca-certificates (20170814) UNRELEASED; urgency=medium
     - "Swisscom Root CA 2"
     - "Swisscom Root EV CA 2"
     - "UTN USERFirst Hardware Root CA"
+
+  [ Thijs Kinkhorst ]
+  * Remove Christian Perrier from uploaders at his request (closes: #894070).
 
  -- Michael Shuler <michael@pbandjelly.org>  Mon, 14 Aug 2017 11:37:33 -0500
 
