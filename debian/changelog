@@ -20,6 +20,7 @@ ca-certificates (20170814) UNRELEASED; urgency=medium
 
   [ Thijs Kinkhorst ]
   * Remove Christian Perrier from uploaders at his request (closes: #894070).
+  * Checked for policy 4.1.3, no changes.
 
  -- Michael Shuler <michael@pbandjelly.org>  Mon, 14 Aug 2017 11:37:33 -0500
 
