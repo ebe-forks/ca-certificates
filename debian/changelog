@@ -36,6 +36,8 @@ ca-certificates (20180329) UNRELEASED; urgency=medium
     - "TURKTRUST Certificate Services Provider Root 2007"
     - "TUBITAK UEKAE Kok Sertifika Hizmet Saglayicisi - Surum 3"
     - "UTN USERFirst Hardware Root CA"
+  * debian/copyright:
+    Fix lintian insecure-copyright-format-uri with https URL.
 
   [ Thijs Kinkhorst ]
   * Remove Christian Perrier from uploaders at his request (closes: #894070).
