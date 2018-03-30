@@ -1,6 +1,7 @@
 *.swp
 build-stamp
 configure-stamp
+debian/.debhelper
 debian/ca-certificates
 debian/ca-certificates.debhelper.log
 debian/ca-certificates.substvars
