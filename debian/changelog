@@ -40,7 +40,7 @@ ca-certificates (20180329) UNRELEASED; urgency=medium
     Fix lintian insecure-copyright-format-uri with https URL.
   * debian/changelog:
     Fix lintian file-contains-trailing-whitespace.
-  * debian/compat:
+  * debian/{compat,control}:
     Set to debhelper compat 11.
 
   [ Thijs Kinkhorst ]
