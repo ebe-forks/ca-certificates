@@ -36,6 +36,9 @@ ca-certificates (20180329) UNRELEASED; urgency=medium
     - "TURKTRUST Certificate Services Provider Root 2007"
     - "TUBITAK UEKAE Kok Sertifika Hizmet Saglayicisi - Surum 3"
     - "UTN USERFirst Hardware Root CA"
+  * mozilla/blacklist.txt
+    Update blacklist to remove certificates no longer in certdata.txt and
+    explicitly ignore distrusted certificates.
   * debian/copyright:
     Fix lintian insecure-copyright-format-uri with https URL.
   * debian/changelog:
