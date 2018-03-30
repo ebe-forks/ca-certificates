@@ -4,9 +4,38 @@ ca-certificates (20180329) UNRELEASED; urgency=medium
   * mozilla/{certdata.txt,nssckbi.h}:
     Update Mozilla certificate authority bundle to version 2.22.
     The following certificate authorities were added (+):
-    + ... TODO
+    + "GDCA TrustAUTH R5 ROOT"
+    + "SSL.com EV Root Certification Authority ECC"
+    + "SSL.com EV Root Certification Authority RSA R2"
+    + "SSL.com Root Certification Authority ECC"
+    + "SSL.com Root Certification Authority RSA"
+    + "TrustCor ECA-1"
+    + "TrustCor RootCert CA-1"
+    + "TrustCor RootCert CA-2"
     The following certificate authorities were removed (-):
-    - ... TODO
+    - "ACEDICOM Root"
+    - "AddTrust Low-Value Services Root"
+    - "AddTrust Public Services Root"
+    - "AddTrust Qualified Certificates Root"
+    - "CA Disig Root R1"
+    - "CNNIC ROOT"
+    - "Camerfirma Chambers of Commerce Root"
+    - "Camerfirma Global Chambersign Root"
+    - "Certinomis - Autorité Racine"
+    - "Certum Root CA"
+    - "China Internet Network Information Center EV Certificates Root"
+    - "Comodo Secure Services root"
+    - "Comodo Trusted Services root"
+    - "DST ACES CA X6"
+    - "GeoTrust Global CA 2"
+    - "PSCProcert"
+    - "Security Communication EV RootCA1"
+    - "Swisscom Root CA 1"
+    - "Swisscom Root CA 2"
+    - "Swisscom Root EV CA 2"
+    - "TURKTRUST Certificate Services Provider Root 2007"
+    - "TUBITAK UEKAE Kok Sertifika Hizmet Saglayicisi - Surum 3"
+    - "UTN USERFirst Hardware Root CA"
 
   [ Thijs Kinkhorst ]
   * Remove Christian Perrier from uploaders at his request (closes: #894070).
