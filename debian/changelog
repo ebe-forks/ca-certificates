@@ -3,39 +3,12 @@ ca-certificates (20161130+nmu1+deb9u1) stable; urgency=medium
   * debian/ca-certificates.postinst:
     Prevent postinst failure on read-only /usr/local. Closes: #843722
   * mozilla/{certdata.txt,nssckbi.h}:
-    Update Mozilla certificate authority bundle to version 2.14.
+    Update Mozilla certificate authority bundle to version 2.22.
     Closes: #858064
     The following certificate authorities were added (+):
-    + "AC RAIZ FNMT-RCM"
-    + "Amazon Root CA 1"
-    + "Amazon Root CA 2"
-    + "Amazon Root CA 3"
-    + "Amazon Root CA 4"
-    + "D-TRUST Root CA 3 2013"
-    + "LuxTrust Global Root 2"
-    + "Symantec Class 1 Public Primary Certification Authority - G4"
-    + "Symantec Class 1 Public Primary Certification Authority - G6"
-    + "Symantec Class 2 Public Primary Certification Authority - G4"
-    + "Symantec Class 2 Public Primary Certification Authority - G6"
-    + "TUBITAK Kamu SM SSL Kok Sertifikasi - Surum 1"
+    + ... TODO
     The following certificate authorities were removed (-):
-    - "ApplicationCA - Japanese Government"
-    - "Buypass Class 2 CA 1"
-    - "EBG Elektronik Sertifika Hizmet Saglayicisi"
-    - "Equifax Secure CA"
-    - "Equifax Secure eBusiness CA 1"
-    - "Equifax Secure Global eBusiness CA"
-    - "IGC/A"
-    - "Juur-SK"
-    - "Microsec e-Szigno Root CA"
-    - "Root CA Generalitat Valenciana"
-    - "RSA Security 2048 v3"
-    - "S-TRUST Authentication and Encryption Root CA 2005 PN"
-    - "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H6"
-    - "Verisign Class 1 Public Primary Certification Authority"
-    - "Verisign Class 2 Public Primary Certification Authority - G2"
-    - "Verisign Class 3 Public Primary Certification Authority"
-    - "WellsSecure Public Root Certificate Authority"
+    - ... TODO
 
  -- Michael Shuler <michael@pbandjelly.org>  Thu, 20 Jul 2017 00:56:40 -0500
 
