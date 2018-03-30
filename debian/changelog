@@ -2,6 +2,8 @@ ca-certificates (20161130+nmu1+deb9u1) stable; urgency=medium
 
   * debian/ca-certificates.postinst:
     Prevent postinst failure on read-only /usr/local. Closes: #843722
+  * debian/control:
+    Remove Christian Perrier from uploaders at his request. Closes: #894070
   * mozilla/{certdata.txt,nssckbi.h}:
     Update Mozilla certificate authority bundle to version 2.22.
     Closes: #858064
