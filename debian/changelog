@@ -6,11 +6,64 @@ ca-certificates (20161130+nmu1+deb9u1) stable; urgency=medium
     Update Mozilla certificate authority bundle to version 2.22.
     Closes: #858064
     The following certificate authorities were added (+):
-    + ... TODO
+    + "AC RAIZ FNMT-RCM"
+    + "Amazon Root CA 1"
+    + "Amazon Root CA 2"
+    + "Amazon Root CA 3"
+    + "Amazon Root CA 4"
+    + "D-TRUST Root CA 3 2013"
+    + "GDCA TrustAUTH R5 ROOT"
+    + "LuxTrust Global Root 2"
+    + "SSL.com EV Root Certification Authority ECC"
+    + "SSL.com EV Root Certification Authority RSA R2"
+    + "SSL.com Root Certification Authority ECC"
+    + "SSL.com Root Certification Authority RSA"
+    + "Symantec Class 1 Public Primary Certification Authority - G4"
+    + "Symantec Class 1 Public Primary Certification Authority - G6"
+    + "Symantec Class 2 Public Primary Certification Authority - G4"
+    + "Symantec Class 2 Public Primary Certification Authority - G6"
+    + "TrustCor ECA-1"
+    + "TrustCor RootCert CA-1"
+    + "TrustCor RootCert CA-2"
+    + "TUBITAK Kamu SM SSL Kok Sertifikasi - Surum 1"
     The following certificate authorities were removed (-):
-    - ... TODO
+    - "ACEDICOM Root"
+    - "AddTrust Public Services Root"
+    - "AddTrust Qualified Certificates Root"
+    - "ApplicationCA - Japanese Government"
+    - "Buypass Class 2 CA 1"
+    - "CA Disig Root R1"
+    - "Certinomis - Autorité Racine"
+    - "China Internet Network Information Center EV Certificates Root"
+    - "CNNIC ROOT"
+    - "Comodo Secure Services root"
+    - "Comodo Trusted Services root"
+    - "DST ACES CA X6"
+    - "EBG Elektronik Sertifika Hizmet Saglayicisi"
+    - "Equifax Secure CA"
+    - "Equifax Secure eBusiness CA 1"
+    - "Equifax Secure Global eBusiness CA"
+    - "GeoTrust Global CA 2"
+    - "IGC/A"
+    - "Juur-SK"
+    - "Microsec e-Szigno Root CA"
+    - "PSCProcert"
+    - "Root CA Generalitat Valenciana"
+    - "RSA Security 2048 v3"
+    - "Security Communication EV RootCA1"
+    - "S-TRUST Authentication and Encryption Root CA 2005 PN"
+    - "Swisscom Root CA 1"
+    - "Swisscom Root EV CA 2"
+    - "TUBITAK UEKAE Kok Sertifika Hizmet Saglayicisi - Surum 3"
+    - "TURKTRUST Certificate Services Provider Root 2007"
+    - "TÜRKTRUST Elektronik Sertifika Hizmet Sağlayıcısı H6"
+    - "UTN USERFirst Hardware Root CA"
+    - "Verisign Class 1 Public Primary Certification Authority"
+    - "Verisign Class 2 Public Primary Certification Authority - G2"
+    - "Verisign Class 3 Public Primary Certification Authority"
+    - "WellsSecure Public Root Certificate Authority"
 
- -- Michael Shuler <michael@pbandjelly.org>  Thu, 20 Jul 2017 00:56:40 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Fri, 30 Mar 2018 12:22:21 -0500
 
 ca-certificates (20161130+nmu1) unstable; urgency=medium
 
