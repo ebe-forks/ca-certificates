@@ -1,28 +1,18 @@
-ca-certificates (20170814) UNRELEASED; urgency=medium
+ca-certificates (20180329) UNRELEASED; urgency=medium
 
   [ Michael Shuler ]
   * mozilla/{certdata.txt,nssckbi.h}:
-    Update Mozilla certificate authority bundle to version 2.16.
-    No new certificate authorities were added in this update.
+    Update Mozilla certificate authority bundle to version 2.22.
+    The following certificate authorities were added (+):
+    + ... TODO
     The following certificate authorities were removed (-):
-    - "AddTrust Low-Value Services Root"
-    - "AddTrust Public Services Root"
-    - "AddTrust Qualified Certificates Root"
-    - "China Internet Network Information Center EV Certificates Root"
-    - "CNNIC ROOT"
-    - "Comodo Secure Services root"
-    - "Comodo Trusted Services root"
-    - "GeoTrust Global CA 2"
-    - "Swisscom Root CA 1"
-    - "Swisscom Root CA 2"
-    - "Swisscom Root EV CA 2"
-    - "UTN USERFirst Hardware Root CA"
+    - ... TODO
 
   [ Thijs Kinkhorst ]
   * Remove Christian Perrier from uploaders at his request (closes: #894070).
   * Checked for policy 4.1.3, no changes.
 
- -- Michael Shuler <michael@pbandjelly.org>  Mon, 14 Aug 2017 11:37:33 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Thu, 29 Mar 2018 18:02:01 -0600
 
 ca-certificates (20170717) unstable; urgency=medium
 
