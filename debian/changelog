@@ -38,6 +38,8 @@ ca-certificates (20180329) UNRELEASED; urgency=medium
     - "UTN USERFirst Hardware Root CA"
   * debian/copyright:
     Fix lintian insecure-copyright-format-uri with https URL.
+  * debian/changelog:
+    Fix lintian file-contains-trailing-whitespace.
 
   [ Thijs Kinkhorst ]
   * Remove Christian Perrier from uploaders at his request (closes: #894070).
@@ -385,7 +387,7 @@ ca-certificates (20130610) unstable; urgency=low
   * Update to machine-readable debian/copyright file v1.0
 
   [ Thijs Kinkhorst ]
-  * Drop upgrading code for upgrades from Debian Etch and earlier. 
+  * Drop upgrading code for upgrades from Debian Etch and earlier.
   * Remove obsolete debconf.org CA certificate. DebConf now uses an
     intermediate certificate signed by SPI. (Closes: #693405)
   * Remove obsolete SPI CA certiticate.
@@ -962,7 +964,7 @@ ca-certificates (20061027) unstable; urgency=low
     closes: Bug#386806
   * debian/po/da.po: updated
     closes: Bug#388018
-    
+
  -- Fumitoshi UKAI <ukai@debian.or.jp>  Sat, 28 Oct 2006 02:28:50 +0900
 
 ca-certificates (20060816) unstable; urgency=low
@@ -1009,18 +1011,18 @@ ca-certificates (20050518) unstable; urgency=high
     closes: Bug#296212
   * update mozilla/certdata.txt
     add: "Certum Root CA", "Comodo AAA Services root"
-         "Comodo Secure Services root", 
-	 "Comodo Trusted Services root",
-	 "IPS Chained CAs root", "IPS CLASE1 root", "IPS CLASE3 root",
-	 "IPS CLASEA1 root", "IPS CLASEA3 root", "IPS Servidores root"
-	 "IPS Timestamping root",
-	 "QuoVadis Root CA",
-	 "Security Communication Root CA",
-	 "Sonera Class 1 Root CA", "Sonera Class 2 Root CA",
-	 "Staat der Nederlanden Root CA",
-	 "TDC Internet Root CA", "TDC OCES Root CA", 
-	 "UTN DATACorp SGC Root CA", "UTN USERFirst Email Root CA",
-	 "UTN USERFirst Hardware Root CA", "UTN USERFirst Object Root CA"
+         "Comodo Secure Services root",
+         "Comodo Trusted Services root",
+         "IPS Chained CAs root", "IPS CLASE1 root", "IPS CLASE3 root",
+         "IPS CLASEA1 root", "IPS CLASEA3 root", "IPS Servidores root"
+         "IPS Timestamping root",
+         "QuoVadis Root CA",
+         "Security Communication Root CA",
+         "Sonera Class 1 Root CA", "Sonera Class 2 Root CA",
+         "Staat der Nederlanden Root CA",
+         "TDC Internet Root CA", "TDC OCES Root CA",
+         "UTN DATACorp SGC Root CA", "UTN USERFirst Email Root CA",
+         "UTN USERFirst Hardware Root CA", "UTN USERFirst Object Root CA"
   * add CACert.org's Root CA
     closes: Bug#213086, Bug#288293
   * add debian/po/vi.po
@@ -1029,13 +1031,13 @@ ca-certificates (20050518) unstable; urgency=high
     closes: Bug#309019
   * write "How certificate will be accepted in ca-certificates package"
     in README.Debain
-    
+
  -- Fumitoshi UKAI <ukai@debian.or.jp>  Wed, 18 May 2005 00:40:54 +0900
 
 ca-certificates (20040809) unstable; urgency=low
 
   * previous version was not fixed Bug#255933 correctly.
-    update-ca-certificates now remove symlinks of deselected entries 
+    update-ca-certificates now remove symlinks of deselected entries
     in ca-certificates.conf
     closes: Bug#255933
 
@@ -1045,7 +1047,7 @@ ca-certificates (20040808) unstable; urgency=low
 
   * run update-ca-certificates by /bin/sh -e
     closes: Bug#247581
-  * update-ca-certificates remove symlinks of deselected entries 
+  * update-ca-certificates remove symlinks of deselected entries
     in ca-certificates.conf
     closes: Bug#255933
   * change default of trust_new_crts from 'ask' to 'yes'
@@ -1133,17 +1135,17 @@ ca-certificates (20030415) unstable; urgency=medium
  -- Fumitoshi UKAI <ukai@debian.or.jp>  Mon, 14 Apr 2003 23:00:58 +0900
 
 ca-certificates (20030414) unstable; urgency=medium
-    
+
   * certificates are installed in /usr/share/ca-certificates
     you can find md5sum of certs files. closes: Bug#170777
-  
+
   * debconf to generate /etc/ca-certificates.conf
-  * update-ca-certificates update /etc/ssl/certs according 
+  * update-ca-certificates update /etc/ssl/certs according
     /etc/ca-certificates.conf
     It also generate /etc/ssl/certs/ca-certificates.crt
     which is single-file version of certs.
     closes: Bug#158904
-  
+
   * change extension from .pem to .crt in /usr/share/ca-certificates
     - /etc/mime.types:
       application/x-x509-ca-cert crt
@@ -1152,7 +1154,7 @@ ca-certificates (20030414) unstable; urgency=medium
     c_rehash requires .pem extension
 
   * Update certificate from mozilla 2:1.3-4
-    mozilla/security/nss/lib/ckfw/builtins/certdata.txt 
+    mozilla/security/nss/lib/ckfw/builtins/certdata.txt
     cefd05b299ea683fc6b1ce9ff1e23a3f  mozilla/certdata.txt
 
   * Add spi-inc.org/spi-ca.crt from http://www.spi-inc.org/secretary/
