@@ -12,7 +12,7 @@ Vcs-Browser: https://salsa.debian.org/debian/ca-certificates
 
 Package: ca-certificates
 Architecture: all
-Depends: openssl (>= 1.0.0), ${misc:Depends}
+Depends: openssl (>= 1.1.0), ${misc:Depends}
 Enhances: openssl
 Multi-Arch: foreign
 Breaks: ca-certificates-java (<<20121112+nmu1)
