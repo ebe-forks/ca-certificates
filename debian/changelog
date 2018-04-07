@@ -46,7 +46,7 @@ ca-certificates (20180329) UNRELEASED; urgency=medium
   * debian/{compat,control}:
     Set to debhelper compat 11.
   * Update openssl dependency to >= 1.1.0 to support `openssl rehash` and drop
-    usage of `c_rehash` script.
+    usage of `c_rehash` script. Closes: #895075
 
   [ Thijs Kinkhorst ]
   * Remove Christian Perrier from uploaders at his request (closes: #894070).
