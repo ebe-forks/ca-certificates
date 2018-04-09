@@ -60,7 +60,7 @@ install: build
 	install -d -m 0755 "$(CURDIR)/debian/ca-certificates-udeb/etc/ssl/certs"
 	(cd mozilla; \
 	 $(MAKE) install CERTSDIR="$(CURDIR)/debian/ca-certificates-udeb/etc/ssl/certs")
-	openssl rehash -compat -v "$(CURDIR)/debian/ca-certificates-udeb/etc/ssl/certs"
+	openssl rehash -v "$(CURDIR)/debian/ca-certificates-udeb/etc/ssl/certs"
 
 # Build architecture-independent files here.
 binary-indep: build install

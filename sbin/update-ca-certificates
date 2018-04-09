@@ -174,9 +174,9 @@ then
   # only run if set of files has changed
   if [ "$verbose" = 0 ]
   then
-    openssl rehash -compat . > /dev/null
+    openssl rehash . > /dev/null
   else
-    openssl rehash -compat .
+    openssl rehash .
   fi
 fi
 
