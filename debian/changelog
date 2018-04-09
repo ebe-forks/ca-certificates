@@ -1,4 +1,4 @@
-ca-certificates (20180329) UNRELEASED; urgency=medium
+ca-certificates (20180409) unstable; urgency=medium
 
   [ Michael Shuler ]
   * mozilla/{certdata.txt,nssckbi.h}:
@@ -52,7 +52,7 @@ ca-certificates (20180329) UNRELEASED; urgency=medium
   * Remove Christian Perrier from uploaders at his request (closes: #894070).
   * Checked for policy 4.1.4, no changes.
 
- -- Michael Shuler <michael@pbandjelly.org>  Thu, 29 Mar 2018 18:02:01 -0600
+ -- Michael Shuler <michael@pbandjelly.org>  Mon, 09 Apr 2018 18:43:49 -0500
 
 ca-certificates (20170717) unstable; urgency=medium
 
