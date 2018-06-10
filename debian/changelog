@@ -3,9 +3,10 @@ ca-certificates (20141019+deb8u4) jessie; urgency=medium
   * Add StartCom and WoSign certificates to mozilla/blacklist.txt as they are
     now untrusted by the major browser vendors. Closes: #858539
   * mozilla/{certdata.txt,nssckbi.h}:
-    Update Mozilla certificate authority bundle to version 2.14.
+    Update Mozilla certificate authority bundle to version 2.22.
     Closes: #858064
     The following certificate authorities were added (+):
+INCOMPLETE
     + "AC RAIZ FNMT-RCM"
     + "Amazon Root CA 1"
     + "Amazon Root CA 2"
@@ -19,6 +20,7 @@ ca-certificates (20141019+deb8u4) jessie; urgency=medium
     + "Symantec Class 2 Public Primary Certification Authority - G6"
     + "TUBITAK Kamu SM SSL Kok Sertifikasi - Surum 1"
     The following certificate authorities were removed (-):
+INCOMPLETE
     - "ApplicationCA - Japanese Government"
     - "Buypass Class 2 CA 1"
     - "EBG Elektronik Sertifika Hizmet Saglayicisi"
@@ -36,8 +38,9 @@ ca-certificates (20141019+deb8u4) jessie; urgency=medium
     - "Verisign Class 2 Public Primary Certification Authority - G2"
     - "Verisign Class 3 Public Primary Certification Authority"
     - "WellsSecure Public Root Certificate Authority"
+  * Remove Christian Perrier from uploaders at his request. Closes: #894070
 
- -- Michael Shuler <michael@pbandjelly.org>  Thu, 20 Jul 2017 01:01:37 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 10 Jun 2018 18:41:02 -0500
 
 ca-certificates (20141019+deb8u3) jessie; urgency=medium
 
