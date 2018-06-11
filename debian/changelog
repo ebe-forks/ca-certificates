@@ -2,7 +2,7 @@ ca-certificates (20141019+deb8u4) jessie; urgency=medium
 
   * mozilla/{certdata.txt,nssckbi.h}:
     Update Mozilla certificate authority bundle to version 2.22.
-    Closes: #858064
+    Closes: #858064, #867461
     This update removes StartCom and WoSign certificates. Closes: #858539
     The following certificate authorities were added (+):
     + "AC RAIZ FNMT-RCM"
