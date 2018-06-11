@@ -70,7 +70,7 @@ ca-certificates (20141019+deb8u4) jessie; urgency=medium
   * debian/control:
     Remove Christian Perrier from uploaders at his request. Closes: #894070
 
- -- Michael Shuler <michael@pbandjelly.org>  Sun, 10 Jun 2018 18:41:02 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 10 Jun 2018 20:03:36 -0500
 
 ca-certificates (20141019+deb8u3) jessie; urgency=medium
 
