@@ -1,4 +1,4 @@
-ca-certificates (20161130+nmu1+deb9u1) stable; urgency=medium
+ca-certificates (20161130+nmu1+deb9u1) stretch; urgency=medium
 
   * debian/ca-certificates.postinst:
     Prevent postinst failure on read-only /usr/local. Closes: #843722
@@ -65,7 +65,7 @@ ca-certificates (20161130+nmu1+deb9u1) stable; urgency=medium
     - "Verisign Class 3 Public Primary Certification Authority"
     - "WellsSecure Public Root Certificate Authority"
 
- -- Michael Shuler <michael@pbandjelly.org>  Fri, 30 Mar 2018 12:22:21 -0500
+ -- Michael Shuler <michael@pbandjelly.org>  Sun, 10 Jun 2018 20:48:03 -0500
 
 ca-certificates (20161130+nmu1) unstable; urgency=medium
 
