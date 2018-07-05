@@ -1,3 +1,15 @@
+ca-certificates (20130119+deb7u3) UNRELEASED; urgency=medium
+
+  * mozilla/{certdata.txt,nssckbi.h}:
+    Update Mozilla certificate authority bundle to version 2.22.
+    The following certificate authorities were added (+):
+    + ...
+    The following certificate authorities were removed (-):
+    - ...
+
+
+ -- Michael Shuler <michael@pbandjelly.org>  Thu, 05 Jul 2018 17:10:00 -0500
+
 ca-certificates (20130119+deb7u2) wheezy-security; urgency=medium
 
   * Add StartCom and WoSign certificates to mozilla/blacklist.txt as they are
