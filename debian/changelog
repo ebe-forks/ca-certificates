@@ -1,4 +1,4 @@
-ca-certificates (20130119+deb7u3) wheezy; urgency=medium
+ca-certificates (20130119+deb7u3) wheezy-security; urgency=high
 
   * mozilla/{certdata.txt,nssckbi.h}:
     Update Mozilla certificate authority bundle to version 2.22.
