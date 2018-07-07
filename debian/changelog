@@ -1,4 +1,4 @@
-ca-certificates (20141019+deb8u4) jessie; urgency=medium
+ca-certificates (20141019+deb8u4) jessie-security; urgency=high
 
   * mozilla/{certdata.txt,nssckbi.h}:
     Update Mozilla certificate authority bundle to version 2.22.
